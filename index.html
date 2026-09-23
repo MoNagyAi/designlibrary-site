@@ -1040,6 +1040,10 @@
                         if (!doc) return;
 
                         const applyFrameEnhancements = () => {
+                            // The parent provides a single contact menu; remove legacy WhatsApp widgets.
+                            doc.querySelectorAll('#contactButtonContainer').forEach(widget => {
+                                if (widget.querySelector('.fa-whatsapp')) widget.remove();
+                            });
                             // Remove copy buttons from all internal pages.
                             doc.querySelectorAll('.copy-link-button').forEach(btn => btn.remove());
 
@@ -1093,6 +1097,28 @@ body{height:100vh;height:100dvh;overflow:hidden}
 .nav-folders{background:#29465e;border:1px solid #8ca1b5;color:white;border-radius:8px;padding:9px;font:inherit;cursor:pointer}
 a:focus-visible,button:focus-visible{outline:3px solid #e8bb53;outline-offset:3px}
 @media(max-width:780px){.brand-center-info{order:3;flex-basis:100%;max-width:none;margin:0!important}.brand-nav-actions{gap:6px;flex-wrap:wrap}.brand-logo{width:145px!important;max-width:35vw!important}.brand-nav-actions .portfolio-button{display:none}.sidebar{width:42vw!important;padding:10px}.bilingual-label .menu-en{font-size:14px}.bilingual-label .menu-ar{font-size:12px}.brand-nav .brand-center-info{display:block!important}.brand-center-info .app-title-en{font-size:12px}.brand-center-info .app-note-en,.brand-center-info .app-note-ar{font-size:10px}}
+</style><style id="polished-app-header">
+.top-nav.brand-nav{display:grid;grid-template-columns:210px minmax(260px,1fr) auto;gap:24px;align-items:center;padding:18px 26px!important;background:linear-gradient(115deg,#101f2d,#1b3042);border-bottom:1px solid #cba65355;box-shadow:0 4px 20px #09121c25;min-height:148px}
+.brand-logo{width:200px;max-width:100%;max-height:78px}
+.brand-center-info{max-width:none;margin:0;text-align:start;border-inline-start:1px solid #ffffff20;padding-inline-start:24px;direction:ltr;line-height:1.5}
+.brand-center-info .app-title-en{font-size:24px;line-height:1.2;font-weight:800;letter-spacing:-.4px;color:#fff}
+.brand-byline{font-size:12px;color:#e8c775;font-weight:600;letter-spacing:0;white-space:nowrap;display:inline-block}
+.brand-center-info .app-title-ar{font-size:16px;font-weight:700;color:#eef4fa;margin-top:6px;direction:rtl;text-align:left}
+.brand-subtitle{font-size:12px;font-weight:400;color:#c8d3df}
+.resource-summary{display:block;font:12px/1.6 Arial,sans-serif;color:#c8d3df}
+.education-badge{display:inline-flex;gap:7px;align-items:center;margin:7px 0 4px;color:#f2d48b;background:#e8bd5610;border:1px solid #e8bd5638;border-radius:7px;padding:3px 9px;font-size:11px;direction:rtl}
+.brand-center-info .app-note-en,.brand-center-info .app-note-ar{display:block;color:#aebdca;font-size:10px;line-height:1.5;margin:0;text-align:left}
+.brand-nav-actions{display:grid;grid-template-columns:repeat(2,minmax(110px,1fr));gap:8px;margin:0}
+.brand-nav-actions a,.brand-nav-actions .nav-folders{display:flex;align-items:center;justify-content:flex-start;gap:10px;min-height:46px;height:auto;padding:9px 13px;border-radius:10px;font-size:16px;text-decoration:none;transition:background .2s,transform .2s}
+.brand-nav-actions .header-btn-text{display:flex!important;flex-direction:column;gap:3px;line-height:1.1;text-align:left;font-family:Arial,sans-serif;font-size:12px;font-weight:700}
+.brand-nav-actions .header-btn-text .btn-sub{display:block;font:10px/1.2 'Cairo',sans-serif;opacity:.8}
+.brand-nav-actions .google-play-button{grid-column:2;grid-row:1;background:#ebc25b;color:#142332;border:1px solid #f4d688}
+.brand-nav-actions .support-button,.brand-nav-actions .portfolio-button,.brand-nav-actions .nav-folders{background:#ffffff08;color:#eaf0f7;border:1px solid #ffffff26;box-shadow:none}
+.brand-nav-actions a:hover,.brand-nav-actions .nav-folders:hover{transform:translateY(-2px);filter:brightness(1.1)}
+#contactButtonContainer{bottom:64px}
+@media(min-width:1600px){.brand-nav-actions{grid-template-columns:repeat(4,minmax(104px,1fr))}.brand-nav-actions .google-play-button{grid-column:auto;grid-row:auto}}
+@media(max-width:1000px){.top-nav.brand-nav{grid-template-columns:150px 1fr;gap:14px;padding:14px 18px!important}.brand-logo{width:145px}.brand-center-info{padding-inline-start:18px}.brand-nav-actions{grid-column:1/-1;grid-template-columns:repeat(4,1fr)}.brand-nav-actions .google-play-button{grid-column:auto;grid-row:auto}}
+@media(max-width:600px){.top-nav.brand-nav{grid-template-columns:90px minmax(0,1fr);gap:10px;padding:12px!important;min-height:0}.brand-logo{width:90px!important;max-width:90px!important}.brand-center-info{order:initial;max-width:none;min-width:0;padding-inline-start:12px}.brand-center-info .app-title-en{font-size:19px}.brand-byline{display:block;font-size:10px;margin-top:3px}.brand-center-info .app-title-ar{font-size:14px}.brand-subtitle,.resource-summary{display:none}.education-badge{font-size:9px;padding:3px 5px;gap:4px;flex-wrap:wrap;margin-top:5px}.brand-center-info .app-note-en,.brand-center-info .app-note-ar{font-size:9px}.brand-nav-actions{gap:5px}.brand-nav-actions a,.brand-nav-actions .nav-folders{padding:8px 5px;gap:5px;min-width:0;justify-content:center;font-size:12px}.brand-nav-actions .header-btn-text{font-size:10px}.brand-nav-actions .header-btn-text .btn-sub{font-size:9px}}
 </style></head>
         <body>
             
@@ -1103,13 +1129,15 @@ a:focus-visible,button:focus-visible{outline:3px solid #e8bb53;outline-offset:3p
                 </a>
 
                 <div class="brand-center-info" aria-label="About Design Library">
-                    <span class="app-title-en">Design Library By MoNagy--Studio — Free design resources, books and creative files.</span>
-                    <span class="app-title-ar">مكتبة التصميم من MoNagy--Studio — موارد وكتب وملفات تصميم متاحة مجانًا.</span>
-                    <span class="app-note-en">Educational use only. Commercial use is not authorized. Rights remain with the original authors, publishers and designers.</span>
-                    <span class="app-note-ar">للاستخدام التعليمي فقط، وغير مصرح بالاستخدام التجاري. جميع الحقوق محفوظة للمؤلفين والناشرين والمصممين الأصليين.</span>
-                </div>
+<span class="app-title-en">Design Library <span class="brand-byline">By MoNagy--Studio</span></span>
+<span class="app-title-ar">مكتبة التصميم <span class="brand-subtitle">— موارد وكتب وملفات إبداعية مجانية</span></span>
+<span class="resource-summary" lang="en">Free design resources, books &amp; creative files</span>
+<div class="education-badge"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>للاستخدام التعليمي فقط <span lang="en">· Educational use only</span></span></div>
+<span class="app-note-ar">غير مصرح بالاستخدام التجاري · الحقوق لأصحابها الأصليين</span>
+<span class="app-note-en">No commercial use · Rights remain with their original owners</span>
+</div>
 
-                <div class="brand-nav-actions"><button class="nav-folders" onclick="toggleSidebar()" aria-label="Show or hide folders / إظهار أو إخفاء الأقسام">☰ الأقسام</button>
+                <div class="brand-nav-actions"><button class="nav-folders" onclick="toggleSidebar()" aria-label="Show or hide folders / إظهار أو إخفاء الأقسام"><i class="fas fa-bars" aria-hidden="true"></i><span class="header-btn-text"><span>Sections</span><span class="btn-sub">الأقسام</span></span></button>
                     <a class="google-play-button" href="https://play.google.com/store/apps/details?id=dlfatcom.buntyfrombengal.riyantalks" target="_blank" rel="noopener noreferrer" aria-label="Get the Design Library app on Google Play">
                         <i class="fab fa-google-play"></i>
                         <span class="header-btn-text">
@@ -1128,7 +1156,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #e8bb53;outline-offset:3p
 
                     <a class="portfolio-button" href="https://monagyai.github.io/monagy-studio/" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-globe"></i>
-                        <span>Portfolio</span>
+                        <span class="header-btn-text"><span>Portfolio</span><span class="btn-sub">معرض الأعمال</span></span>
                     </a>
                 </div>
             </div>
