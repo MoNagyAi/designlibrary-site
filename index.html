@@ -350,6 +350,7 @@
                     filter: brightness(1.05);
                 }
                 .brand-menu-button {
+                    display: none !important;
                     width: 42px;
                     padding: 0;
                     border: 1px solid rgba(255,255,255,.22);
@@ -639,19 +640,13 @@
             
             <div class="top-nav brand-nav">
                 <a class="brand-logo-link" href="https://monagyai.github.io/monagy-studio/" target="_blank" rel="noopener noreferrer" aria-label="MoNagy Studio Portfolio">
-                    <img class="brand-logo" src="assets/monagy-logo.webp" alt="MoNagy Studio">
+                    <img class="brand-logo" src="https://monagyai.github.io/monagy-studio/assets/logo-full.png" alt="MoNagy Studio">
                 </a>
 
                 <div id="topNavGroups" class="brand-hidden-groups" aria-hidden="true"></div>
 
                 <div class="brand-nav-actions">
-                    <div class="groups-dropdown-container">
-                        <button id="groupsDropdownButton" class="brand-menu-button" onclick="toggleGroupsDropdown()" title="المحتويات" aria-label="المحتويات">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                        <div id="groupsDropdown" class="groups-dropdown"></div>
-                    </div>
-
+                    <div id="groupsDropdown" class="groups-dropdown" style="display:none !important;" aria-hidden="true"></div>
                     <a class="portfolio-button" href="https://monagyai.github.io/monagy-studio/" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-globe"></i>
                         <span>Portfolio</span>
