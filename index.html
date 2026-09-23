@@ -484,27 +484,34 @@
                 }
                 function buildTopNav(groupNames) {
                     const topNavGroups = document.getElementById('topNavGroups');
-                    topNavGroups.innerHTML = '';
-                    groupNames.forEach(name => {
-                        const btn = document.createElement('button');
-                        btn.classList.add('top-nav-button');
-                        btn.textContent = name;
-                        btn.onclick = () => setActiveGroup(name);
-                        topNavGroups.appendChild(btn);
-                    });
+                    if (topNavGroups) {
+                        topNavGroups.innerHTML = '';
+                        groupNames.forEach(name => {
+                            const btn = document.createElement('button');
+                            btn.classList.add('top-nav-button');
+                            btn.textContent = name;
+                            btn.onclick = () => setActiveGroup(name);
+                            topNavGroups.appendChild(btn);
+                        });
+                    }
+
+                    // The old "contents" dropdown was intentionally removed from the header.
+                    // Keep initialization safe when that element is not present.
                     const groupsDropdown = document.getElementById('groupsDropdown');
-                    groupsDropdown.innerHTML = '';
-                    groupNames.forEach(name => {
-                        const a = document.createElement('a');
-                        a.href = "#";
-                        a.textContent = name;
-                        a.onclick = (e) => {
-                            e.preventDefault();
-                            setActiveGroup(name);
-                            toggleGroupsDropdown();
-                        };
-                        groupsDropdown.appendChild(a);
-                    });
+                    if (groupsDropdown) {
+                        groupsDropdown.innerHTML = '';
+                        groupNames.forEach(name => {
+                            const a = document.createElement('a');
+                            a.href = "#";
+                            a.textContent = name;
+                            a.onclick = (e) => {
+                                e.preventDefault();
+                                setActiveGroup(name);
+                                toggleGroupsDropdown();
+                            };
+                            groupsDropdown.appendChild(a);
+                        });
+                    }
                 }
                 function setActiveGroup(groupName) {
                     currentGroup = groupName;
@@ -626,6 +633,7 @@
                 }
                 function toggleGroupsDropdown() {
                     const dropdown = document.getElementById('groupsDropdown');
+                    if (!dropdown) return;
                     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
                 }
                 window.onload = () => {
