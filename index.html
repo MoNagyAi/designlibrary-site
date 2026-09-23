@@ -1,8 +1,11 @@
-
-        <html lang="ar">
+<!doctype html>
+<html lang="ar">
         <head>
             <meta charset="UTF-8">
-            <title>بعض محتويات مكتبة التصميم محمد ناجي</title>
+            <title>Design Library By MoNagy--Studio | مكتبة التصميم</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="الموقع الرسمي لتطبيق مكتبة التصميم: موارد تعليمية للمصممين، تحميل التطبيق، الدعم وسياسة الخصوصية. Official website of Design Library By MoNagy--Studio.">
+<link rel="canonical" href="https://monagyai.github.io/designlibrary-site/">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
@@ -1078,7 +1081,19 @@
                     };
                 };
             </script>
-        </head>
+        <style>
+/* Keep navigation, library and support links usable at every screen size. */
+body{height:100vh;height:100dvh;overflow:hidden}
+.top-nav.brand-nav{position:relative;flex-shrink:0;width:100%;flex-wrap:wrap;gap:10px}
+.main-container{margin-top:0!important;height:auto!important;min-height:0;flex:1;overflow:hidden}
+.content-area{min-width:0;height:100%}
+.sidebar{max-width:42vw;height:100%}
+.site-footer{flex-shrink:0;display:flex;justify-content:center;flex-wrap:wrap;gap:8px 20px;background:#17283a;padding:9px 14px;font-size:13px;direction:rtl}
+.site-footer a{color:#ffda80;text-decoration:none}.site-footer a:hover{text-decoration:underline}
+.nav-folders{background:#29465e;border:1px solid #8ca1b5;color:white;border-radius:8px;padding:9px;font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:3px solid #e8bb53;outline-offset:3px}
+@media(max-width:780px){.brand-center-info{order:3;flex-basis:100%;max-width:none;margin:0!important}.brand-nav-actions{gap:6px;flex-wrap:wrap}.brand-logo{width:145px!important;max-width:35vw!important}.brand-nav-actions .portfolio-button{display:none}.sidebar{width:42vw!important;padding:10px}.bilingual-label .menu-en{font-size:14px}.bilingual-label .menu-ar{font-size:12px}.brand-nav .brand-center-info{display:block!important}.brand-center-info .app-title-en{font-size:12px}.brand-center-info .app-note-en,.brand-center-info .app-note-ar{font-size:10px}}
+</style></head>
         <body>
             
             
@@ -1094,7 +1109,7 @@
                     <span class="app-note-ar">للاستخدام التعليمي فقط، وغير مصرح بالاستخدام التجاري. جميع الحقوق محفوظة للمؤلفين والناشرين والمصممين الأصليين.</span>
                 </div>
 
-                <div class="brand-nav-actions">
+                <div class="brand-nav-actions"><button class="nav-folders" onclick="toggleSidebar()" aria-label="Show or hide folders / إظهار أو إخفاء الأقسام">☰ الأقسام</button>
                     <a class="google-play-button" href="https://play.google.com/store/apps/details?id=dlfatcom.buntyfrombengal.riyantalks" target="_blank" rel="noopener noreferrer" aria-label="Get the Design Library app on Google Play">
                         <i class="fab fa-google-play"></i>
                         <span class="header-btn-text">
@@ -1119,7 +1134,7 @@
             </div>
             <div class="main-container">
                 <div class="content-area">
-                    <iframe id="mainFrame"></iframe>
+                    <iframe id="mainFrame" title="Library resources / موارد المكتبة"></iframe>
                     <div id="loadingOverlay">من فضلك انتظر جاري ظهور المحتويات</div>
                 </div>
                 <div class="sidebar" id="sidebar">
@@ -1134,7 +1149,12 @@
             
         
         
-        <div id="contactButtonContainer">
+        <nav class="site-footer" aria-label="App information / معلومات التطبيق">
+<a href="app-info.html">عن التطبيق والدعم / About &amp; Support</a>
+<a href="https://monagyai.github.io/designlibrary/privacy.html">سياسة الخصوصية / Privacy</a>
+<a href="app-info.html#terms">شروط الاستخدام / Terms</a>
+<a href="app-info.html#rights">حقوق المحتوى / Content rights</a>
+</nav><div id="contactButtonContainer">
             <div id="contactButton" title="Contact / تواصل" aria-label="Contact / تواصل"><i class="fas fa-comments"></i></div>
             <div id="contactMenu">
                 <a href="https://monagyai.github.io/monagy-studio/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i>Portfolio</a>
