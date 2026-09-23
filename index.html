@@ -558,15 +558,6 @@
                         } else {
                             btn.onclick = () => loadContent(folderId + '.html', btn.id);
                         }
-                        const copyButton = document.createElement('button');
-                        copyButton.textContent = 'نسخ';
-                        copyButton.classList.add('copy-link-button');
-                        copyButton.onclick = (e) => {
-                            e.stopPropagation();
-                            copyToClipboard(value);
-                            highlightButton(btn.id);
-                        };
-                        btn.appendChild(copyButton);
                         subfolderContainer.appendChild(btn);
                     });
                 }
@@ -636,10 +627,35 @@
                     if (!dropdown) return;
                     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
                 }
+                function hideCopyButtonsInFrame() {
+                    const iframe = document.getElementById('mainFrame');
+                    if (!iframe) return;
+                    try {
+                        const doc = iframe.contentDocument || iframe.contentWindow.document;
+                        if (!doc) return;
+
+                        const hide = () => {
+                            doc.querySelectorAll('.copy-link-button').forEach(btn => btn.remove());
+                        };
+
+                        hide();
+
+                        // Also remove any copy buttons added later by page scripts.
+                        if (doc.body && !doc.body.dataset.copyButtonsObserver) {
+                            const observer = new MutationObserver(hide);
+                            observer.observe(doc.body, { childList: true, subtree: true });
+                            doc.body.dataset.copyButtonsObserver = '1';
+                        }
+                    } catch (e) {
+                        // External pages loaded in the iframe are cross-origin and cannot be edited.
+                    }
+                }
+
                 window.onload = () => {
                     init();
                     document.getElementById('mainFrame').onload = function() {
                         document.getElementById('loadingOverlay').style.display = 'none';
+                        hideCopyButtonsInFrame();
                     };
                 };
             </script>
