@@ -1,0 +1,2561 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>فولدرات حفظ مستندات</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>فولدرات حفظ مستندات</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1QTOKCvV6BpABw8M5hou-59h_1gu52DnU&sz=w200" alt="_فولدرات حفظ مستندات_ 1.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 1.jpg</h3>
+                            <p class="card-size">الحجم: 747.33 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QTOKCvV6BpABw8M5hou-59h_1gu52DnU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QTOKCvV6BpABw8M5hou-59h_1gu52DnU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QTOKCvV6BpABw8M5hou-59h_1gu52DnU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 1.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 1.rar</h3>
+                            <p class="card-size">الحجم: 4.34 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ZDW-1c7wEPolG6r9YUZCWQPySAK50X22&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ZDW-1c7wEPolG6r9YUZCWQPySAK50X22&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ZDW-1c7wEPolG6r9YUZCWQPySAK50X22&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1IaamUcTxkBroLCD26NDMoWjS1WSVZnZB&sz=w200" alt="_فولدرات حفظ مستندات_ 10.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 10.jpg</h3>
+                            <p class="card-size">الحجم: 880.82 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1IaamUcTxkBroLCD26NDMoWjS1WSVZnZB&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1IaamUcTxkBroLCD26NDMoWjS1WSVZnZB&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1IaamUcTxkBroLCD26NDMoWjS1WSVZnZB&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 10.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 10.rar</h3>
+                            <p class="card-size">الحجم: 24.70 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1jJ3hM-HMOX5VzN8bIuCRd9lIWrHKGk3_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1jJ3hM-HMOX5VzN8bIuCRd9lIWrHKGk3_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1jJ3hM-HMOX5VzN8bIuCRd9lIWrHKGk3_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1HP1s3oqVu6nijDxvbDH7bPPAMebEtROs&sz=w200" alt="_فولدرات حفظ مستندات_ 11.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 11.jpg</h3>
+                            <p class="card-size">الحجم: 682.27 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1HP1s3oqVu6nijDxvbDH7bPPAMebEtROs&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1HP1s3oqVu6nijDxvbDH7bPPAMebEtROs&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1HP1s3oqVu6nijDxvbDH7bPPAMebEtROs&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 11.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 11.rar</h3>
+                            <p class="card-size">الحجم: 71.34 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Vw8j-wSMx3GDjFYUwDI7gJqpYLReXPUd&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Vw8j-wSMx3GDjFYUwDI7gJqpYLReXPUd&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Vw8j-wSMx3GDjFYUwDI7gJqpYLReXPUd&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1VG-zm5ZsOqTayEvfiz6GbNCC9WMZuL-0&sz=w200" alt="_فولدرات حفظ مستندات_ 12.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 12.jpg</h3>
+                            <p class="card-size">الحجم: 752.64 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1VG-zm5ZsOqTayEvfiz6GbNCC9WMZuL-0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1VG-zm5ZsOqTayEvfiz6GbNCC9WMZuL-0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1VG-zm5ZsOqTayEvfiz6GbNCC9WMZuL-0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 12.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 12.rar</h3>
+                            <p class="card-size">الحجم: 70.71 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1eyqRy49haQb49d5o-tcGOpe8Kdxt3EvD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1eyqRy49haQb49d5o-tcGOpe8Kdxt3EvD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1eyqRy49haQb49d5o-tcGOpe8Kdxt3EvD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kLdjYpeTFaChvLiFLIJvzEwP5cznE1vh&sz=w200" alt="_فولدرات حفظ مستندات_ 13.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 13.jpg</h3>
+                            <p class="card-size">الحجم: 709.93 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kLdjYpeTFaChvLiFLIJvzEwP5cznE1vh&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kLdjYpeTFaChvLiFLIJvzEwP5cznE1vh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kLdjYpeTFaChvLiFLIJvzEwP5cznE1vh&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 13.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 13.rar</h3>
+                            <p class="card-size">الحجم: 58.05 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10mvmgGDIDDyU3HIQ2GmvJQi_AXBks3uQ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10mvmgGDIDDyU3HIQ2GmvJQi_AXBks3uQ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10mvmgGDIDDyU3HIQ2GmvJQi_AXBks3uQ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1-R9GA33Er-eXaiSJ2cV5hVra1LycRhO7&sz=w200" alt="_فولدرات حفظ مستندات_ 14.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 14.jpg</h3>
+                            <p class="card-size">الحجم: 803.33 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1-R9GA33Er-eXaiSJ2cV5hVra1LycRhO7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1-R9GA33Er-eXaiSJ2cV5hVra1LycRhO7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1-R9GA33Er-eXaiSJ2cV5hVra1LycRhO7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 14.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 14.rar</h3>
+                            <p class="card-size">الحجم: 61.51 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kJrIrZ1reKGiZtVV5lJf-2Rizv9cY-ea&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kJrIrZ1reKGiZtVV5lJf-2Rizv9cY-ea&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kJrIrZ1reKGiZtVV5lJf-2Rizv9cY-ea&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1jLRAJi8n2N_UD0ygLRzvxBmT5iqKwC6e&sz=w200" alt="_فولدرات حفظ مستندات_ 15.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 15.jpg</h3>
+                            <p class="card-size">الحجم: 776.88 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1jLRAJi8n2N_UD0ygLRzvxBmT5iqKwC6e&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1jLRAJi8n2N_UD0ygLRzvxBmT5iqKwC6e&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1jLRAJi8n2N_UD0ygLRzvxBmT5iqKwC6e&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 15.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 15.rar</h3>
+                            <p class="card-size">الحجم: 53.26 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ad684tIO2V_Jly41CJ-ZazxptYcJvBV5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ad684tIO2V_Jly41CJ-ZazxptYcJvBV5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ad684tIO2V_Jly41CJ-ZazxptYcJvBV5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Jq7mTgQx-TE0Mbg8HqoB41RT6AawJMNl&sz=w200" alt="_فولدرات حفظ مستندات_ 16.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 16.jpg</h3>
+                            <p class="card-size">الحجم: 857.67 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Jq7mTgQx-TE0Mbg8HqoB41RT6AawJMNl&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Jq7mTgQx-TE0Mbg8HqoB41RT6AawJMNl&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Jq7mTgQx-TE0Mbg8HqoB41RT6AawJMNl&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 16.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 16.rar</h3>
+                            <p class="card-size">الحجم: 94.71 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1TCkuovUtTyOBtnCgXZEM87Gr1f9Cg0rP&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1TCkuovUtTyOBtnCgXZEM87Gr1f9Cg0rP&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1TCkuovUtTyOBtnCgXZEM87Gr1f9Cg0rP&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=10rjNaQnIT6YpIyBj0j9-OYQwP7P7Jjct&sz=w200" alt="_فولدرات حفظ مستندات_ 17.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 17.jpg</h3>
+                            <p class="card-size">الحجم: 826.39 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10rjNaQnIT6YpIyBj0j9-OYQwP7P7Jjct&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10rjNaQnIT6YpIyBj0j9-OYQwP7P7Jjct&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10rjNaQnIT6YpIyBj0j9-OYQwP7P7Jjct&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 17.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 17.rar</h3>
+                            <p class="card-size">الحجم: 52.00 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1fo2nOEyuvK2UfCAIB1YGjQd0HVzhw3cN&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1fo2nOEyuvK2UfCAIB1YGjQd0HVzhw3cN&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1fo2nOEyuvK2UfCAIB1YGjQd0HVzhw3cN&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1vedIquI1e49B50DWmd0ETUFbbFMh3zOd&sz=w200" alt="_فولدرات حفظ مستندات_ 18.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 18.jpg</h3>
+                            <p class="card-size">الحجم: 894.10 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1vedIquI1e49B50DWmd0ETUFbbFMh3zOd&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1vedIquI1e49B50DWmd0ETUFbbFMh3zOd&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1vedIquI1e49B50DWmd0ETUFbbFMh3zOd&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 18.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 18.rar</h3>
+                            <p class="card-size">الحجم: 108.37 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1jbrWEiyLmkZ5X9tTf2DCxysMra51Yk_F&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1jbrWEiyLmkZ5X9tTf2DCxysMra51Yk_F&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1jbrWEiyLmkZ5X9tTf2DCxysMra51Yk_F&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=17WF---T0z5bbSnzMCV9GYEYSUq3_6sOg&sz=w200" alt="_فولدرات حفظ مستندات_ 19.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 19.jpg</h3>
+                            <p class="card-size">الحجم: 806.45 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=17WF---T0z5bbSnzMCV9GYEYSUq3_6sOg&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=17WF---T0z5bbSnzMCV9GYEYSUq3_6sOg&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=17WF---T0z5bbSnzMCV9GYEYSUq3_6sOg&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 19.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 19.rar</h3>
+                            <p class="card-size">الحجم: 102.59 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1-rJ7YUDe-Q08zlOEI8Ff31mATrVvNDJc&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1-rJ7YUDe-Q08zlOEI8Ff31mATrVvNDJc&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1-rJ7YUDe-Q08zlOEI8Ff31mATrVvNDJc&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nPxC0GYBVjprURCSHnVokCkkbQ2m9Z7r&sz=w200" alt="_فولدرات حفظ مستندات_ 2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 2.jpg</h3>
+                            <p class="card-size">الحجم: 734.21 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nPxC0GYBVjprURCSHnVokCkkbQ2m9Z7r&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nPxC0GYBVjprURCSHnVokCkkbQ2m9Z7r&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nPxC0GYBVjprURCSHnVokCkkbQ2m9Z7r&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 2.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 2.rar</h3>
+                            <p class="card-size">الحجم: 29.79 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1MfE9L8AR4qeMOrlzDAqtH2d-uEJwW6hV&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1MfE9L8AR4qeMOrlzDAqtH2d-uEJwW6hV&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1MfE9L8AR4qeMOrlzDAqtH2d-uEJwW6hV&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1MhPNSZQC0UVSuDlcp-Wj_UCRDNiPZwCk&sz=w200" alt="_فولدرات حفظ مستندات_ 20.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 20.jpg</h3>
+                            <p class="card-size">الحجم: 772.57 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1MhPNSZQC0UVSuDlcp-Wj_UCRDNiPZwCk&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1MhPNSZQC0UVSuDlcp-Wj_UCRDNiPZwCk&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1MhPNSZQC0UVSuDlcp-Wj_UCRDNiPZwCk&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 20.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 20.rar</h3>
+                            <p class="card-size">الحجم: 33.68 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1IpWSRqOCyi6unoKJP6g2A99I4AGzVqJp&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1IpWSRqOCyi6unoKJP6g2A99I4AGzVqJp&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1IpWSRqOCyi6unoKJP6g2A99I4AGzVqJp&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1tCBdnQlgnQCCsuNJ_pU5wwp50apzIwZF&sz=w200" alt="_فولدرات حفظ مستندات_ 21.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 21.jpg</h3>
+                            <p class="card-size">الحجم: 725.23 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1tCBdnQlgnQCCsuNJ_pU5wwp50apzIwZF&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1tCBdnQlgnQCCsuNJ_pU5wwp50apzIwZF&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1tCBdnQlgnQCCsuNJ_pU5wwp50apzIwZF&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 21.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 21.rar</h3>
+                            <p class="card-size">الحجم: 46.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hszzaL7paMPB99BWMm098sp5KmKwuk9G&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hszzaL7paMPB99BWMm098sp5KmKwuk9G&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hszzaL7paMPB99BWMm098sp5KmKwuk9G&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=12YDeNKuCUZWUpVXdllbQWCynZINCqjoS&sz=w200" alt="_فولدرات حفظ مستندات_ 22.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 22.jpg</h3>
+                            <p class="card-size">الحجم: 970.23 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12YDeNKuCUZWUpVXdllbQWCynZINCqjoS&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12YDeNKuCUZWUpVXdllbQWCynZINCqjoS&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12YDeNKuCUZWUpVXdllbQWCynZINCqjoS&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 22.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 22.rar</h3>
+                            <p class="card-size">الحجم: 137.80 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kThV0k9wMjVuWElQLomc4mKOu5bk1-hX&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kThV0k9wMjVuWElQLomc4mKOu5bk1-hX&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kThV0k9wMjVuWElQLomc4mKOu5bk1-hX&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=12kRrE3ZdcfPyoPY53qjWTMpybqtvyoNw&sz=w200" alt="_فولدرات حفظ مستندات_ 3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 3.jpg</h3>
+                            <p class="card-size">الحجم: 649.63 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12kRrE3ZdcfPyoPY53qjWTMpybqtvyoNw&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12kRrE3ZdcfPyoPY53qjWTMpybqtvyoNw&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12kRrE3ZdcfPyoPY53qjWTMpybqtvyoNw&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 3.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 3.rar</h3>
+                            <p class="card-size">الحجم: 3.87 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1v6nfzJspKJk9MCrAj5xfoFAmbADqv9y8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1v6nfzJspKJk9MCrAj5xfoFAmbADqv9y8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1v6nfzJspKJk9MCrAj5xfoFAmbADqv9y8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Zmc9QoMwy8ft0JUua7UtnWMKpPoKwUH1&sz=w200" alt="_فولدرات حفظ مستندات_ 4.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 4.jpg</h3>
+                            <p class="card-size">الحجم: 716.73 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Zmc9QoMwy8ft0JUua7UtnWMKpPoKwUH1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Zmc9QoMwy8ft0JUua7UtnWMKpPoKwUH1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Zmc9QoMwy8ft0JUua7UtnWMKpPoKwUH1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 4.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 4.rar</h3>
+                            <p class="card-size">الحجم: 46.92 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12MODX7v2jshumXrDTFAVCWsYmxEIW80G&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12MODX7v2jshumXrDTFAVCWsYmxEIW80G&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12MODX7v2jshumXrDTFAVCWsYmxEIW80G&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1hdd-UHBlGDMXxaOHb_xJvVRURIw1FZGy&sz=w200" alt="_فولدرات حفظ مستندات_ 5.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 5.jpg</h3>
+                            <p class="card-size">الحجم: 740.83 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hdd-UHBlGDMXxaOHb_xJvVRURIw1FZGy&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hdd-UHBlGDMXxaOHb_xJvVRURIw1FZGy&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hdd-UHBlGDMXxaOHb_xJvVRURIw1FZGy&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 5.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 5.rar</h3>
+                            <p class="card-size">الحجم: 19.53 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1eupJ1Pk0Xd4Jqw8QZ3hANLB4iqMdtbWV&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1eupJ1Pk0Xd4Jqw8QZ3hANLB4iqMdtbWV&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1eupJ1Pk0Xd4Jqw8QZ3hANLB4iqMdtbWV&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1R_d22kIcU3a0wA0XtIJTO6YTFazcGFRB&sz=w200" alt="_فولدرات حفظ مستندات_ 6.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 6.jpg</h3>
+                            <p class="card-size">الحجم: 775.44 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1R_d22kIcU3a0wA0XtIJTO6YTFazcGFRB&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1R_d22kIcU3a0wA0XtIJTO6YTFazcGFRB&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1R_d22kIcU3a0wA0XtIJTO6YTFazcGFRB&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 6.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 6.rar</h3>
+                            <p class="card-size">الحجم: 18.54 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12L7eMbWwh-qT37W5xJBvshov-SqVm2j8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12L7eMbWwh-qT37W5xJBvshov-SqVm2j8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12L7eMbWwh-qT37W5xJBvshov-SqVm2j8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1yBfNaIcZpXMiIe6P2Vdnk6_QjpS-Dilf&sz=w200" alt="_فولدرات حفظ مستندات_ 7.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 7.jpg</h3>
+                            <p class="card-size">الحجم: 812.10 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1yBfNaIcZpXMiIe6P2Vdnk6_QjpS-Dilf&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1yBfNaIcZpXMiIe6P2Vdnk6_QjpS-Dilf&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1yBfNaIcZpXMiIe6P2Vdnk6_QjpS-Dilf&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 7.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 7.rar</h3>
+                            <p class="card-size">الحجم: 112.99 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1quXtRfxC2LTKfBiUEnlL1rFO-6uWAjZk&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1quXtRfxC2LTKfBiUEnlL1rFO-6uWAjZk&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1quXtRfxC2LTKfBiUEnlL1rFO-6uWAjZk&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1PRdWn5kBH-4jQwbr01hsmzCFevnAkhEB&sz=w200" alt="_فولدرات حفظ مستندات_ 8.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 8.jpg</h3>
+                            <p class="card-size">الحجم: 810.88 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1PRdWn5kBH-4jQwbr01hsmzCFevnAkhEB&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1PRdWn5kBH-4jQwbr01hsmzCFevnAkhEB&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1PRdWn5kBH-4jQwbr01hsmzCFevnAkhEB&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 8.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 8.rar</h3>
+                            <p class="card-size">الحجم: 56.04 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Eox8iRXIpsjr0zZc_z8Y21CxycRYWHnA&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Eox8iRXIpsjr0zZc_z8Y21CxycRYWHnA&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Eox8iRXIpsjr0zZc_z8Y21CxycRYWHnA&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1WqzH7sOJA6pOiPsAzgB4J5wiJo0eX-dG&sz=w200" alt="_فولدرات حفظ مستندات_ 9.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 9.jpg</h3>
+                            <p class="card-size">الحجم: 776.32 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1WqzH7sOJA6pOiPsAzgB4J5wiJo0eX-dG&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1WqzH7sOJA6pOiPsAzgB4J5wiJo0eX-dG&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1WqzH7sOJA6pOiPsAzgB4J5wiJo0eX-dG&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_فولدرات حفظ مستندات_ 9.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_فولدرات حفظ مستندات_ 9.rar</h3>
+                            <p class="card-size">الحجم: 54.37 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12GKCp2JrDHfbNvT5dmSRyz5aIQ5z5YQ9&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12GKCp2JrDHfbNvT5dmSRyz5aIQ5z5YQ9&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12GKCp2JrDHfbNvT5dmSRyz5aIQ5z5YQ9&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mIrj3GWoz0Ms3BVKCqV6prKE-0DmaWNC&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر copy.jpg</h3>
+                            <p class="card-size">الحجم: 940.88 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mIrj3GWoz0Ms3BVKCqV6prKE-0DmaWNC&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mIrj3GWoz0Ms3BVKCqV6prKE-0DmaWNC&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mIrj3GWoz0Ms3BVKCqV6prKE-0DmaWNC&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mG4utjNvBA-z4iSE1lMTv2ttg5cR-dyZ&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر.psd</h3>
+                            <p class="card-size">الحجم: 98.32 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mG4utjNvBA-z4iSE1lMTv2ttg5cR-dyZ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mG4utjNvBA-z4iSE1lMTv2ttg5cR-dyZ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mG4utjNvBA-z4iSE1lMTv2ttg5cR-dyZ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lTNNtDX7K3rW0lu-yDCTWyXIfjQqLQPw&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__111.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__111.psd</h3>
+                            <p class="card-size">الحجم: 16.29 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lTNNtDX7K3rW0lu-yDCTWyXIfjQqLQPw&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lTNNtDX7K3rW0lu-yDCTWyXIfjQqLQPw&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lTNNtDX7K3rW0lu-yDCTWyXIfjQqLQPw&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lPoRGTSjo72kneDBfZYQC0guD7eXQJvy&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__222 copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__222 copy.jpg</h3>
+                            <p class="card-size">الحجم: 932.73 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lPoRGTSjo72kneDBfZYQC0guD7eXQJvy&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lPoRGTSjo72kneDBfZYQC0guD7eXQJvy&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lPoRGTSjo72kneDBfZYQC0guD7eXQJvy&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lZAkITSLs47Z4ZRXvLEnIp4gvYFOttpL&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__222.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__222.psd</h3>
+                            <p class="card-size">الحجم: 42.18 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lZAkITSLs47Z4ZRXvLEnIp4gvYFOttpL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lZAkITSLs47Z4ZRXvLEnIp4gvYFOttpL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lZAkITSLs47Z4ZRXvLEnIp4gvYFOttpL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mfDOR8OJjKiTSh4jw2yxs4esYHB7LYUq&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__A3 copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__A3 copy.jpg</h3>
+                            <p class="card-size">الحجم: 1014.22 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mfDOR8OJjKiTSh4jw2yxs4esYHB7LYUq&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mfDOR8OJjKiTSh4jw2yxs4esYHB7LYUq&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mfDOR8OJjKiTSh4jw2yxs4esYHB7LYUq&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1men82tQeSKpoEvqUxXTauXJj6YKZ94Ng&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__A3.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__A3.psd</h3>
+                            <p class="card-size">الحجم: 168.77 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1men82tQeSKpoEvqUxXTauXJj6YKZ94Ng&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1men82tQeSKpoEvqUxXTauXJj6YKZ94Ng&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1men82tQeSKpoEvqUxXTauXJj6YKZ94Ng&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oq3LPDbFIOzTwi5JT5zzVoieNGsWLrfO&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Folder mockup.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Folder mockup.psd</h3>
+                            <p class="card-size">الحجم: 6.80 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oq3LPDbFIOzTwi5JT5zzVoieNGsWLrfO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oq3LPDbFIOzTwi5JT5zzVoieNGsWLrfO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oq3LPDbFIOzTwi5JT5zzVoieNGsWLrfO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pLPVkQRwyJjPtIavvQOexgl4jfZfjGJD&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0344.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0344.eps</h3>
+                            <p class="card-size">الحجم: 7.43 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pLPVkQRwyJjPtIavvQOexgl4jfZfjGJD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pLPVkQRwyJjPtIavvQOexgl4jfZfjGJD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pLPVkQRwyJjPtIavvQOexgl4jfZfjGJD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1opTWvcVvB6nh9j-liMZKYtkrJegZfVxv&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0344.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0344.jpg</h3>
+                            <p class="card-size">الحجم: 419.43 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1opTWvcVvB6nh9j-liMZKYtkrJegZfVxv&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1opTWvcVvB6nh9j-liMZKYtkrJegZfVxv&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1opTWvcVvB6nh9j-liMZKYtkrJegZfVxv&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pL2WHiAbrZJS6I-RpEbsk9Q4eQ1xTtX1&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0351.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0351.eps</h3>
+                            <p class="card-size">الحجم: 7.32 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pL2WHiAbrZJS6I-RpEbsk9Q4eQ1xTtX1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pL2WHiAbrZJS6I-RpEbsk9Q4eQ1xTtX1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pL2WHiAbrZJS6I-RpEbsk9Q4eQ1xTtX1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oopreFWW4vqwUNPWRfuQmHdmycyQwu1J&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0351.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0351.jpg</h3>
+                            <p class="card-size">الحجم: 418.52 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oopreFWW4vqwUNPWRfuQmHdmycyQwu1J&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oopreFWW4vqwUNPWRfuQmHdmycyQwu1J&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oopreFWW4vqwUNPWRfuQmHdmycyQwu1J&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pKVjoXSkZgtoTqqa2qvpFiu5y4unwEsH&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0358.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0358.eps</h3>
+                            <p class="card-size">الحجم: 7.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pKVjoXSkZgtoTqqa2qvpFiu5y4unwEsH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pKVjoXSkZgtoTqqa2qvpFiu5y4unwEsH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pKVjoXSkZgtoTqqa2qvpFiu5y4unwEsH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1okbUKV9I9GPb-k2jdahcR6NOhe8wLJZu&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0358.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0358.jpg</h3>
+                            <p class="card-size">الحجم: 412.24 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1okbUKV9I9GPb-k2jdahcR6NOhe8wLJZu&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1okbUKV9I9GPb-k2jdahcR6NOhe8wLJZu&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1okbUKV9I9GPb-k2jdahcR6NOhe8wLJZu&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pPumKRMeEUG9NCNpyB5NFgutDfLGLGJF&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0365.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0365.eps</h3>
+                            <p class="card-size">الحجم: 7.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pPumKRMeEUG9NCNpyB5NFgutDfLGLGJF&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pPumKRMeEUG9NCNpyB5NFgutDfLGLGJF&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pPumKRMeEUG9NCNpyB5NFgutDfLGLGJF&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ojSSS5D72Z_CyH9FNkDa406kqLVJgLnZ&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0365.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0365.jpg</h3>
+                            <p class="card-size">الحجم: 417.04 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ojSSS5D72Z_CyH9FNkDa406kqLVJgLnZ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ojSSS5D72Z_CyH9FNkDa406kqLVJgLnZ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ojSSS5D72Z_CyH9FNkDa406kqLVJgLnZ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pOB_kbJ-sXQ2aMvO7U5kD-wCr209jU9z&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0372.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0372.eps</h3>
+                            <p class="card-size">الحجم: 7.32 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pOB_kbJ-sXQ2aMvO7U5kD-wCr209jU9z&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pOB_kbJ-sXQ2aMvO7U5kD-wCr209jU9z&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pOB_kbJ-sXQ2aMvO7U5kD-wCr209jU9z&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oyj1Xkp7u4VAe8kwFUdIpw1mVO9c2SjU&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0372.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0372.jpg</h3>
+                            <p class="card-size">الحجم: 413.93 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oyj1Xkp7u4VAe8kwFUdIpw1mVO9c2SjU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oyj1Xkp7u4VAe8kwFUdIpw1mVO9c2SjU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oyj1Xkp7u4VAe8kwFUdIpw1mVO9c2SjU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pM5XCqrquDusszVv8KFsytJV5rgVZWcN&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0386.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0386.eps</h3>
+                            <p class="card-size">الحجم: 7.29 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pM5XCqrquDusszVv8KFsytJV5rgVZWcN&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pM5XCqrquDusszVv8KFsytJV5rgVZWcN&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pM5XCqrquDusszVv8KFsytJV5rgVZWcN&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oyfh2belTvNwhmBYuj534QpoDhBKoJo3&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0386.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0386.jpg</h3>
+                            <p class="card-size">الحجم: 419.15 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oyfh2belTvNwhmBYuj534QpoDhBKoJo3&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oyfh2belTvNwhmBYuj534QpoDhBKoJo3&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oyfh2belTvNwhmBYuj534QpoDhBKoJo3&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pYyJcBtRB_P61jCylVx1Yc3cMni8lsMW&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0400.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0400.eps</h3>
+                            <p class="card-size">الحجم: 7.21 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pYyJcBtRB_P61jCylVx1Yc3cMni8lsMW&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pYyJcBtRB_P61jCylVx1Yc3cMni8lsMW&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pYyJcBtRB_P61jCylVx1Yc3cMni8lsMW&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oxYJVSV_LH03bzCamCcNwDC7K72rlYG7&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0400.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0400.jpg</h3>
+                            <p class="card-size">الحجم: 415.19 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oxYJVSV_LH03bzCamCcNwDC7K72rlYG7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oxYJVSV_LH03bzCamCcNwDC7K72rlYG7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oxYJVSV_LH03bzCamCcNwDC7K72rlYG7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pYfW4lazBsbRwkeEtAf91J2vp_z2oM4a&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0407.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0407.eps</h3>
+                            <p class="card-size">الحجم: 6.25 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pYfW4lazBsbRwkeEtAf91J2vp_z2oM4a&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pYfW4lazBsbRwkeEtAf91J2vp_z2oM4a&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pYfW4lazBsbRwkeEtAf91J2vp_z2oM4a&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1owD1AlXzH7VRfEimNR6lqjATL2ThLE1E&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0407.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0407.jpg</h3>
+                            <p class="card-size">الحجم: 427.78 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1owD1AlXzH7VRfEimNR6lqjATL2ThLE1E&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1owD1AlXzH7VRfEimNR6lqjATL2ThLE1E&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1owD1AlXzH7VRfEimNR6lqjATL2ThLE1E&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pV6I1Y1Jkdk_YY6EW6GWbq4wDF-bgNIc&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0519.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0519.eps</h3>
+                            <p class="card-size">الحجم: 6.43 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pV6I1Y1Jkdk_YY6EW6GWbq4wDF-bgNIc&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pV6I1Y1Jkdk_YY6EW6GWbq4wDF-bgNIc&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pV6I1Y1Jkdk_YY6EW6GWbq4wDF-bgNIc&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1otylb-MzltfJeYS42nfxEU2S5KUR5qBp&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0519.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0519.jpg</h3>
+                            <p class="card-size">الحجم: 416.93 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1otylb-MzltfJeYS42nfxEU2S5KUR5qBp&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1otylb-MzltfJeYS42nfxEU2S5KUR5qBp&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1otylb-MzltfJeYS42nfxEU2S5KUR5qBp&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pScREdMQiY31XKi_Np968hERVb9_9fqf&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0561.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0561.eps</h3>
+                            <p class="card-size">الحجم: 7.36 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pScREdMQiY31XKi_Np968hERVb9_9fqf&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pScREdMQiY31XKi_Np968hERVb9_9fqf&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pScREdMQiY31XKi_Np968hERVb9_9fqf&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ot9RyiaB0r-mkxf1nrJCGP7KbaXyd1Zo&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0561.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0561.jpg</h3>
+                            <p class="card-size">الحجم: 414.51 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ot9RyiaB0r-mkxf1nrJCGP7KbaXyd1Zo&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ot9RyiaB0r-mkxf1nrJCGP7KbaXyd1Zo&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ot9RyiaB0r-mkxf1nrJCGP7KbaXyd1Zo&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pZWIAS37U6wxfhYXevaYz8EtWcon7MEq&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0568.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0568.eps</h3>
+                            <p class="card-size">الحجم: 7.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pZWIAS37U6wxfhYXevaYz8EtWcon7MEq&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pZWIAS37U6wxfhYXevaYz8EtWcon7MEq&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pZWIAS37U6wxfhYXevaYz8EtWcon7MEq&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1p6rW6mLAXOQBTM-gfGzCJXCTVa7dS2d8&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0568.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0568.jpg</h3>
+                            <p class="card-size">الحجم: 411.78 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1p6rW6mLAXOQBTM-gfGzCJXCTVa7dS2d8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1p6rW6mLAXOQBTM-gfGzCJXCTVa7dS2d8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1p6rW6mLAXOQBTM-gfGzCJXCTVa7dS2d8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pZJfxee1IO9xDOZehewt1iPYuaXtmqXs&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0596.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0596.eps</h3>
+                            <p class="card-size">الحجم: 7.27 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pZJfxee1IO9xDOZehewt1iPYuaXtmqXs&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pZJfxee1IO9xDOZehewt1iPYuaXtmqXs&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pZJfxee1IO9xDOZehewt1iPYuaXtmqXs&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1p660mrsDZpstQhTGuBaWLSeCZT36PZs1&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0596.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0596.jpg</h3>
+                            <p class="card-size">الحجم: 429.65 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1p660mrsDZpstQhTGuBaWLSeCZT36PZs1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1p660mrsDZpstQhTGuBaWLSeCZT36PZs1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1p660mrsDZpstQhTGuBaWLSeCZT36PZs1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pZ0ZgXgtatnlZ_oVjF4xXnvMTFfD-FrY&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0603.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0603.eps</h3>
+                            <p class="card-size">الحجم: 7.36 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pZ0ZgXgtatnlZ_oVjF4xXnvMTFfD-FrY&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pZ0ZgXgtatnlZ_oVjF4xXnvMTFfD-FrY&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pZ0ZgXgtatnlZ_oVjF4xXnvMTFfD-FrY&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1p3fn8m-guVwGsqQDKTI3hVTyr8NAL6cP&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0603.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0603.jpg</h3>
+                            <p class="card-size">الحجم: 420.53 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1p3fn8m-guVwGsqQDKTI3hVTyr8NAL6cP&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1p3fn8m-guVwGsqQDKTI3hVTyr8NAL6cP&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1p3fn8m-guVwGsqQDKTI3hVTyr8NAL6cP&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1p_T-d7AN_EGGrsDLgxOSGiElkhKw-oHs&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0610.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0610.eps</h3>
+                            <p class="card-size">الحجم: 7.20 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1p_T-d7AN_EGGrsDLgxOSGiElkhKw-oHs&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1p_T-d7AN_EGGrsDLgxOSGiElkhKw-oHs&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1p_T-d7AN_EGGrsDLgxOSGiElkhKw-oHs&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1p2QrZZuncxNpD0ZHjafKT6CUfa7FdaYo&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0610.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0610.jpg</h3>
+                            <p class="card-size">الحجم: 408.67 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1p2QrZZuncxNpD0ZHjafKT6CUfa7FdaYo&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1p2QrZZuncxNpD0ZHjafKT6CUfa7FdaYo&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1p2QrZZuncxNpD0ZHjafKT6CUfa7FdaYo&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pZcBgjDrbxDvHd-BoRT20WrqQI4f2uZT&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0617.eps" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0617.eps</h3>
+                            <p class="card-size">الحجم: 7.47 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pZcBgjDrbxDvHd-BoRT20WrqQI4f2uZT&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pZcBgjDrbxDvHd-BoRT20WrqQI4f2uZT&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pZcBgjDrbxDvHd-BoRT20WrqQI4f2uZT&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.EPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1p0gOG521sy6kmpbrIX7fyQgmmRamwk3u&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0617.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__Vector_N__0617.jpg</h3>
+                            <p class="card-size">الحجم: 422.71 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1p0gOG521sy6kmpbrIX7fyQgmmRamwk3u&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1p0gOG521sy6kmpbrIX7fyQgmmRamwk3u&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1p0gOG521sy6kmpbrIX7fyQgmmRamwk3u&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oTVQI-D6uSJSlIRGPGvatlexP_3_iBwc&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__al dawly.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__al dawly.jpg</h3>
+                            <p class="card-size">الحجم: 883.87 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oTVQI-D6uSJSlIRGPGvatlexP_3_iBwc&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oTVQI-D6uSJSlIRGPGvatlexP_3_iBwc&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oTVQI-D6uSJSlIRGPGvatlexP_3_iBwc&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oQTRHwak-ESypFyosWHbsWmjrTDQP1_c&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__al dawly.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__al dawly.psd</h3>
+                            <p class="card-size">الحجم: 107.79 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oQTRHwak-ESypFyosWHbsWmjrTDQP1_c&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oQTRHwak-ESypFyosWHbsWmjrTDQP1_c&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oQTRHwak-ESypFyosWHbsWmjrTDQP1_c&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oXlLo7YTlRpv7fhKYfE4FYb8ygpoafym&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__al saqr.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__al saqr.jpg</h3>
+                            <p class="card-size">الحجم: 951.69 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oXlLo7YTlRpv7fhKYfE4FYb8ygpoafym&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oXlLo7YTlRpv7fhKYfE4FYb8ygpoafym&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oXlLo7YTlRpv7fhKYfE4FYb8ygpoafym&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oUZwdekVuVnGz-d8f3NMLBc6cDhEwmp2&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__al saqr.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__al saqr.psd</h3>
+                            <p class="card-size">الحجم: 125.55 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oUZwdekVuVnGz-d8f3NMLBc6cDhEwmp2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oUZwdekVuVnGz-d8f3NMLBc6cDhEwmp2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oUZwdekVuVnGz-d8f3NMLBc6cDhEwmp2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oYJbSd9UKS4B_XTohip4f9l7KovrpT1Y&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__cairo.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__cairo.jpg</h3>
+                            <p class="card-size">الحجم: 1.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oYJbSd9UKS4B_XTohip4f9l7KovrpT1Y&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oYJbSd9UKS4B_XTohip4f9l7KovrpT1Y&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oYJbSd9UKS4B_XTohip4f9l7KovrpT1Y&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oY5Gp149-vbVA1bUAvZk04fKW_pDz401&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__cairo.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__cairo.psd</h3>
+                            <p class="card-size">الحجم: 161.81 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oY5Gp149-vbVA1bUAvZk04fKW_pDz401&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oY5Gp149-vbVA1bUAvZk04fKW_pDz401&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oY5Gp149-vbVA1bUAvZk04fKW_pDz401&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lapsEx1KpCOES5ivx-ROylDQYO7kar-v&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__folder.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__folder.jpg</h3>
+                            <p class="card-size">الحجم: 503.70 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lapsEx1KpCOES5ivx-ROylDQYO7kar-v&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lapsEx1KpCOES5ivx-ROylDQYO7kar-v&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lapsEx1KpCOES5ivx-ROylDQYO7kar-v&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1la8H8JJeT9-4y7gL3HalanQbXYnawYpN&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__folder.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__folder.psd</h3>
+                            <p class="card-size">الحجم: 36.13 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1la8H8JJeT9-4y7gL3HalanQbXYnawYpN&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1la8H8JJeT9-4y7gL3HalanQbXYnawYpN&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1la8H8JJeT9-4y7gL3HalanQbXYnawYpN&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1o_p39IC1A71BJk9ES5oekY8DOTIdCyt_&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__mohamy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__mohamy.jpg</h3>
+                            <p class="card-size">الحجم: 881.93 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1o_p39IC1A71BJk9ES5oekY8DOTIdCyt_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1o_p39IC1A71BJk9ES5oekY8DOTIdCyt_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1o_p39IC1A71BJk9ES5oekY8DOTIdCyt_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oZqzdaCm_JFaH4K42cjpuSUIRMVxa0yy&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__mohamy.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__mohamy.psd</h3>
+                            <p class="card-size">الحجم: 104.57 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oZqzdaCm_JFaH4K42cjpuSUIRMVxa0yy&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oZqzdaCm_JFaH4K42cjpuSUIRMVxa0yy&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oZqzdaCm_JFaH4K42cjpuSUIRMVxa0yy&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oeCClbqIcJYL1oGTURVz2p4VqzBchkKi&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__osoul decore.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__osoul decore.jpg</h3>
+                            <p class="card-size">الحجم: 920.18 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oeCClbqIcJYL1oGTURVz2p4VqzBchkKi&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oeCClbqIcJYL1oGTURVz2p4VqzBchkKi&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oeCClbqIcJYL1oGTURVz2p4VqzBchkKi&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oaUtJ5zZnP97oPojQAbNJqKRBvWFRNN7&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__osoul decore.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__osoul decore.psd</h3>
+                            <p class="card-size">الحجم: 139.61 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oaUtJ5zZnP97oPojQAbNJqKRBvWFRNN7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oaUtJ5zZnP97oPojQAbNJqKRBvWFRNN7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oaUtJ5zZnP97oPojQAbNJqKRBvWFRNN7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lcOlSDzmb6zRcXtZcvqTVLNU5YCTYvp5&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__بروشووور copy-Recovered.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__بروشووور copy-Recovered.psd</h3>
+                            <p class="card-size">الحجم: 272.01 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lcOlSDzmb6zRcXtZcvqTVLNU5YCTYvp5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lcOlSDzmb6zRcXtZcvqTVLNU5YCTYvp5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lcOlSDzmb6zRcXtZcvqTVLNU5YCTYvp5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ld85ihNGW_n6BV-52VflCctgJVVQd_Pb&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__بروشووور copy.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__بروشووور copy.PSD</h3>
+                            <p class="card-size">الحجم: 240.53 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ld85ihNGW_n6BV-52VflCctgJVVQd_Pb&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ld85ihNGW_n6BV-52VflCctgJVVQd_Pb&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ld85ihNGW_n6BV-52VflCctgJVVQd_Pb&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ld_m2NmBh3s57CDVxSbVmKPz-mYnZ_Uq&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__بروشووور copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__بروشووور copy.jpg</h3>
+                            <p class="card-size">الحجم: 903.16 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ld_m2NmBh3s57CDVxSbVmKPz-mYnZ_Uq&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ld_m2NmBh3s57CDVxSbVmKPz-mYnZ_Uq&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ld_m2NmBh3s57CDVxSbVmKPz-mYnZ_Uq&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lh_cqBhVvgA4zlOC-hAHka-_4tEOkbGv&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__ظهر البروشور copy.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__ظهر البروشور copy.psd</h3>
+                            <p class="card-size">الحجم: 22.24 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lh_cqBhVvgA4zlOC-hAHka-_4tEOkbGv&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lh_cqBhVvgA4zlOC-hAHka-_4tEOkbGv&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lh_cqBhVvgA4zlOC-hAHka-_4tEOkbGv&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mhdvJoVSSX6lLlGt5Y56Ub6jz0UXZyr5&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__غلاف معمل التوحيد 2 copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__غلاف معمل التوحيد 2 copy.jpg</h3>
+                            <p class="card-size">الحجم: 295.38 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mhdvJoVSSX6lLlGt5Y56Ub6jz0UXZyr5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mhdvJoVSSX6lLlGt5Y56Ub6jz0UXZyr5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mhdvJoVSSX6lLlGt5Y56Ub6jz0UXZyr5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mgdo8GvPWcjiWrV9R32e0PXE2hDRrIex&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__غلاف معمل التوحيد 2.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__غلاف معمل التوحيد 2.psd</h3>
+                            <p class="card-size">الحجم: 147.94 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mgdo8GvPWcjiWrV9R32e0PXE2hDRrIex&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mgdo8GvPWcjiWrV9R32e0PXE2hDRrIex&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mgdo8GvPWcjiWrV9R32e0PXE2hDRrIex&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1dq0FSToVs-xoSQGA-3j41MQHTpDCVZ__&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__غلاف معمل التوحيد.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__غلاف معمل التوحيد.png</h3>
+                            <p class="card-size">الحجم: 729.90 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1dq0FSToVs-xoSQGA-3j41MQHTpDCVZ__&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1dq0FSToVs-xoSQGA-3j41MQHTpDCVZ__&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1dq0FSToVs-xoSQGA-3j41MQHTpDCVZ__&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mjMfVGqGWcyQFHriKAlMmL151k4fCI48&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__غلاف معمل التوحيد.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__غلاف معمل التوحيد.psd</h3>
+                            <p class="card-size">الحجم: 144.04 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mjMfVGqGWcyQFHriKAlMmL151k4fCI48&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mjMfVGqGWcyQFHriKAlMmL151k4fCI48&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mjMfVGqGWcyQFHriKAlMmL151k4fCI48&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mjdbvfivlLg--5BQLbKVCsvbxIKkNwiq&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر (4).psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر (4).psd</h3>
+                            <p class="card-size">الحجم: 43.04 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mjdbvfivlLg--5BQLbKVCsvbxIKkNwiq&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mjdbvfivlLg--5BQLbKVCsvbxIKkNwiq&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mjdbvfivlLg--5BQLbKVCsvbxIKkNwiq&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mlsTR2UXLtii99FcBm_ff3vv3eHW1YVe&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر سنتر اجيال التعليمي.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر سنتر اجيال التعليمي.PSD</h3>
+                            <p class="card-size">الحجم: 133.53 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mlsTR2UXLtii99FcBm_ff3vv3eHW1YVe&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mlsTR2UXLtii99FcBm_ff3vv3eHW1YVe&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mlsTR2UXLtii99FcBm_ff3vv3eHW1YVe&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mobM-H5Lk6PLKJ2WC7mRqJJPKOr1jyOf&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر سنتر النجاح التعليمي.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر سنتر النجاح التعليمي.png</h3>
+                            <p class="card-size">الحجم: 567.93 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mobM-H5Lk6PLKJ2WC7mRqJJPKOr1jyOf&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mobM-H5Lk6PLKJ2WC7mRqJJPKOr1jyOf&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mobM-H5Lk6PLKJ2WC7mRqJJPKOr1jyOf&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mnz1LaKT9FpfZkYMmTifV7uKCysENJK8&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الشوادفي العقارية.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الشوادفي العقارية.PSD</h3>
+                            <p class="card-size">الحجم: 159.72 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mnz1LaKT9FpfZkYMmTifV7uKCysENJK8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mnz1LaKT9FpfZkYMmTifV7uKCysENJK8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mnz1LaKT9FpfZkYMmTifV7uKCysENJK8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mtnqPt7wPJ8GhMdgaynX8x8FfyIyn078&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الصفا والمروة العقارية copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الصفا والمروة العقارية copy.jpg</h3>
+                            <p class="card-size">الحجم: 1.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mtnqPt7wPJ8GhMdgaynX8x8FfyIyn078&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mtnqPt7wPJ8GhMdgaynX8x8FfyIyn078&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mtnqPt7wPJ8GhMdgaynX8x8FfyIyn078&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mpXsVrLkm9g8eFSFwulmZNaoO4Ali-uf&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الصفا والمروة العقارية.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الصفا والمروة العقارية.psd</h3>
+                            <p class="card-size">الحجم: 117.96 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mpXsVrLkm9g8eFSFwulmZNaoO4Ali-uf&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mpXsVrLkm9g8eFSFwulmZNaoO4Ali-uf&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mpXsVrLkm9g8eFSFwulmZNaoO4Ali-uf&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1myqNEViBZLKerB26ZyBrV9HhB9ka4aV7&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الصفا والمروة العقارية2 copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الصفا والمروة العقارية2 copy.jpg</h3>
+                            <p class="card-size">الحجم: 1.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1myqNEViBZLKerB26ZyBrV9HhB9ka4aV7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1myqNEViBZLKerB26ZyBrV9HhB9ka4aV7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1myqNEViBZLKerB26ZyBrV9HhB9ka4aV7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1myPi86weTT7r0Z-aRAI9C-jpmtpbZtg5&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الصفا والمروة العقارية2.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة الصفا والمروة العقارية2.PSD</h3>
+                            <p class="card-size">الحجم: 85.07 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1myPi86weTT7r0Z-aRAI9C-jpmtpbZtg5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1myPi86weTT7r0Z-aRAI9C-jpmtpbZtg5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1myPi86weTT7r0Z-aRAI9C-jpmtpbZtg5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1n-juZKoPWYYkBn05nKEGgy5YkW8rCNLW&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة العربية العقارية.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة العربية العقارية.PSD</h3>
+                            <p class="card-size">الحجم: 142.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1n-juZKoPWYYkBn05nKEGgy5YkW8rCNLW&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1n-juZKoPWYYkBn05nKEGgy5YkW8rCNLW&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1n-juZKoPWYYkBn05nKEGgy5YkW8rCNLW&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1n92e2XeShZ41p99o8N9ZGRQ2ohgSt9LO&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة صروح العقارية copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة صروح العقارية copy.jpg</h3>
+                            <p class="card-size">الحجم: 1.39 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1n92e2XeShZ41p99o8N9ZGRQ2ohgSt9LO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1n92e2XeShZ41p99o8N9ZGRQ2ohgSt9LO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1n92e2XeShZ41p99o8N9ZGRQ2ohgSt9LO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1n7ApsGH1CVQTbrW0tE0L9oS3PQoNi6cl&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة صروح العقارية.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر شركة صروح العقارية.PSD</h3>
+                            <p class="card-size">الحجم: 182.56 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1n7ApsGH1CVQTbrW0tE0L9oS3PQoNi6cl&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1n7ApsGH1CVQTbrW0tE0L9oS3PQoNi6cl&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1n7ApsGH1CVQTbrW0tE0L9oS3PQoNi6cl&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nEYNRbbMzdl8yIgY4M7Lz9I7W8e9d5YU&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر صغير معمل القاهرة.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر صغير معمل القاهرة.psd</h3>
+                            <p class="card-size">الحجم: 1.14 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nEYNRbbMzdl8yIgY4M7Lz9I7W8e9d5YU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nEYNRbbMzdl8yIgY4M7Lz9I7W8e9d5YU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nEYNRbbMzdl8yIgY4M7Lz9I7W8e9d5YU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nDUCa4O0F4nnJilS43WlbJ26il_AVU5B&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر طبيب copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر طبيب copy.jpg</h3>
+                            <p class="card-size">الحجم: 978.20 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nDUCa4O0F4nnJilS43WlbJ26il_AVU5B&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nDUCa4O0F4nnJilS43WlbJ26il_AVU5B&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nDUCa4O0F4nnJilS43WlbJ26il_AVU5B&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1n9pMjvzd8MFDWb8YQ0l1WKbcqNz4v87T&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر طبيب.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر طبيب.psd</h3>
+                            <p class="card-size">الحجم: 109.83 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1n9pMjvzd8MFDWb8YQ0l1WKbcqNz4v87T&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1n9pMjvzd8MFDWb8YQ0l1WKbcqNz4v87T&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1n9pMjvzd8MFDWb8YQ0l1WKbcqNz4v87T&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nLNEhL1exh8yrRjgeLHg5uF2V_lAfg38&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر محامي copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر محامي copy.jpg</h3>
+                            <p class="card-size">الحجم: 1.21 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nLNEhL1exh8yrRjgeLHg5uF2V_lAfg38&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nLNEhL1exh8yrRjgeLHg5uF2V_lAfg38&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nLNEhL1exh8yrRjgeLHg5uF2V_lAfg38&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nHOV6DHdOdjKcEoaib85QozjCKZhrLMH&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر محامي.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر محامي.PSD</h3>
+                            <p class="card-size">الحجم: 159.25 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nHOV6DHdOdjKcEoaib85QozjCKZhrLMH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nHOV6DHdOdjKcEoaib85QozjCKZhrLMH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nHOV6DHdOdjKcEoaib85QozjCKZhrLMH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nPOiqFMxAgZ8w07zbSYsaj9nDBow2X_y&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل اطمئن copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل اطمئن copy.jpg</h3>
+                            <p class="card-size">الحجم: 1.20 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nPOiqFMxAgZ8w07zbSYsaj9nDBow2X_y&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nPOiqFMxAgZ8w07zbSYsaj9nDBow2X_y&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nPOiqFMxAgZ8w07zbSYsaj9nDBow2X_y&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nLkGeE21mfhGiUK9EwjCv79zz6qRR4yr&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل اطمئن.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل اطمئن.PSD</h3>
+                            <p class="card-size">الحجم: 202.20 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nLkGeE21mfhGiUK9EwjCv79zz6qRR4yr&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nLkGeE21mfhGiUK9EwjCv79zz6qRR4yr&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nLkGeE21mfhGiUK9EwjCv79zz6qRR4yr&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nQkGjQdANuovQalme6FnL2y2o1zl68sj&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة 2 copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة 2 copy.jpg</h3>
+                            <p class="card-size">الحجم: 923.71 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nQkGjQdANuovQalme6FnL2y2o1zl68sj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nQkGjQdANuovQalme6FnL2y2o1zl68sj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nQkGjQdANuovQalme6FnL2y2o1zl68sj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nQWERwp1FZhoJi2f4GXlG63ZSxTX5QWX&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة 2.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة 2.PSD</h3>
+                            <p class="card-size">الحجم: 115.93 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nQWERwp1FZhoJi2f4GXlG63ZSxTX5QWX&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nQWERwp1FZhoJi2f4GXlG63ZSxTX5QWX&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nQWERwp1FZhoJi2f4GXlG63ZSxTX5QWX&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nWvLlbSjFF-CQYKMGFKL2R0Bw6x2HuoM&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة 3 copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة 3 copy.jpg</h3>
+                            <p class="card-size">الحجم: 1.22 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nWvLlbSjFF-CQYKMGFKL2R0Bw6x2HuoM&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nWvLlbSjFF-CQYKMGFKL2R0Bw6x2HuoM&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nWvLlbSjFF-CQYKMGFKL2R0Bw6x2HuoM&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nQloaTkHywWNz6QTETqZM6SRgsNAuGAI&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة 3.PSD" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة 3.PSD</h3>
+                            <p class="card-size">الحجم: 144.15 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nQloaTkHywWNz6QTETqZM6SRgsNAuGAI&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nQloaTkHywWNz6QTETqZM6SRgsNAuGAI&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nQloaTkHywWNz6QTETqZM6SRgsNAuGAI&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nbmlFHI2brYbT4yrpxyDslRxYsP2CkLj&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة copy.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة copy.jpg</h3>
+                            <p class="card-size">الحجم: 1.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nbmlFHI2brYbT4yrpxyDslRxYsP2CkLj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nbmlFHI2brYbT4yrpxyDslRxYsP2CkLj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nbmlFHI2brYbT4yrpxyDslRxYsP2CkLj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nYSIuQ5moGLKyIqmVSj1UjvAec8BEsM9&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر معمل القاهرة.psd</h3>
+                            <p class="card-size">الحجم: 225.75 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nYSIuQ5moGLKyIqmVSj1UjvAec8BEsM9&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nYSIuQ5moGLKyIqmVSj1UjvAec8BEsM9&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nYSIuQ5moGLKyIqmVSj1UjvAec8BEsM9&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mnt08NeA-O9l2X7Ju1X-EPO4Yg0u04CY&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر.jpg</h3>
+                            <p class="card-size">الحجم: 890.64 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mnt08NeA-O9l2X7Ju1X-EPO4Yg0u04CY&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mnt08NeA-O9l2X7Ju1X-EPO4Yg0u04CY&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mnt08NeA-O9l2X7Ju1X-EPO4Yg0u04CY&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mn9wYvj7Pjb_ZCJMvkHiPhTnNlf-0m9R&sz=w200" alt="فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_23+تصميم عربي اغلفة فولدر【PSD_JPG__فولدر.psd</h3>
+                            <p class="card-size">الحجم: 107.91 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mn9wYvj7Pjb_ZCJMvkHiPhTnNlf-0m9R&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mn9wYvj7Pjb_ZCJMvkHiPhTnNlf-0m9R&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mn9wYvj7Pjb_ZCJMvkHiPhTnNlf-0m9R&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1JuYfY4UuOuGQQ2zlTpRcC4osXzU4Q-hH&sz=w200" alt="فولدرات حفظ مستندات_تحديث 1_تحديث 1_1.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_تحديث 1_تحديث 1_1.png</h3>
+                            <p class="card-size">الحجم: 3.73 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1JuYfY4UuOuGQQ2zlTpRcC4osXzU4Q-hH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1JuYfY4UuOuGQQ2zlTpRcC4osXzU4Q-hH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1JuYfY4UuOuGQQ2zlTpRcC4osXzU4Q-hH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=13JHoYRnNDQqJtpIqXf0NusnCeo7ZP2T0&sz=w200" alt="فولدرات حفظ مستندات_تحديث 1_تحديث 1_1.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_تحديث 1_تحديث 1_1.psd</h3>
+                            <p class="card-size">الحجم: 66.71 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=13JHoYRnNDQqJtpIqXf0NusnCeo7ZP2T0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=13JHoYRnNDQqJtpIqXf0NusnCeo7ZP2T0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=13JHoYRnNDQqJtpIqXf0NusnCeo7ZP2T0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1zQ7sqSBGOvDxV18HZhksqedsn38KpcgW&sz=w200" alt="فولدرات حفظ مستندات_تحديث 1_تحديث 1_2.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_تحديث 1_تحديث 1_2.png</h3>
+                            <p class="card-size">الحجم: 4.91 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1zQ7sqSBGOvDxV18HZhksqedsn38KpcgW&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1zQ7sqSBGOvDxV18HZhksqedsn38KpcgW&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1zQ7sqSBGOvDxV18HZhksqedsn38KpcgW&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1B1IJaMEhW6Xy28iYUK9lHlr_pPS6h9ci&sz=w200" alt="فولدرات حفظ مستندات_تحديث 1_تحديث 1_2.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">فولدرات حفظ مستندات_تحديث 1_تحديث 1_2.psd</h3>
+                            <p class="card-size">الحجم: 77.70 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1B1IJaMEhW6Xy28iYUK9lHlr_pPS6h9ci&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1B1IJaMEhW6Xy28iYUK9lHlr_pPS6h9ci&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1B1IJaMEhW6Xy28iYUK9lHlr_pPS6h9ci&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

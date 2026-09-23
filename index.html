@@ -1,0 +1,515 @@
+
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <title>بعض محتويات مكتبة التصميم محمد ناجي</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #f4f7fa;
+                    height: 100vh;
+                }
+                .top-nav {
+                    display: flex;
+                    align-items: center;
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 0 15px;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1000;
+                    height: 60px;
+                    white-space: nowrap;
+                }
+                .top-nav-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-right: 10px;
+                    white-space: nowrap;
+                }
+                .top-nav-scroll-container {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    flex: 1;
+                }
+                .top-nav-groups {
+                    display: flex;
+                    overflow-x: auto;
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+                }
+                .top-nav-groups::-webkit-scrollbar {
+                    display: none;
+                }
+                .scroll-button {
+                    background: transparent;
+                    border: none;
+                    color: #FF5722;
+                    font-size: 22px;
+                    cursor: pointer;
+                    padding: 10px;
+                    transition: transform 0.3s ease;
+                }
+                .scroll-button:hover {
+                    transform: scale(1.1);
+                }
+                .top-nav-button {
+                    cursor: pointer;
+                    padding: 15px;
+                    margin: 0 5px;
+                    text-align: center;
+                    background-color: transparent;
+                    border: none;
+                    color: #ecf0f1;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    border-radius: 8px;
+                }
+                .top-nav-button:not(:first-child) {
+                    border-left: 1px solid rgba(255, 255, 255, 0.4);
+                    padding-left: 10px;
+                }
+                .top-nav-button:hover {
+                    background-color: #34495e;
+                    transform: translateY(-2px);
+                }
+                .top-nav-button.active {
+                    background-color: #2980b9;
+                }
+                .burger-menu {
+                    font-size: 22px;
+                    cursor: pointer;
+                    margin-left: auto;
+                    padding: 10px;
+                    border: none;
+                    background: transparent;
+                    color: #ecf0f1;
+                    transition: transform 0.3s ease;
+                }
+                .burger-menu:hover {
+                    transform: scale(1.1);
+                }
+                .groups-dropdown-container {
+                    position: relative;
+                    margin-left: 10px;
+                }
+                .groups-dropdown-button {
+                    background: #FF5722;
+                    border: none;
+                    color: #fff;
+                    padding: 8px 12px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    transition: background 0.3s ease;
+                }
+                .groups-dropdown-button:hover {
+                    background: #E64A19;
+                }
+                .groups-dropdown {
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    display: none;
+                    z-index: 1000;
+                    min-width: 150px;
+                }
+                .groups-dropdown a {
+                    display: block;
+                    padding: 8px 12px;
+                    color: #333;
+                    text-decoration: none;
+                    border-bottom: 1px solid #eee;
+                }
+                .groups-dropdown a:last-child {
+                    border-bottom: none;
+                }
+                .groups-dropdown a:hover {
+                    background: #f0f0f0;
+                }
+                .main-container {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: row;
+                    transition: all 0.3s ease;
+                    margin-top: 60px;
+                    height: calc(100vh - 60px);
+                }
+                .content-area {
+                    flex: 1;
+                    background-color: #fff;
+                    position: relative;
+                    order: 1;
+                    transition: all 0.3s ease;
+                }
+                .content-area iframe {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                }
+                #loadingOverlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5em;
+                    color: #333;
+                    z-index: 10;
+                    display: none;
+                }
+                .sidebar {
+                    width: 270px;
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 20px;
+                    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+                    order: 2;
+                    transition: all 0.3s ease;
+                    overflow-y: auto;
+                    direction: rtl;
+                    text-align: right;
+                    height: 100%;
+                }
+                .sidebar.hidden {
+                    display: none;
+                }
+                .sidebar h2 {
+                    font-size: 18px;
+                    margin: 0 0 15px;
+                    color: #ecf0f1;
+                }
+                .sidebar-subfolder-button {
+                    background-color: #3b4a59;
+                    padding: 10px 12px;
+                    border-radius: 6px;
+                    margin: 5px 0;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                }
+                .sidebar-subfolder-button:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.02);
+                }
+                .sidebar-subfolder-button.active {
+                    background-color: #2ecc71;
+                    color: #fff;
+                    font-weight: bold;
+                }
+                .search-container {
+                    position: relative;
+                    margin-bottom: 15px;
+                    direction: ltr;
+                }
+                .search-container input {
+                    width: 100%;
+                    padding: 10px;
+                    padding-right: 35px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+                    outline: none;
+                    text-align: right;
+                }
+                .search-container .clear-button {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    background: transparent;
+                    border: none;
+                    color: #7f8c8d;
+                    font-size: 16px;
+                    cursor: pointer;
+                    visibility: hidden;
+                }
+                .search-container .clear-button.visible {
+                    visibility: visible;
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        
+            </style>
+            <script>
+                const folderGroupsData = {"psd-ai-RAR-eps-svg مكتبة كل ما يتعلق بالتصميم": [{"title": "كروت شخصية عربي", "type": "folder_id", "value": "1J5koWu8SO2qTEYK4qIZRA0H3A8Bz_d4r"}, {"title": "مكتبة تصاميم البيتزاالبلح", "type": "folder_id", "value": "1pNCYcV0YDhSlsZiFh0jOtoY_iNQ5mlyD"}, {"title": "شهادات تقدير 1", "type": "folder_id", "value": "1NfuIZaMKZjVodbmDOJmkrHRJZqc853ZU"}, {"title": "فلايرز عربي 1", "type": "folder_id", "value": "1Bc5xTfj0_Nbo79a44Jkk_Jpo-L9GYgL1"}, {"title": "نتائج العام الجديد 1", "type": "folder_id", "value": "1jNJBnJBnBRSooC2xI4_ZTgZ5YLzOB5Ro"}, {"title": "يفط بنر طولية مج 1 ", "type": "folder_id", "value": "1FRLIc1h7VPRdYV4gtUkiKJc6eqqh6qXw"}, {"title": "يفط بنر استاند مج 1 ", "type": "folder_id", "value": "1pWJn6mB-4VgDXJaDlFnqMcK9aQ4vC7t7"}, {"title": "يفط بنر مج 1", "type": "folder_id", "value": "17x8pzYcw-HwMi51_VLN2Stwi-rkdCHxP"}, {"title": "( 1 GB ) - شارات", "type": "folder_id", "value": "1Y_TZa62jM1s1I73gl44JIZIsxK82bNYP"}, {"title": "( 1.40 GB ) - نقوش وزخارف اسلامية", "type": "folder_id", "value": "1RmyU6PfT-Y-1RbSFwvMDdnuV9hjtfAXe"}, {"title": "1-مكتبة الاغلفه وملحقاته", "type": "folder_id", "value": "1IWA0TQKoFRYmPBusP0gKMU-h5-eWflU4"}, {"title": "كروت شخصية ١-١", "type": "folder_id", "value": "17tgZJwSvmit2m5uxscCp6Kwg58guVXoz"}, {"title": "01. logos لوجو", "type": "folder_id", "value": "1jfCD8mp0nUJhv85XE6m_uSSw3MBwmyjX"}, {"title": "عروض تقديمية [PPT+PPTX] مج ١", "type": "folder_id", "value": "1r4nwmE_imOdJm19A2rzi1fZSEsq_aMVs"}, {"title": "تجميعة الكنز 1", "type": "folder_id", "value": "1og-5Y2EkNTWEkxUeJUoWqSGOmZtlMbwP"}, {"title": "1- مجموعة تصاميم اكثر من 300 PSD", "type": "folder_id", "value": "18vyL20OkEArnnIiFSv7LU5W-Z4t0DGUx"}, {"title": "1-أغلفة الكتب واطارات والملازم", "type": "folder_id", "value": "1Y0Li4_ByscO6FmdPt6twJS02SWmSwim4"}, {"title": " 2تصاميم ورق واكياس", "type": "folder_id", "value": "1hgwlTDs-UjxrMHjzOrqEHoEzsANyNFrg"}, {"title": "دروع وشهادات 2", "type": "folder_id", "value": "1ioUoY-TUp60eJPuCI7k8nE2q9Pu0Jwh3"}, {"title": "روشتات 2", "type": "folder_id", "value": "1K71gTMJpp4eQ76sUJfO_2QtnClfsWpo5"}, {"title": "شهادات تقدير 2", "type": "folder_id", "value": "1KKpmWo4l6umb3VGwBDRY2TQEAIPsSN_B"}, {"title": "فلاير 2", "type": "folder_id", "value": "1FxbVrDiwWAuKgPHvxwaWZftef2SLFTxo"}, {"title": "فواتير وايصالات 2", "type": "folder_id", "value": "1lDUFUqU-b_F2unZDv2uNfQKK2YK7572t"}, {"title": "قسم خاص بالانتخابات 2", "type": "folder_id", "value": "1ljUjpWkWupNqhrMIPXSUy2pNqrxEEDFA"}, {"title": "موك اب 2", "type": "folder_id", "value": "1YWiH89a0D67VNihwobG5iRI4_Kwd0eiA"}, {"title": "نتائج العام الجديد ", "type": "folder_id", "value": "1n8AofS87RXT5_2mB9sHChd05aVQ7L5RI"}, {"title": "يفط بنر مج 2", "type": "folder_id", "value": "1qOFQf1XaiFfM1oPgzw_BtpEItTO2aKL7"}, {"title": "عيادات ومستشفيات2", "type": "folder_id", "value": "1txFWMyGjAfdIT8GMQH7IlLbkh_2IGhUN"}, {"title": "(2 GB ) - تولكيت", "type": "folder_id", "value": "11IW2bz4cmvnv_xw3bNTmh3mJDYL7VR1f"}, {"title": "2.5 GB ) - تأثيرات ضوئية", "type": "folder_id", "value": "1Oote0B9qnrQfSVT6wSyix8ER_7rmZFq8"}, {"title": "2.5 GB ) - ملفات طباعة الليزر cdr", "type": "folder_id", "value": "1IY6StoS6Eodf7FwVz40hdMJ802E850wM"}, {"title": "2- اطارات الكتاب والملازم", "type": "folder_id", "value": "1YtzcAbJs5FP5K4AxYpe-bn8Mk17E5Ysl"}, {"title": "طباعة الماج ٢", "type": "folder_id", "value": "11uBX4mrSBTG_zfQhkoc5PgFWbrOhpjNq"}, {"title": "عروض تقديمية [PPT+PPTX] مج ٢", "type": "folder_id", "value": "1uIt3B4lX7oE8NiRh3a-aZqXheQJmtGRF"}, {"title": "تجميعة الكنز 2", "type": "folder_id", "value": "1ev9Xo2XMY0dahrWKa8RuI_G2r5h2g926"}, {"title": "2 جيجا سيرة ذاتية cv", "type": "folder_id", "value": "1gVqf0OcnGvsYpknggBulluAfVZPG73pq"}, {"title": "2D Cutout People شخصيات من جميع الزوايا PSD", "type": "folder_id", "value": "1S-bijG_AikHwz6DPmAIBioCQ2IFrtcKb"}, {"title": "٢-كروت شخصية (بيزنس كارد)", "type": "folder_id", "value": "1a2IK1ZJz-lGYhnXGJgYPddx_aIW6F_3o"}, {"title": "شهادات تقدير 3", "type": "folder_id", "value": "1ITvpoabSR86CnDdDJrUYT62wga8q_CYP"}, {"title": "يفط بنر مج 3", "type": "folder_id", "value": "1eljYEPnu0PorjLwylZJuJJNvCVAuXYSD"}, {"title": "( 3 GB ) - فرش", "type": "folder_id", "value": "1xqSwzouUoJnipp5QxRe7Ej5h-2PvhZ7M"}, {"title": "(3) فلاير مطبعة ودعاية واعلان", "type": "folder_id", "value": "1naV56qU_zM6I3gP8Wc0U2Ap2x1wRSnZ8"}, {"title": "3 GB علامات تجاريه", "type": "folder_id", "value": "1yEx7rKwmAwAPk7e_45ufUIXtaq-DA4yw"}, {"title": "3.5 GB- التصميمات المصريه والاسلامية", "type": "folder_id", "value": "1AGioB6B05DgTfKBRR_jqaIWBruropY8y"}, {"title": "3- كروت شخصية مدرسين", "type": "folder_id", "value": "1Hm_omH0Xk-2P2Ive-8ZtGF0nqGxozIL-"}, {"title": "youtube صورة مصغرة مجموعة ٣", "type": "folder_id", "value": "1XLT6Y8Sl1dH0MVWPot855b5rkla1f-pU"}, {"title": "نماذج ثلاثية الأبعاد 3Dmax Model Bundles [vip]", "type": "folder_id", "value": "1F9JyrCuq0rinRF8JMzUutjvjQcb3qL1W"}, {"title": "٣- منيوهات المطاعم والمقاهي", "type": "folder_id", "value": "1-Wdjwjoqulh05tKbONJH4kjGj1GTxstJ"}, {"title": "يفط بنر مج 4", "type": "folder_id", "value": "15Y0npSN-VttoCFIc_e4etUfpGUbFzRtJ"}, {"title": "(4)فلايرات احترافية", "type": "folder_id", "value": "1pPndTsJjYhnqKnii5O659cQWZ102yTtL"}, {"title": "4- كروت حجز مدرسين", "type": "folder_id", "value": "1EEb6_BCg7WUbHnyF7zmyU2mKGfeaSk42"}, {"title": "Vfx Bundle [lite] حزمة الخدع السينمائية", "type": "folder_id", "value": "1NRtBDnIQ-KE1rSkuURYRDgAW3TiDz5XD"}, {"title": "4 جيجا تصميمات مصرية", "type": "folder_id", "value": "1ywbURbw-kmlitAujEWSFcikvZSWDVUVv"}, {"title": "٤-قسم خاص بالانتخابات", "type": "folder_id", "value": "1VXUyuWlludETAlzEPApPO3y5XfJHC46w"}, {"title": "يفط بنر مج 5", "type": "folder_id", "value": "1mIDRySxoLpm7TXHyMEpaQiviAXSvikQF"}, {"title": "(5) يوفط طولية", "type": "folder_id", "value": "1LOh9gcSJrolXKy5m30O_-0NLimApOS-4"}, {"title": "5 GB انديزاين", "type": "folder_id", "value": "1j4tSviH8-YDLuIKxdBvrCFNiScxUj55_"}, {"title": "5.5 GB ) - ملفات psd للاطفال", "type": "folder_id", "value": "1vkrFpS3PuiLfLo-AH0BW290aKxcu8-OP"}, {"title": "5- شهادات تقدير", "type": "folder_id", "value": "1-6E_96Ho-dglIJf-dt0I-BLhDeZda4k9"}, {"title": "5,000 Adobe After Effects Templates (.aep) قوالب افترايفيكتس ", "type": "folder_id", "value": "1Mwa3qaJ3gygbZGh5g4X6TsDqigDqBYGy"}, {"title": "5,000 Adobe Illustrator Templates (.ai, .eps)قوالب اليستراتور ", "type": "folder_id", "value": "1a85iTn4ZPgUKw9LpPlnt0EP0SyUqifwk"}, {"title": "5,000 Adobe Photoshop Templates (.psd)قوالب فوتوشوب متنوعة", "type": "folder_id", "value": "1S19y1jFAEzZjYZOzcdcTC54A2oRGSZ9a"}, {"title": "5,000 CorelDraw Templates (.cdr) قوالب كورل", "type": "folder_id", "value": "1YSPngr8ZpUH0QN5avV-Q3d9ZFzvrn3yq"}, {"title": "5,000 Microsoft PowerPoint Templates (.pptx, .xps) عروض تقديمية ", "type": "folder_id", "value": "1fZ5mAJFvEt-4IPbyeBbNO7l72bpDm_MF"}, {"title": "٥-لوجوهات بالعربي", "type": "folder_id", "value": "1ZjNTIZCsKsT1hPtqZk3DZ5dNWK2yAfwW"}, {"title": "يفط بنر مج 6", "type": "folder_id", "value": "1OU80p8e9LV5D67IY_y4_3VxLQGOK0e3G"}, {"title": "6-بوسترات سوشيال ميديا", "type": "folder_id", "value": "1t17Bz2YS4Ph68MBN6nP6gIrlDH0frRR3"}, {"title": "٦-بطاقات عضوية", "type": "folder_id", "value": "1Oz1j-_YlqiYf9i0exP9DX0U6_QZ0BTmA"}, {"title": "يفط بنر مج 7 ", "type": "folder_id", "value": "1HHM1WBdgl8m6W4iB1ZCT76x4wJNCHfEk"}, {"title": "٧-أختام", "type": "folder_id", "value": "1ywvKy21Kq-yA4zvfDy-Ro31iHGUO5NhA"}, {"title": "يفط بنر مج 8 ", "type": "folder_id", "value": "1gpM9r-03WBA3RtbJZW1gcoyxKQWM3gnD"}, {"title": "8 GB CV", "type": "folder_id", "value": "1ois3lS9pWDNn1V1wphCZNsC-Xsknenjg"}, {"title": "8.5 GB ) - اغلفة كتب", "type": "folder_id", "value": "1Oryc1xbG2Wp7E3mrjnLECgteOa7R0ae4"}, {"title": "٨-اوراق مراسلة عربي", "type": "folder_id", "value": "1piqD83452nPSCsUAV1Tr1avmZToEu9UJ"}, {"title": "يفط بنر مج 9", "type": "folder_id", "value": "1DB8mvYI8o5Sp_GuAYHgD2K4stUEgnPRZ"}, {"title": "٩-ورق للمحاميين", "type": "folder_id", "value": "1IF8HCgoKBknsvjIlnrZpXcDu8Erz8c5J"}, {"title": "يفط بنر مج 10", "type": "folder_id", "value": "1whvKuD-cwQa4ChYkOAyF1y6pnzDbsg5M"}, {"title": "10.000 Photoshop Actions أكشنات مضغوطة ", "type": "folder_id", "value": "1lxaJdfWKNmml_U-IOgWzuLLM3dwEbsa-"}, {"title": "١٠-برشورات عربي", "type": "folder_id", "value": "1GFbb749PCFmP0hLsQrUUMD4IGVzU29x2"}, {"title": "يفط بنر مجموعة", "type": "folder_id", "value": "1ofeIzy0jAIpkCvCEmvX5oUnO0FXDshHz"}, {"title": "١١-بوسترات عربية", "type": "folder_id", "value": "1Ae7pEfmfqEAUjp4zCg6bFQyHtoVuEKtw"}, {"title": "يفط بنر مج 12", "type": "folder_id", "value": "1HoiEmn6cNOkiZP9qe6zBAdvCuCcbBE2X"}, {"title": "١٢-سوشيال عربي", "type": "folder_id", "value": "16qpbewR6lVxjBIU0hM6oRBwG5Nu2kGMa"}, {"title": "١٣-روشتات", "type": "folder_id", "value": "1RjJ8qtREVI0PUr_mDAkol5y9iL_uQ8wX"}, {"title": "14 GB اعلانات", "type": "folder_id", "value": "1ugVzb1Q-YozqY5nXI5UW_F81cu0JCPyG"}, {"title": "15.000 مكتبات الموشن جرافيك ", "type": "folder_id", "value": "1zmEujjQMsrHA4SOIsrGXqaJ0pbElIHrI"}, {"title": "( 16 GB ) - هويات شركات", "type": "folder_id", "value": "1XHYoTDhRYUXcOpMixSwbmgkZ7F2g-793"}, {"title": "17.5 GB ) - ملحقات رمضان كريم", "type": "folder_id", "value": "179CsvwaYqX-63xIxREpisnAYNFg4HQfI"}, {"title": "حزمة موك اب بوسترات Poster Mockup 19.3GB", "type": "folder_id", "value": "1XeOZWe6xh1Qg8oMl9kuShP0qos1fZKAq"}, {"title": "اكثر من 20 الف خط عربى وانجليزي", "type": "folder_id", "value": "1SWS-iy4ykZE_wXHLzOCy_hIgPj4nqR7D"}, {"title": "( 23 GB ) - باتيرن", "type": "folder_id", "value": "1-jjpt9yfX0EBAd4hjYo5C3-TqUcHjDAz"}, {"title": "23 GB منيو طعام psd", "type": "folder_id", "value": "1TRKjN-fDHEUiv86XU4Hl7F6N6jg3bnZm"}, {"title": "(23.000+) قوالب الشعارات بصيغة PSD , EPS", "type": "folder_id", "value": "1mWcPp-xXY0kaobsRkIMLx_kcZxlnuIlJ"}, {"title": "25.000 Vector Icons", "type": "folder_id", "value": "1b2x07IcsQPnKqNxwPZU4DVCz18fSw00m"}, {"title": "بريسيتات والوان", "type": "folder_id", "value": "1-nnaaATx_m6Yzrb0RdJd0-LCYg2edRLs"}, {"title": "29 GB فيسبوك كفر", "type": "folder_id", "value": "1YoLNVMzK0mly4jm-x-OOzt6QU3pGbevJ"}, {"title": "شترستوك حصررررري 30 جيجا", "type": "folder_id", "value": "1ig5nnX-KfZVP4UOTMtrLbJa8YHP-lElI"}, {"title": "أكثر من 30 ألف مشروع أفتر ايفيكت وبريمير Aftereffects Premiere Pro Projects", "type": "folder_id", "value": "105gqbMRlDU-35n6KZ5aEE202B8mX7Y8W"}, {"title": "30.000 Fonts Collection", "type": "folder_id", "value": "1CGmYuc-1yBD8qr-cf603q1jK0iw0UWIc"}, {"title": "30+ Digital Business Card", "type": "folder_id", "value": "1A8KoSqIzca2dF9UrUrkKz6om-LmwIHM5"}, {"title": "( 32 GB ) - ورق حائط", "type": "folder_id", "value": "1qVUy5wc0dV3DJuvUx6yGHytQsjyMwVZH"}, {"title": "35 GB كروت شخصية", "type": "folder_id", "value": "1T_gsGau5oCokBidJLltGrotZOMWkfQGn"}, {"title": "( 36 GB ) - بوسترات اعلانيه PSD", "type": "folder_id", "value": "16PVCEvI0cr668sjxP9BqecYo7iwqTCa8"}, {"title": "38,000 Adobe Lightroom Presets (.lrtemplate)", "type": "folder_id", "value": "10HD8HDyfPgqgoILdNaFYM2V8GEBzDdib"}, {"title": "40 جيجا موك اب عرض تصاميم", "type": "folder_id", "value": "1K2X91-Ki2vB955qQAWgnoEudx_zWtkZ5"}, {"title": "43 GB ) - قسم الطباعة على الخامات", "type": "folder_id", "value": "1XJx4m--GuFOBY56UqoUXI6gN-yJQRbXU"}, {"title": "فيكتور", "type": "folder_id", "value": "1jCrID3RrCTmhKPDyLgd4VeIRAZ-Qq3oo"}, {"title": "( 58 GB ) - موسيقى للمنتاج", "type": "folder_id", "value": "1h4KsEt5fLQ-h8kATvD8a5BXxnVPR1aj7"}, {"title": "59 GB سوشيال ميديا", "type": "folder_id", "value": "1Aow1WKjjsWmVQWNWB6k0OhdUfbkvf8BQ"}, {"title": "( 64 GB ) - ايقونات مفتوحة المصدر PSD", "type": "folder_id", "value": "1MmhDVHgn5xGqYS_yIGSIjJALcSLhXDLL"}, {"title": "ورق حائط+77 DecorWall HD【PSD+JPG】", "type": "folder_id", "value": "1a7O3INdG_rV9YbqNt05wyfmfzO-hxCvR"}, {"title": "80+ BookDesign Kit أغلفة الكتب【PSD+JPG】", "type": "folder_id", "value": "1KPw--6Ehdzoy93fO5URQ_MTOYVUyN2az"}, {"title": "Editors-Toolkit-Pro(99DVD) المجموعة الكاملة لصناع المحتوى والمونتاج", "type": "folder_id", "value": "1dI9eK5UGrc3zJEXWTIFzAbhX1NoBLfHb"}, {"title": "100+ Flyers فلايرز", "type": "folder_id", "value": "18g-G2bOuoZqAoPTtnBwXcYVyBp7ePgUV"}, {"title": "100+ Certificate Design شهادة", "type": "folder_id", "value": "1-G9mwrLLx3cIxtFlaUdWCfWN7EqWkNHY"}, {"title": "100+ Mockups موكاب", "type": "folder_id", "value": "1lbNjT0muwGvn64ZZ8vJGCQRdR7ybSz58"}, {"title": "(100+) لوجو موكاب Logo mock-up ", "type": "folder_id", "value": "1mNm7PtJHPiZgfkSOEgcogimJmT-7D9Xq"}, {"title": "108 قوالب سوشيال ميديا EPS", "type": "folder_id", "value": "1QsPGpv9rABiG0UHw_rdOh1LmnEeGT0gu"}, {"title": "124 RollUp بنر طولي【PSD】", "type": "folder_id", "value": "1IZN2t8o27Xpiqstp7IaPoSjoFpAigmck"}, {"title": "135+【PSD】Advertisment سوشيال اعلانات ", "type": "folder_id", "value": "1pYaSzdfWzbR1hlWHQX9HPh_Jg_LRuOcn"}, {"title": "145+【PSD】Advertisment سوشيال اعلانات", "type": "folder_id", "value": "15hSZQ61QujvJ7ksAXJwL4dCCYy9evvjX"}, {"title": "فلايرات احترافية 155 فلاير", "type": "folder_id", "value": "1_uqAR1FtPBNB2_CIb9ThaffmGk9jd2gR"}, {"title": "180+【PSD】Advertisment سوشيال اعلانات ", "type": "folder_id", "value": "1RqC9oianH1ouIZyEv4QP-o8V1_nt3MVt"}, {"title": "اضافات - قوالب انستغرام (180+)", "type": "folder_id", "value": "1D9ck6U3Iz_AYPZDJbBQf_KkCyLIW5t1A"}, {"title": "200+ Abstract Background Images خلفيات صور", "type": "folder_id", "value": "1PjHHVvT_ef5RJgwPTV04Q4MPrfMI_ktT"}, {"title": "200+ Colour Luts ملفات إضاءة ", "type": "folder_id", "value": "1EhLsqbNp6JxAQL7M_0zGqKgDa9Q-hJSP"}, {"title": "200+ Visiting Cards Templates نماذج كروت دعوة", "type": "folder_id", "value": "1Y3Ruy8QLTtjaejAtEXrod-ap2z8cHv4n"}, {"title": "200+ Wedding Text PSD Template نصوص زفاف", "type": "folder_id", "value": "1TRTj1c9fXXrDo4Zl4WY8U3lu4AIwPvg8"}, {"title": "300+【PSD】Advertisment سوشيال اعلانات", "type": "folder_id", "value": "1NQnjiknRPtI_0O7xgTF3WL-xSi8dgmap"}, {"title": "(300+) انستغرام ستوري بريمير Instagram ", "type": "folder_id", "value": "1Y_j40MxXzJ6JQNGdLe1dPRwKh4JhkM5U"}, {"title": "قوالب كروت اي دي +350", "type": "folder_id", "value": "1-nc1S18MjQzVuE6aIR6a1GHwTo57VgKl"}, {"title": "350+ قوالب الستريتور EPS", "type": "folder_id", "value": "18saXCVPaxPB6mMYGs9AspHR9JpT9G2Zq"}, {"title": "(قوالب الرول اب (350 PSD", "type": "folder_id", "value": "1mZREH_v9xcBwFyPJ2PR-qSPj0L8Wb2Ou"}, {"title": "ملحقات منوعه من فري بيك (370+)", "type": "folder_id", "value": "1WFXspSdcg6ZbBoxxo818qABU0jQBSd-J"}, {"title": "ملفات PSD منوعة (380+)", "type": "folder_id", "value": "1iz8LsCUcHC9Hz0hjDa6FbHEzwMeTfgg5"}, {"title": "400+ Stock Video Footage فيديوهات ", "type": "folder_id", "value": "1XGa2PI7k3O5PFoLSneuEKBjvi6JEgyYi"}, {"title": "(400) Certificate شهادة", "type": "folder_id", "value": "1m-U0X3oSmFWZ8q4w8g4y5k-sc8pfZoEe"}, {"title": "PSD تأثيرات الكتابة", "type": "folder_id", "value": "1lumV8hYydMmdWzv0E2BDv99L1lvhzBz6"}, {"title": "شهادات تقدير ورد", "type": "folder_id", "value": "1feVWhssSXMG64ZmFbGa5hlokcfqv0VLR"}, {"title": "500+ Social Media Post سوشيال", "type": "folder_id", "value": "14kJo-Juu8WuYFr6tvtWGvitla7wPH8Uk"}, {"title": "500 قوالب سوشيال ميديا حسب القسمEPS ,PSD", "type": "folder_id", "value": "18hdfGyY-8ZB00xMcoauVlk_PVpEvWzvw"}, {"title": "500+ أبحاث مدارس [doc-docx]", "type": "folder_id", "value": "1ltCZ11BKVwK0Y8ZvfVtJTxmGiMGwtpeh"}, {"title": "600+ Business Card Templates كروت شخصية ", "type": "folder_id", "value": "1Ro0uHfTsFY8R98ofQt2CpUPD0mOeFV7w"}, {"title": "(600+) قوالب الافترافكت", "type": "folder_id", "value": "1jIHAV2LCyCQCJe6GEwLrmuRRpRCpNuvW"}, {"title": "650+ Advertisment Social[PSD+Jpg+EPS]", "type": "folder_id", "value": "1U0s_NrK__zHF9JiJcEJH0hVF2Q2ywW_H"}, {"title": "660+【PSD】Posters+Advertisment سوشيال ", "type": "folder_id", "value": "1CBK5xBYRoOlRlb0W_rOK2r7tT4GTOPm5"}, {"title": "موك اب منوعة (700+)", "type": "folder_id", "value": "1IHHUSn7VepGT2W_A5XZo3ssL-Q3Ursr3"}, {"title": "1000 تصميم تيشرت", "type": "folder_id", "value": "1uBEVSlgjOWtz0gHu3S-DvxYOP_zcwXh9"}, {"title": "1000+ Graphics Library مكتبة جرافيك ", "type": "folder_id", "value": "1aA0KRZ1sxgqGuRNYAxAGljtmkukmKyx7"}, {"title": "1000+ light Effects Element Collection PSD مؤثرات ضوئية ", "type": "folder_id", "value": "1uSCxhy_wGfuZMCUtRzZQS24rVN3T6h1Z"}, {"title": "1000+ Photoshop Brushes فرش", "type": "folder_id", "value": "1-WSvwY41oW_--Gd4g2tyzczAHUxlh1Im"}, {"title": "1000+ T-Shirt Design طباعة تشيرت", "type": "folder_id", "value": "1BC0OtpvERSlQuqXdefoaB6b7Eye7S0Oc"}, {"title": "(1000+) قسم اشكال 3 دي blender+png", "type": "folder_id", "value": "1DD8-nQMPDGov4FcU_1VV_JfEu0DNrJxW"}, {"title": "+1000 قسم منيو الطعام", "type": "folder_id", "value": "1mVyjrjZcofsqFr_AWMULR4j39YJtnzIW"}, {"title": "(1000+) قسم الهوية البصرية", "type": "folder_id", "value": "1llW6pto8kUU7mjeC-fBKAVT0FlhUx490"}, {"title": "(1000+) تصاميم تيشيرت eps , vsg", "type": "folder_id", "value": "1D5EljjDblpWARKiwDRXFNkZ000OiWHWo"}, {"title": "1200+ Wedding Album Templates زفاف قوالب", "type": "folder_id", "value": "1cn2iNbAGdhr88k2YCAkSK4bqOZFBIaIv"}, {"title": "1500+ Websites Codes, Themes & Plugins", "type": "folder_id", "value": "1szorhbuQawMRX7_1THNzS7g1idNCpQ0Z"}, {"title": "2000+ Premiere Pro Effects Presets مؤثرات بريمير برو", "type": "folder_id", "value": "1p3N8kciPvE57egQ85VLT9OdQ3VwdHaOd"}, {"title": "2000+ Sound Effects مؤثرات صوتية ", "type": "folder_id", "value": "1rG3FptfJRX_J4WymS7y9qiHVQWqCLr7M"}, {"title": "2000 Logo علامات تجارية【tif+AI+EPS+jpg+psd+png+jpg】_English Logo", "type": "folder_id", "value": "1CKmgaKUkmazRGG5vgApZnKuhx3ThgVko"}, {"title": "2000 Logo علامات تجارية【tif+AI+EPS+jpg+psd+png+jpg】_Logo Mockups", "type": "folder_id", "value": "1u2AStXhN3XO3qeETNRTMOMZawZ2Y2I-G"}, {"title": "2000 Mockups Basic+هويات شركات", "type": "folder_id", "value": "19-u9p590enOQfrgJOSttQPHMc0QDjTEn"}, {"title": "امساكية رمضان2023", "type": "folder_id", "value": "1l9VKLNSTtqr1qAfizkouhsovOhflf7-L"}, {"title": "Calendar 2024 نتائج ", "type": "folder_id", "value": "1nrQuGhYybTJfgugUqIU2T2frLBeN42Up"}, {"title": "2500+ PNG & Clipart صور", "type": "folder_id", "value": "12XHhaCMb1H6I2Dg7JbQdPUdB92cMjklo"}, {"title": "2500+ Premiere Pro Super Transition Bundle انتقالات بريمير", "type": "folder_id", "value": "1akHqnclA7PR6H-jovNVfn88R-DSEdgod"}, {"title": "2700 Lightroom Presets اضاءات بريست لايتروم", "type": "folder_id", "value": "1aGw9kSIoM2osNaVtAzWxdZM1V2mLxZ2V"}, {"title": "3000 cinema sound اصوات سينما", "type": "folder_id", "value": "1S3LozXlHOymn6zQfz9_-i0vS9RIHw3Tb"}, {"title": "3000+ Logos لوجو", "type": "folder_id", "value": "1AvQ_1FjT97dkVqRJNbp11jHOqLxZWFeZ"}, {"title": "(3700) قوالب بوربوينت عروض تقديمية", "type": "folder_id", "value": "1ltLnEMvMLkj96dW5NTaj11ZG5GtNjKBB"}, {"title": "(4000+) بانر اعلاني PSD&EPS Banner", "type": "folder_id", "value": "1P5f-08hpoZCRc7NcNMtLRHbJiy1cBtrB"}, {"title": "5000+ حزمة صورة مقصوصة +Png+Psd", "type": "folder_id", "value": "1qXysii2stwWZtXPv0Dma6-rwbIlZfyYC"}, {"title": "5000+ Gradient Bundle تدريجات", "type": "folder_id", "value": "1ugowy2F8XDUuQuy5V2qsXXp_f1FYT2Nd"}, {"title": "5000+ handcrafted LUTs اضاءات ", "type": "folder_id", "value": "1oX82hrvGlwIN1lIff6O3WYv-QjnnpFid"}, {"title": "5000+ Infographics انفوجرافيك ", "type": "folder_id", "value": "1Z7GfgzPfN-gOamRGdJW36JBIBxz9QPnn"}, {"title": "5000+ Motion Graphics قوالب", "type": "folder_id", "value": "1l9qfVv-6RW1axQKUwctfqqKlY0dOqaVm"}, {"title": "Brushes مكتبة الفرش", "type": "folder_id", "value": "17NkxBQw1jjzNjoF0LG8HtHNvUbBSrXJ2"}, {"title": "(5000+) انتقالات بريمير برو premiere transitions", "type": "folder_id", "value": "1TmDNKPCJW5sSR_SNP1Ihl7irryduyfh_"}, {"title": "(5000+) مكتبة قوالب الانستغرام", "type": "folder_id", "value": "1nUCGB8NcMInSn1FjZgfmwsEKWJCBoTI2"}, {"title": "6000+ Shapes Photoshop اشكال فوتوشوب ", "type": "folder_id", "value": "16Q5lb-J6UXPJ3aUiP18ES3nApKXnX1Iv"}, {"title": "(6500) قوالب الكوريل درو", "type": "folder_id", "value": "1z3-T3jIbOBYGg6Hds1KB4fwSsKIV0RQ7"}, {"title": "(7000+) Brushes-فرش الفوتوشوب", "type": "folder_id", "value": "1m5fH-56TbnO8JVlVPL0Tq2TBDCVYrOam"}, {"title": "(7000+) - social meda سوشيال ميديا بوست", "type": "folder_id", "value": "102JJVa_n2jBhGx979EkGJHWdi75Alp8r"}, {"title": "7100 presets for lightroom", "type": "folder_id", "value": "1V7pzu7VMi-Ls83qHIhIezNMEtN9K9VWs"}, {"title": "8000+ Lightroom Presets اضاءات لايتروم ", "type": "folder_id", "value": "1SI-qSX7XxJ4YMsOn45gRuz1HuniM7c_S"}, {"title": "(8000+) الاشكال Shapes", "type": "folder_id", "value": "1nWSsyCtJ-VmyE0WNn51bnsPULT6K9Smd"}, {"title": "10000++Cinematic+Photo+Overlays اوفرلاي", "type": "folder_id", "value": "1jUr8YTbAlMGbOvzCc4CSG_bdKuaE0rj1"}, {"title": "10000+ Icons ايقونات", "type": "folder_id", "value": "14w7mQAc0K22eeYQ7HmvW4kezDY05Ng1n"}, {"title": "10000 Mockups Vip+هويات شركات", "type": "folder_id", "value": "17GnzihN4CujLE4p_7bHwqbMkJbs1cqzG"}, {"title": "(10000+) ايقونات icon", "type": "folder_id", "value": "1TfK37zc0D5s39R-265dyzez3JJYJqU1y"}, {"title": "11700+ Vectors ملفات فيكتور【AI+EPS+tif+jpg+svg+png+psd+cdr】", "type": "folder_id", "value": "1I7A1SG2AoVb8o4xc755LcNtZcklBkcyd"}, {"title": "11900+ Backgrounds خلفيات - ملامس - تدريجيات", "type": "folder_id", "value": "1KvuUDA7CQ1bbmt6Z0bI8N57hZZ1bUhLU"}, {"title": "15000+ PhotoshopActions【atn+xmp+cube】 مكتبة الأكشنات", "type": "folder_id", "value": "16yOPyfuluHWwCAt8ro_HVkFyYiWg9bUZ"}, {"title": "15000 Photoshop Actions مكتبات اكشنات اخرى", "type": "folder_id", "value": "1RFlnoLRP4WE0Ao47Amgk5TEPQ8Q2YIBO"}, {"title": "18000 SVG فيكتور", "type": "folder_id", "value": "168K0YBa7wjKjQ3-xNkmUHjyBGAuO2ffz"}, {"title": "20000+ مكتبة السوشيال ميديا والبوسترات", "type": "folder_id", "value": "18IKaO2vIz1tkSYU20YVo_0iW9xuO0cZb"}, {"title": "Fonts premium خطوط", "type": "folder_id", "value": "1BEmLzDMorL_X-L9-3li0oS3_eXUR7dpM"}, {"title": "25000 PS Plugin Collection بلاجنزفوتوشوب", "type": "folder_id", "value": "1mEawrOJWNqJzONsamHt2SGexUHXnFDzB"}, {"title": "أكثر من 35000 ملحقات لايت رووم", "type": "folder_id", "value": "18IY2bfiSdCt9G4qns2wQK9jMardAQxOA"}, {"title": "100000 PhotoBG صورة وخلفية", "type": "folder_id", "value": "15jq-40v-Zln6iAXybZcIsbAvQB-Gy9WC"}, {"title": "قوالب سوشيال ميديا احترافية", "type": "folder_id", "value": "1DwQ-6tSboSRzJD1VOmzhwKk-cDUETiLi"}, {"title": "كروت شخصية", "type": "folder_id", "value": "13ndvSmzvpSFXobjgXMHxIM_JZ8yMO02t"}, {"title": "PNG صور", "type": "folder_id", "value": "1WJpiMTG5ksdNA9LIYdShYKP5c5_Pg8Bu"}, {"title": "font خطوط", "type": "folder_id", "value": "14-klRCK0GixmsTSBwfFAjNXwWcuDeVe0"}, {"title": "id كروت", "type": "folder_id", "value": "1kmc3m5DE4xGKbn9LEKKGRpuzg7KAxltZ"}, {"title": "اغلفه الكتب والملازم ", "type": "folder_id", "value": "1dUZWRNnnBD4sPt5ffHRTrsyor4RBAHSn"}, {"title": "البوسترات", "type": "folder_id", "value": "1LL4I_6P66TLZZpppnWsnipAqdpSUXqWa"}, {"title": "الرول اب", "type": "folder_id", "value": "14XGPjiG6XaESYrKH7VIdtBrMskAYo1bD"}, {"title": "ايصالات وفواتير", "type": "folder_id", "value": "11HSV-eh7zPIPumY0If-1bMxt6EcgY3dA"}, {"title": "بروشورات", "type": "folder_id", "value": "15HhMw7Em4L3lrXUM1OUpAPsmRJQ-3Vro"}, {"title": "بطاقات دعوة للاطفال", "type": "folder_id", "value": "1o-9-GEMjVIDZlAKrVxqmL2110IDWEzU4"}, {"title": "بطاقات عضوية", "type": "folder_id", "value": "1Cty33iRQJNCRZOj798LJwGcGTYq1jWPy"}, {"title": "بنرات طولية", "type": "folder_id", "value": "1AUgJihK44YQpNVFjTd4-_RJCzLYjx2Gy"}, {"title": "تصاميم ابيض واسود وطباعة ورقيات اكياس", "type": "folder_id", "value": "13e4A8f3hK0WV_vDZF9VLeKYksTae2QGa"}, {"title": "تصاميم تابلوهات مجمعة", "type": "folder_id", "value": "1o0nA6PiD1GF1EkoQ1goDgEz8PyErOaWa"}, {"title": "تصميمات اسلاميه واعمال خيرية", "type": "folder_id", "value": "1VRJuESxo9r8Kq2Spv-Ewwb5P4EIUMLUU"}, {"title": "تصميمات الطباعة على المجات", "type": "folder_id", "value": "1TD0TePlm6CdLHsmHQo3SoEFiLltHE1Wm"}, {"title": "تصميمات العناية بالبشرة", "type": "folder_id", "value": "1oatJlLY__-LTS0Cs75TotOK-eyne_MrI"}, {"title": "تصميمات فولدرات", "type": "folder_id", "value": "183DCzchBQewDolNEIbkePE7FbgMxMkAy"}, {"title": "فريم - frame", "type": "folder_id", "value": "1d6JANwZHolenflsxHS0qGdxggBNkvNCM"}, {"title": "فلايرات", "type": "folder_id", "value": "1yFjggltsfg5ai01uwM9u5Gr3LMhR_bSM"}, {"title": "قسم خاص بالانتخابات", "type": "folder_id", "value": "1wwjBeLImM0jAK7WNFo8G4kxzPWpu_KxJ"}, {"title": "مجلة السوبر ماركت", "type": "folder_id", "value": "1nLHyIIae0-ImX-suMmZgAOe63Fvwv-83"}, {"title": "مطبعة دعايا واعلان", "type": "folder_id", "value": "1haNkg-DRPl9oFgxHpS3ZzJUPr08dBhZe"}, {"title": "مكتبة الخطوط العربية", "type": "folder_id", "value": "1qGxjeGpDdYl81R_jCo1xIT7B3J-LG8ym"}, {"title": "ملف تصميمات مناديل كتب الكتاب", "type": "folder_id", "value": "1wqvQXeIo3WFORrVIPVqRdnLcTAdaaeuI"}, {"title": "منيوهات مطاعم ومقاهي", "type": "folder_id", "value": "1fND6BkqjOK38cyXvMYNYsdUjTXYgux0i"}, {"title": "مهرجنات وكروت افراح ", "type": "folder_id", "value": "1PQPtZ-d3MucjgSXdkUcHSNxiAZncdHL_"}, {"title": "ورقيات", "type": "folder_id", "value": "1YJrsDP12g1NTZb1slRlZcfnljv9TuBZa"}, {"title": "وسائل تعليمية", "type": "folder_id", "value": "15I0nFYKbuOX5GxKNUG18YCwZL0S4XL7b"}, {"title": "خطوط ", "type": "folder_id", "value": "1320ic-3pkEy4YndD5BZEFzlwRO87WXsd"}, {"title": "خطوط", "type": "folder_id", "value": "12zkinowYi10MBXOa-O4d4VjgU4DVYgtS"}, {"title": "خطوط مكتبة الجرافيك ", "type": "folder_id", "value": "12ykaMcF5_QJ5jxJ8oz3Fv_b6yQXhTrZb"}, {"title": "يفط بنر طولية ", "type": "folder_id", "value": "1o8qIqU5BdIvp77xKzuIXk4JsFnR3SgXb"}, {"title": "استديو", "type": "folder_id", "value": "1voFgbGSZSsoOQNNV8OV0yOzbFLGkHjPQ"}, {"title": "اعلانات", "type": "folder_id", "value": "1h9fUJcPWEXl9dX5AofctCVdeva4QQcJX"}, {"title": "تصميمات عموديه", "type": "folder_id", "value": "1p5Bxm2bQ_1sYYY8m4_BZbKlCkvLCJ0JG"}, {"title": "تصميمات متنوعه", "type": "folder_id", "value": "1Fw3-paw1naK1TbtuvBOqpPX4IubFPWQd"}, {"title": "حلويات", "type": "folder_id", "value": "1kyTxzgaNo0DoFXFyy7Grhhf7oAQA_Nsu"}, {"title": "عصائر", "type": "folder_id", "value": "1VGqxEqAGq4VtMsxkoRCU-As-QlN4-ftc"}, {"title": "عقارات", "type": "folder_id", "value": "1ygL89fLO46B0jzSesgtxaj-JHeAK4lTR"}, {"title": "عيادات ومستشفيات", "type": "folder_id", "value": "1lI30q-2b23ws_UZY5ukyTNxanvcFbrt5"}, {"title": "فلاتير مياة", "type": "folder_id", "value": "15067IsPWte-_LF2SHVuH3CB9fKFeLFST"}, {"title": "فنيل شفاف مط", "type": "folder_id", "value": "1se13bTpNFk1ZDgKVa8EEKiLlGtNDimhO"}, {"title": "قائمة اسعار", "type": "folder_id", "value": "18OCJ2I9S1HSFDeJJrB5GGuE3LFkBbPBH"}, {"title": "قاعة أفراح", "type": "folder_id", "value": "1bnq9_tPGcC1X6XUqwKXPIjhEeL4tWNkL"}, {"title": "كاوتشات واحذية", "type": "folder_id", "value": "11_Fl3Y-08k9TlEshAS3iWg7kbpNAKvr3"}, {"title": "محاماة", "type": "folder_id", "value": "1j2zQAmkn4qYRd-sBDOQQw36fNmBkqnWB"}, {"title": "محمول", "type": "folder_id", "value": "1YnY6hw5zDTswRH6Np_rv3mymQqFFkBWy"}, {"title": "مخبوزات", "type": "folder_id", "value": "1dn-RC5fHTIc6AQu92ZHAmcgv6hmXLZGN"}, {"title": "مدارس", "type": "folder_id", "value": "1kJxDsT09BQ2NYMPAI8KPs7SwKrWvlrQ7"}, {"title": "مراكز شباب", "type": "folder_id", "value": "1d3pO3KbIZkJJxBaPgYQHpzfQdjBniFSB"}, {"title": "للتصميم صور مختلفه", "type": "folder_id", "value": "1Ac0GZNTSv2TfgyKFwgMQOzHVAjaPsyif"}, {"title": "لوجو", "type": "folder_id", "value": "1IRkJ-WIhR3-tuYKLUaxxvSms4B3eqxQk"}, {"title": "ملفات فري بيك", "type": "folder_id", "value": "17vumju30Oqmm9OPT_dkORIkYLQcAV6kl"}, {"title": "موشن شخصيات", "type": "folder_id", "value": "1PdjTxNPAxJze-XRQLkOZY9nm-Pcp8lQF"}, {"title": "ROLL UP رول اب", "type": "folder_id", "value": "1C0Ux7P4tsAtjRu7kfDmKxySYSYuuJQ93"}, {"title": "افترافكت", "type": "folder_id", "value": "1sJL1ONAD9br_hUMFzTisiLLH3wc9nInA"}, {"title": "انستجرام", "type": "folder_id", "value": "1JrsRJXMf7VKDulcYunxBiNdGznmKNFNN"}, {"title": "انفوجرافيك", "type": "folder_id", "value": "1obpcsrdmvOWXDTY9nuHyHRVuk4vo7gG8"}, {"title": "برايمير", "type": "folder_id", "value": "1U9jjHxb8-6QdyWF3VCP0Rfbc0QVwFno5"}, {"title": "تابلوهات", "type": "folder_id", "value": "19aGM6qwNb2Ki5LKPFGsbdPuOJFIlCbZW"}, {"title": "تصميمات مواقع", "type": "folder_id", "value": "1COSSwN_nA6Wy83jrM3Y074-g2hd4UQvx"}, {"title": "ديكور", "type": "folder_id", "value": "1LhvlaJwg8Q8MDgAGSAAJBelicJcY7K3r"}, {"title": "سيشن +استديو مهم جدا", "type": "folder_id", "value": "1Nev07heNVqQjS-EC20ozmTdJ2NZXfBWD"}, {"title": "شهادات", "type": "folder_id", "value": "16aQ8NaB9bcOugYKnyn8AdmgJnnI4ZXxi"}, {"title": "كروت دعوه", "type": "folder_id", "value": "1XP_FcCFv-LW3563OtAppRhD1wEUTI-7F"}, {"title": "كورل", "type": "folder_id", "value": "17VxgQ1erYt_IHa2sk58UNFymj0TjE0dK"}, {"title": "اغلفة مجلدات", "type": "folder_id", "value": "1DjEqoMLUA9u_3ZmyrSBwn3XPd3mNVDlV"}, {"title": "الفوتوشوب وطريقة استخدام المكتبة ", "type": "folder_id", "value": "1ZSzGxEyXJFQvzHt952T9Wnhr2i-l6-yy"}, {"title": "برنامج تعديل ال pdf", "type": "folder_id", "value": "1X0Fni54DM8nWSsfk-n28UABGV9_81M06"}, {"title": "كورس تعليم الوايت بورد عربي السبورة البيضاء+ البرنامج", "type": "folder_id", "value": "1AurJOy9SqPT-OTCM_-wZJ1WqfAvn2QOM"}, {"title": "مكتبة الوورد والتصميمات بخلفية شفافة", "type": "folder_id", "value": "1H_M5aRLRGpBq2M9vUH5eKqxTNtImPRZl"}, {"title": "ملفات الخطوط", "type": "folder_id", "value": "1bCNUTUxX67q5AjoCp1U4Rk2hc08VbIAP"}, {"title": "موك اب", "type": "folder_id", "value": "1yeUS6UQFgpd-xS8IT5vuZhtXkZg6lSq0"}, {"title": "logo package لوجو", "type": "folder_id", "value": "14YB2e4DtHXKMXTHOSMb7i1XBsgNgJbo_"}, {"title": "التجميعة الثانية من شترستوك", "type": "folder_id", "value": "15DeS0b6_cMKRXAExXNy2YEaWzwPrwUoZ"}, {"title": "قسم تصميمات المدرسين ومذكرات واغلفة وشهادات", "type": "folder_id", "value": "1TRtiXG-15bHPSwrSQ7kadeNW6Dlq7-Be"}, {"title": "png صور", "type": "folder_id", "value": "1UEcL2Dwz50f_Q6JuNRqd_nHiWfjZeaid"}, {"title": "خلفيات رمضان واسلامية", "type": "folder_id", "value": "1L86JW4_xeBBilTbgttA09uknLxczP3w7"}, {"title": "خلفيات وصور جودة عالية", "type": "folder_id", "value": "1_gM4Eal4k2dzHQCkSqzqxkewwscAgWuO"}, {"title": "صور HD من شتر ستوك", "type": "folder_id", "value": "1_95lbXZfnIslEBOT6Rvu9OIad09_lPff"}, {"title": "مكتبة صور شترستوك", "type": "folder_id", "value": "18t3VmZ5N1mUj-RGBAvvBqQrsg3AmDhiy"}, {"title": "gradiant خلفيات", "type": "folder_id", "value": "1tBArGaacEnRmTZGPkCzI-iSzU3qpEYxw"}, {"title": "مكتبة صور متنوعة كبيرة جدا والجديد شديد", "type": "folder_id", "value": "1PEAK_9RiD2Pvy-e4hJdHPHOySRnD5Dk-"}, {"title": "فواتير_فواتير PSD", "type": "folder_id", "value": "10R0_GHWj2hUvAs53J_nmRq8D60Su_SBe"}, {"title": "AI + Midjourney صور ذكاء اصطناعي ", "type": "folder_id", "value": "10SYRhD8EdNQaiY75Loqdn401jDAQPpIA"}, {"title": "BRANDING MUCKUP موكاب", "type": "folder_id", "value": "16RPO3j-JnUAuGmJBfeUuq4A6DBrob8ta"}, {"title": "Collections صور", "type": "folder_id", "value": "1tnnJLHpq2nL1ZDqXzdh70qsd4twQAyLi"}, {"title": "CV Resume سي في", "type": "folder_id", "value": "1fIhW4vPiC1oOb-kPNGehCkfNg0VILvwq"}, {"title": "CV TAMP سي في", "type": "folder_id", "value": "1vwI-zx0Wu1cw_K3Ng0iRwMdsrF-HaTyt"}, {"title": "DVD Label Cover Template PSD اغلفة سيديهات", "type": "folder_id", "value": "1j0WcCC35icYdBXLwDNAMSZ8aqVTyKY3G"}, {"title": "facebook covers اغلفة فيسبوك ", "type": "folder_id", "value": "1GYoKOF8C28VgKToKQ2-FomS2qKXJt1Fs"}, {"title": "Flyer and Brochure فلاير وبروشور", "type": "folder_id", "value": "11DvXaBqzVwNRH0sMqo0K0xhanzylfnm6"}, {"title": "Font Style for T-shirts تيشيرت طباعة", "type": "folder_id", "value": "1x8k_P_aGiLFVEqoHupXmOxoHiUmK8O5F"}, {"title": "Fonts خطوط", "type": "folder_id", "value": "1-7G5JoqV7ldD0tUc_PPOm8cLRkURKBt5"}, {"title": "FONTS BUNDLE خطوط ", "type": "folder_id", "value": "1-zQznrs08xib7NJY9Acz92cM-ITHG_Ju"}, {"title": "FREE STOCK IMAGES صور", "type": "folder_id", "value": "1AKYo8O55lgOmEdMgCkvXjMNQejWIMT19"}, {"title": "ID Card كروت عضوية", "type": "folder_id", "value": "1wH7kjt-evTyM_yg6Lr1yR0O_t8iyx3Zm"}, {"title": "Infographs انفوجرافيك ", "type": "folder_id", "value": "1OA2S67RjHcknV-dj3WhfdPc3x8R5Nhpj"}, {"title": "Letterhead Template ليتر هيد", "type": "folder_id", "value": "1yZz2dxtz2bQy1lc6re8D299Yjxwb-sw_"}, {"title": "Lightroom Presets لايتروم بريست", "type": "folder_id", "value": "1Sb3ALoYzJK4y8hksVwYkuqyesY5SNgCi"}, {"title": "Logo Templates لوجو", "type": "folder_id", "value": "1rY1cSETqmjmbcHsRupC7t4Z1oEKUAHDN"}, {"title": "Manpulation صور", "type": "folder_id", "value": "15O3xINEAoxUVFu1jz8S4oqhpEHdU9pVp"}, {"title": "mockuplux موكاب", "type": "folder_id", "value": "1hWqQ_J-blcfXC-4aJ4HEbKx6x-ndbi_c"}, {"title": "overlay اوفلاي", "type": "folder_id", "value": "1lhcZZUK2Fzd1BZ9Fq61OXgPvKlm9c1cm"}, {"title": "Photoshop and Illustrator Plugins ملحقات", "type": "folder_id", "value": "14P5qaE1QhNZHwjMSimouQVS8HsheOSSB"}, {"title": "PowerPoint Infographics انفوجرافيك ", "type": "folder_id", "value": "1_ngAHcJgQmoyzw4O2qFhUzwFMoeDi6J1"}, {"title": "Photoshop Brushes فرش ", "type": "folder_id", "value": "1gT_bFNggYkgbnv4IGHJkQcck4DYtt9a_"}, {"title": "psd متنوع", "type": "folder_id", "value": "1sQzQcydqUVyFibjGv5yiHjQEmzEEIa3C"}, {"title": "roll up رول اب", "type": "folder_id", "value": "1hkWB3QPWLmin4FCbkilV9xdlqz-x2E83"}, {"title": "shopify ثيمات مواقع", "type": "folder_id", "value": "1Vcu2bogh0Dc7aqZdVzaCiTZjdwqKu4Kh"}, {"title": "Social arabic سوشيال عربي", "type": "folder_id", "value": "1IeENp6U50sB_MztzBeA18wybBhQV1KpT"}, {"title": "Soical Media Templates سوشيال ", "type": "folder_id", "value": "1swPppjDXk4oFl1xBfcJyAnE0hCPgP6UM"}, {"title": "SOUND EFFECTS مؤثرات صوتية ", "type": "folder_id", "value": "1a8OyFQR9Mke48DeVjvhi3YAHuzeu2e-K"}, {"title": "SVG فيكتور", "type": "folder_id", "value": "1HXkIL4kMr2H5xw4KB9m5upe1NAjvtigD"}, {"title": "Textures ملامس", "type": "folder_id", "value": "1OBwKzOwnyI5w-gRm6NtCamAkGKrnmWAY"}, {"title": "The Mockups موكاب", "type": "folder_id", "value": "1_FCs9ow-DLi0eyAEo0dW8AaKMpu4bsdp"}, {"title": "Trifold Brochure بروشور", "type": "folder_id", "value": "1AmOj4hTDNsvo7KwTGQmSg3Md3BVrf8up"}, {"title": "Video Editing Bundle مشاريع تعديل الفيديو ", "type": "folder_id", "value": "1Iw9grIVZegfdq2JZiKHAKXdIGeM3d72d"}, {"title": "احدث مكتبةshutter stock", "type": "folder_id", "value": "1ooNXRhUDFKl7tBXkN2igpBJJEA4USrKs"}, {"title": "مكتبة اضافات الافترافيكت موشن after effects motion", "type": "folder_id", "value": "1fLRtX88KA2rMJcbmyuOJhZ9EWL_Wu8kW"}, {"title": "مكتبة اضافات الفوتوشوب فرش تدريجات اكشن باترن ", "type": "folder_id", "value": "13CMgRomOnRo4u8yPDx8hFlFYoZICcK9q"}, {"title": "شهادات تقديرورد[Docx+doc+jpg]word", "type": "folder_id", "value": "1ogBBjqoqqql-ecrYz6eyoLMfsLinDg1s"}, {"title": "FontS مكتبة الخطوط ", "type": "folder_id", "value": "1KSBxM8Fac-_kbGOH6Lkf56Pn2uJPZ1LN"}, {"title": "A large collection of brushes مكتبة فرش", "type": "folder_id", "value": "1jP1KcjY95j6_ib-mqqYZh-NauQ7Ejws5"}, {"title": "Font مكتبات الخطوط", "type": "folder_id", "value": "1X8C7uXsnN8QezyJp0XV7zSya7dkyfj0L"}, {"title": "ملفات powerpoint مدفوعة عروض تقديمية", "type": "folder_id", "value": "1Jr_4kV9xlXYvpC9L8a6plzBkW1Ry5a-S"}, {"title": "موشن جرافيك تامبليت after effects", "type": "folder_id", "value": "1xuNbtiM-_JBT9MPDfG06LoFgUQmKGpqp"}, {"title": "ID CARDS كروت عضوية كورل CDR", "type": "folder_id", "value": "1j7cObdnP0yWocVOBZZmaZprWQX0LjpFQ"}, {"title": "(مكتبة الاكشن)-Photoshop Actions Atn", "type": "folder_id", "value": "1a7YPVOW0QWHbPkpVMyhnTozkGa3CbMlG"}, {"title": "(مكتبة الاشكال)-Shapes ai-eps-svg-png", "type": "folder_id", "value": "1cTtZ6W7gwngPlYUZiR5L9r9s_OmpgzPP"}, {"title": "(قوالب نوت بوك)-Notebook-eps", "type": "folder_id", "value": "1fg8S9KmWR0-bclHEaEpRt4Fp8hUTrpmO"}, {"title": "(كتب واغلفه)-Book InDesign ", "type": "folder_id", "value": "1LjFsIqtvgJ7XzJlxVSS7g2bPvUcFH1xw"}, {"title": "Food menu منيو طعام ", "type": "folder_id", "value": "1I8Qc2JchBA0xJ6_noWuS1EH8b3dnMrDN"}, {"title": "سير الذاتية والبورتفوليو [PPT+PSD+Docx]", "type": "folder_id", "value": "1xVSF7VT6UYORTgTYnDq3hFbxGDm-yFFc"}, {"title": "BUSNISS CARDS كروت شخصية مضغوط", "type": "folder_id", "value": "1nng7NB8m14q2EpKz43-NqERIphqWcIzV"}, {"title": "YouTube صور مصغرة يوتيوب", "type": "folder_id", "value": "1jC0IMt02kYMxcPOul_VdE9d2gxm3UmWd"}, {"title": "تجميعة lovepick", "type": "folder_id", "value": "1PlzpaRLy-JB3bKr-fuYWNf4oeLlpmd0i"}, {"title": "تابلوهات مجمعة لاعمال السبلميشن", "type": "folder_id", "value": "1FllTPlWMdAye65yhYF37UYAfDc3Cz2pu"}, {"title": "تجميعة i stock و shutter", "type": "folder_id", "value": "1VO7uZFCqYsGPKIhJD39pN6fUD_hxaVoq"}, {"title": "بنرات عربي متنوعة جديدة", "type": "folder_id", "value": "1yK51MXzlwzRbZ2eXwKREQPzpTBG5Q_8W"}, {"title": "برندات شركات", "type": "folder_id", "value": "1pmz5-Vhp1wEcxCPsIa2jH3THTeLh4ra3"}, {"title": "بوسترات احترافية", "type": "folder_id", "value": "1bWZWxeq0lnBIjHKWNwnPC53g1ywl4bCU"}, {"title": "psd قسم اغلفة المدرسين وملحقاتها", "type": "folder_id", "value": "1aBgeCiz8qq-eoME0beiArPFjgL79Tuoq"}, {"title": "اكثر من الف تصميم تيشيرت", "type": "folder_id", "value": "11EGWfszTDgAYjzhmqi2nPKRL7wsG6Yug"}, {"title": "اكلات مصرية متنوعة", "type": "folder_id", "value": "19u6WB1Mt6OQE053U4eLmHxqMah--zZYW"}, {"title": "shapes اضافات الفوتو والاليستريتور", "type": "folder_id", "value": "1MMZ20kiiJ_5fveymInv_fYpRw0wrEujy"}, {"title": "التجميعة المحدثة الجديدة شترستوك وفري بيك وانفاتو", "type": "folder_id", "value": "1BNZe_bTki9-nVsixzegpiTdZjEm9-sfA"}, {"title": "استايلات النصوص", "type": "folder_id", "value": "1Qg1rAwqr96bgeogumxPh8wrbafnJHaG5"}, {"title": "تصاميم بوسترات عربي", "type": "folder_id", "value": "1eGQ_kAz2A7iTyuy-HewU0pBkjopGUQyB"}, {"title": "تصاميم ابيض واسود", "type": "folder_id", "value": "1-v3oX0dIXdDc7tRlO7bDESGV_yBDKBlh"}, {"title": "تصاميم اختام", "type": "folder_id", "value": "1b0gMHbqEnea8jossQz3M4g4YfCW5yPQg"}, {"title": "تصاميم العيد", "type": "folder_id", "value": "1wUuQ5o7bmjDOq2AN4PPaIBZq92sBQT4x"}, {"title": "تصاميم انتخابات", "type": "folder_id", "value": "1OZAmyR_2jHIZY2ykaVEQsfBBB6Vo5PV2"}, {"title": "تصاميم اسلامية", "type": "folder_id", "value": "1CpsfQFQM9FF2WajX7Cmtastd5u7fCHWD"}, {"title": "تصاميم اخرى ", "type": "folder_id", "value": "16e8N9SL6YdiSL9nAhJy1MgfAjs6ybk7y"}, {"title": "تصاميم رمضان", "type": "folder_id", "value": "17IoK-JYx8AtCLpX0J_uqhn0cEVziJH-F"}, {"title": "تصميم امساكية رمضان", "type": "folder_id", "value": "1Xp7d2mCvi4tFeZiP6vyuXGP9ApLk5NvZ"}, {"title": "سوشيال ميديا تاني", "type": "folder_id", "value": "161aud0IYwRfxMfbzlXDSKZ0pD10U1ml-"}, {"title": "تصاميم لوجوهات", "type": "folder_id", "value": "1mJv2-hqP7bQtnjctV4-gNA98dcry1udM"}, {"title": "تصاميم ورق حائط PSD", "type": "folder_id", "value": "10DaA01eZDY80hU_t1EoL862N5yB6awaS"}, {"title": "تصاميم نتائج العام", "type": "folder_id", "value": "19t7U2Nmn3JWX85sBDL4uNXfUx0SEgYOj"}, {"title": "سوشيال العيد واطفال", "type": "folder_id", "value": "142NbIp3ORp0A1pIRF6tV7OvIcmve5wda"}, {"title": "جريدينت", "type": "folder_id", "value": "1sksNHQyjhVY_-ZrKSPyqz2T9zVqjmI7E"}, {"title": "موك كتب واوراق ودفاتر", "type": "folder_id", "value": "1uhtICNSw_w0E32wsIQXygr7_G5Zt8hOH"}, {"title": "برشورات وفلايرز اخرى", "type": "folder_id", "value": "1usdntA72013_znlhT3Z3mjR4-zVfRthy"}, {"title": "برشورات عربي", "type": "folder_id", "value": "1w6sRgydGuQMy_YW_8Xz5jSqmZC04Hw-r"}, {"title": "اوراق مراسلة عربي", "type": "folder_id", "value": "1vJfds2m79V0KG5A0C4HWOp0-35KovfXL"}, {"title": "روشتات", "type": "folder_id", "value": "1is8nNLhehrG6Q_acsxBndDaSGG1IxuNu"}, {"title": "شهادات وفريمات", "type": "folder_id", "value": "1RODzVpCcTy9jn5XSrgW-YRYlcOEdz9MC"}, {"title": "بنرات عربي بالطول", "type": "folder_id", "value": "12xxrXYeEWms6ecb0Dq87PuhCMe0Q2PVm"}, {"title": "دروع وشهادات", "type": "folder_id", "value": "1iEoEaLoPqMsMv8KjOUIr3HAFhMU8hpJ6"}, {"title": "رول اب عربي", "type": "folder_id", "value": "1xgSNVyRWx0EdZlFzl1dGbVJEUyMFnrGh"}, {"title": "طباعة التيشيرت والماج وعيد الام ", "type": "folder_id", "value": "1jd97HAYpR8SnlakmefaXkMjWSj2N9hcj"}, {"title": "ليتر واظرف شركات", "type": "folder_id", "value": "1qFCoZS8vF0LpioETHj8vxQ004ze9Okn5"}, {"title": "ليتر هيد شركات", "type": "folder_id", "value": "198uL0t0A8KHatKch6suQoagua306TRH7"}, {"title": "فلايرز عربي ابيض واسود", "type": "folder_id", "value": "1POvMiFQ8ar8Q8FNCCdABBuYIWSglRSaq"}, {"title": "فلايرز عربي احترافية", "type": "folder_id", "value": "1wv7O15WyFmX9YhakwOF2EOMBKqCLuPNj"}, {"title": "رسومات جرافيتي ", "type": "folder_id", "value": "1Df_fu7mzKTiaENYXqB9Dq9AoWVXdC8Rn"}, {"title": "CGTextures جميع صور موقع", "type": "folder_id", "value": "1WfJ2S-KsHPe2azpEiuASNT3SnvBJUX1j"}, {"title": "تجميعات موقع ShutterStock محدثة بإستمرار", "type": "folder_id", "value": "1_EDRjDsLMrdnQpN_JXbBgANSZoqLaGCa"}, {"title": "قوالب سوشيال ميديا مضغوطة", "type": "folder_id", "value": "1tJPx_m3EphPQgQYQ6yavjc3_wEzDBJy-"}, {"title": "حقيبة عيد الأضحي المبارك", "type": "folder_id", "value": "1UuMPomrxQuE6dxDWJRP03UmctDLJIJjX"}, {"title": "Photobash Bundles صور موقع كامل ومحدث", "type": "folder_id", "value": "14rYQL--5s8glQglTDNq_XQ4zUmDnm1HC"}, {"title": "Texture Bundle ملامس وخامات", "type": "folder_id", "value": "1vMuJW4CqOSP3RSjd6exAFGsxmuLpSMHF"}, {"title": "كل مايخص اللاند سكيب [PSD] صور مقصوصة", "type": "folder_id", "value": "18Z9M0_q-yAylW5fFmswY5YoMNnf0dcRJ"}, {"title": "مكتبة الصور المقصوصة عالية الجودة [Basic]", "type": "folder_id", "value": "1VeiLrx9yJgmqtmlPjJ-wCc1FeraoO6p1"}, {"title": "الحقيبة الرمضانية الشاملة لملحقات التصميم كل ما يحتاجه المصمم يجده هنا", "type": "folder_id", "value": "1_LkZucJjjbkqWZ_b1Jy1szWetHH065Qx"}, {"title": "الاف الانتقالات Transitions أفترايفيكت + البريمير", "type": "folder_id", "value": "1GAuGkeHxxshxL6ZtWG7t7GsffT9hMXbL"}, {"title": "أكثر من ألف مشروع AfterEffects بالمعاينة فيديو ", "type": "folder_id", "value": "19HHZXWr1hOeDBP09anGbcd0nyGsnRF3i"}, {"title": "مؤثرات صوتية منظمة VFX Sounds Library ", "type": "folder_id", "value": "1950BuHT6G-_tz7s3Hu_J60JY3I8BFKPT"}, {"title": "مواد فيديو تصلح للخدع سينمائية VFx", "type": "folder_id", "value": "19aQRvbsPcL1z0aCozfMqmHeZiEylg0UU"}, {"title": "Audiojungle Collection المجموعة الكاملة لهندسة الصوت والموسيقي", "type": "folder_id", "value": "12hgAvYQflPsGluIN0bQs_H31c4K8Pr9x"}, {"title": "تأثيرات متنوعة للبريمير والأفترايفيكت Aftereffects Premiere Pro Transitions", "type": "folder_id", "value": "1M2uVaCRyrgnbS2PlcBjL8jmA_XOsZSjh"}, {"title": "Creative Social Media Album", "type": "folder_id", "value": "1P4xWnw8mqiv9H1xrsNxq2fvLlKDj0Ays"}, {"title": "(خطوط مكتبة التصميم) تجميعة", "type": "folder_id", "value": "1-0XWnQ2iAb-5hS3lxwIMnUImpjYDpAxE"}, {"title": "قوالب سيرة ذاتية CV ", "type": "folder_id", "value": "1Wqr2yWRnUEHsAzhxKHdwr9LbXNlB_b28"}, {"title": "بوستات الاكلات والمطاعم PSD , EPS", "type": "folder_id", "value": "18q5JR-fOD1NnYiMBQrF_bkeFgRNE-MTX"}, {"title": "ملف حزمة اصوات و موسيقى للاستخدام بالمونتاج.", "type": "folder_id", "value": "1YxwXyIn0phopFsTQslJk1itLxnXDAW1Z"}, {"title": "texture - تكسرات - اضافات", "type": "folder_id", "value": "1z399xP0DHa2uz9OsjRttR8PW_CDDyeAM"}, {"title": "تصميمات البث المباشر-Twitch overlay template", "type": "folder_id", "value": "1MNafI0Z6oN9ehXK_NbUfy912atz394Mc"}, {"title": "Luts and Presets -(ملفات الاضاءة)", "type": "folder_id", "value": "1cTexpifHls4FRAoYxqXGeeAoRObpavlM"}, {"title": "(موك اب)-Mock Up", "type": "folder_id", "value": "1J35fvMhy8RoTOny6fK-BNBsprwMIjJ0D"}, {"title": "(قسم فيسبوك كافر)-Facebook Cover", "type": "folder_id", "value": "1TLGB4Ds-xbCmMGbEEqqVORoVEYvOSIUR"}, {"title": "(قسم المنيو)-Menu", "type": "folder_id", "value": "14sEwJcG5uQbTc2jPU83ktv7I8C3qcW6L"}, {"title": "(قسم تاثيرات الصور )-Photo Effect", "type": "folder_id", "value": "1_mj4Qh8zWA_4Jpa6r6sniTu-gmq9R2Kr"}, {"title": "(كروت شخصية)-Business Card", "type": "folder_id", "value": "1vgFzMGfdiF3LHxOHYqWu2N8aZ_bl9tGT"}, {"title": "(قسم تدرج الالوان)-Gradients", "type": "folder_id", "value": "1IQ7eYaB2q7JyF6hHY1q9zPSlR61LuElC"}, {"title": "(قسم التيشيرتات)-T-shirt Designs", "type": "folder_id", "value": "1-ccmudAHMJErCsks5-PojmsnQQM7WoMT"}, {"title": "(قسم اللوجوهات)-LOGOS", "type": "folder_id", "value": "1o8OYpgPyj25o8WP85krxgictsoGKIDWw"}, {"title": "(صور مولدة بالذكاء الاصطناعي)-AI + Midjourney - Images", "type": "folder_id", "value": "1V5G6Q6_OTakQeR16GCjuRS8yerI_9xCc"}, {"title": "(خلفيات)-Background ", "type": "folder_id", "value": "1u4xI6-yT293QTALj9Qhz3IyF6QqmjHaY"}, {"title": "(قسم الايصالات والفواتير)-Invoice Template", "type": "folder_id", "value": "15yd7V9SJxiLu02AB3zoZqFcIvDd3Hb9c"}, {"title": "(قسم الانفوجرافيك)-INFOGRAPHICS", "type": "folder_id", "value": "1tNcSoWfxR8461am2kMWGeOtMkUKEd3w7"}, {"title": "(فرش)-Brushes", "type": "folder_id", "value": "1ehlaTeapL2gv8edLjfVeaf7L3_trQebF"}, {"title": "(رول اب)-Roll Up", "type": "folder_id", "value": "1gEqHrYqTO88T_HUrxPl8VVQdKera7iPe"}, {"title": "(صور شاتر ستوك)-Shutterstock Library", "type": "folder_id", "value": "1H27T4lzbFT-9ZNtjBMMOPpEtQER8HJPz"}, {"title": "(قسم التاثيرات الضوئية)-Light Effects", "type": "folder_id", "value": "1B1ql3liunWqs_GeX5Ikp3pkY9yeMt30r"}, {"title": "(شهادات)-Certificate ", "type": "folder_id", "value": "1fRyQop70oKp-rVZXo2HRemMgjxMyp6WN"}, {"title": "(قسم التغليف والعلب)-Packaging", "type": "folder_id", "value": "1zgf4QJZO7y6E-BkGYkThNBUPheGk8znP"}, {"title": "(خطوط احترافية)-Fonts", "type": "folder_id", "value": "12SMaZRXldhvCl6YMHvUfUTSAp5HYoBJa"}, {"title": "(تصاميم ورق الشركات )-Letterhead", "type": "folder_id", "value": "1RUS2boHkfXGOe3lnX05CssfynnVdKhEE"}, {"title": "(تصميمات السيرة الذاتيه)-CV and Resume", "type": "folder_id", "value": "1xiU8SLFGvpAUNr_e_d5b8IKfdFZLoTSS"}, {"title": "(تصميمات الروشتات)-Prescription", "type": "folder_id", "value": "12jwpcV1We1h4Eiv4Q2jRFm4MF4LEiXyx"}, {"title": "(تصميمات السوشيال ميديا)-Social Media Designs", "type": "folder_id", "value": "1nbv8OFsuqcNucwmzGYJJ25weJ11dyG2x"}, {"title": "(تصميمات اليوتيوب)-Youtube", "type": "folder_id", "value": "1VYQLP51mTiUYa71yi4mptJMzRKyHBqmW"}, {"title": "(تصميمات اطفال)-Kids Design ", "type": "folder_id", "value": "1AZn5GcaNt96sb4CZcNqVF2RE1m-FT9qn"}, {"title": "(تصميمات الجداول والخطط)-Schedule,Planner Templates", "type": "folder_id", "value": "19icLa19boHOrZbKVKDU60lUTzR7IsDjt"}, {"title": "(تصميمات السي دي)-CD", "type": "folder_id", "value": "1pX6k7QFlFBwV0C-oWJfdjseA12_B-PbF"}, {"title": "(تصميمات اغلفه السيارات)-CAR WRAP Designs", "type": "folder_id", "value": "173AIQZU58ihkWnCQdXh7q7JmxY5GqSe5"}, {"title": "(تصاميم اسلامية)-ISLAMIC", "type": "folder_id", "value": "1zby1F8mWUjCPbScRQlB4BP2DqvrxC2NY"}, {"title": "(بانر)-Banners", "type": "folder_id", "value": "1tfA1EREmmda0_RGTZOqltgxeOxIkMHUf"}, {"title": "تصميمات الكولاج-Collage Art", "type": "folder_id", "value": "19gJL8JHorbpd-d_prnSPeSpsEMLkBoB1"}, {"title": "(تصاميم انستجرام)-Instagram", "type": "folder_id", "value": "1xGdREOt9pQXsXDH6qPiyAV-2lgIY-T5a"}, {"title": "(التاثيرات النصية)-Text Effects ", "type": "folder_id", "value": "1AuTcBWMhiEUe09LMXAqJFaxJhh-O5psL"}, {"title": "(تصاميم طبية)-MEDICAL", "type": "folder_id", "value": "1OmmQdS-VXaz3Dm8q-Yw2P_I3S78dsV_G"}, {"title": "قسم المخطوطات", "type": "folder_id", "value": "1vNfziM8tc6Y0vyQuCywi_VpYZMflfhKC"}, {"title": "قسم بروفايل الشركات-Company Profile", "type": "folder_id", "value": "1qAmRfuYg7z82zlcrGWtX98FprGTwXTsK"}, {"title": "تصميمات المواقع", "type": "folder_id", "value": "141vrNhivwAvor32RIvXTPO1MVbs19G7M"}, {"title": "(بريستات لايت روم)-Lightroom presets", "type": "folder_id", "value": "1SWwhmISCBxwUKvFW6uARefyZsssN9LqZ"}, {"title": "مكتبة السير الذاتية والبورتفوليوBasic [PPT+PSD+Docx]", "type": "folder_id", "value": "18xdD6fAp3aqBdDkQQgmn_KAPuGuIszy7"}, {"title": "Youtube صور مصغرة", "type": "folder_id", "value": "1vLg7UfA550wck804Gpi7VD9JVNO9ISqo"}, {"title": "تصميم غلاف ورد قابل للتعديل [Doc+Docx]", "type": "folder_id", "value": "1YHPNAB3asa6nHZItUiDHZYadsDo8kXZ0"}, {"title": "عروض تقديمية [PPT+PPTX] [Basic]", "type": "folder_id", "value": "17h5XD4hAaZLDM38uzIUOFSOBu7odtpBF"}, {"title": "Food Menu قوائم طعام [jpg+PSD+ai+eps+png]", "type": "folder_id", "value": "1-_7yLT7SKJEf2j4mkFxcmJMLzpRpLuZv"}, {"title": "CD DVD cover packaging templates【PSD+JPG】", "type": "folder_id", "value": "1_vmnbEuwBbc0ptjYtANV2u866o8L3eJg"}, {"title": "طابلوهات مجمعة", "type": "folder_id", "value": "1MkUEK5pIDBLXqJdZo0hMYYApN4YH0l8r"}, {"title": "مجلات عروض محلات", "type": "folder_id", "value": "12u9JyALpdcVDuccrqGatjfI_LkMzQquA"}, {"title": "فواتير وايصالات", "type": "folder_id", "value": "1iPI0ui4UTGk0zxM65MvNMP4Rx7lbkvtO"}, {"title": "تصاميم ورق واكياس", "type": "folder_id", "value": "1Z54uJS-KCoqLwK-X4Dq2QxoGrXZjomaB"}, {"title": "سيشنات وخلفيات تصوير مفتوحة للتعديل", "type": "folder_id", "value": "184cnpjhQdv6yzStKvvXhiEk1j2Ls0zNr"}, {"title": "قسم اليفط", "type": "folder_id", "value": "17ZvDZqePLrRhuHQYho54MQw_MlJAKP71"}, {"title": "طباعة على التشيرت", "type": "folder_id", "value": "14XWkIWeryJEwkMrRk-UY1cfGdHm7_y_E"}, {"title": "طباعة الماج", "type": "folder_id", "value": "1S2u8HP5N5pwKcb5I5PVbLlSROGlrbHwx"}, {"title": "فولدرات حفظ مستندات", "type": "folder_id", "value": "1ldPVyGVKxjnWWGOdKUqmkWJTCCZY_hMG"}, {"title": "فلايرز بالعربي", "type": "folder_id", "value": "1p-sRFVyAPEnD7LgwcJPa9FROe_YKGlWy"}, {"title": "مكتبة تصميمات سوشيال ميدايا المعربة", "type": "folder_id", "value": "1_zyCJVrBGcelgwd1WwWqfKHIZIz5QNmm"}, {"title": "اظرف للشركات والمحاميين", "type": "folder_id", "value": "1iChVfcUV5N71_Rh2BX_DDcB7EYydxurs"}], "درايف الكورسات المدفوعة": [{"title": "كورسات مدغوعة", "type": "link", "value": "https://courses-premium-full.netlify.app/"}], "درايف البرامج المفعلة": [{"title": "برامج مدفوعة", "type": "link", "value": "https://designlibrary-pro-full.netlify.app/"}], "درايف البيانات التسويقية": [{"title": "البيانات التسويقية", "type": "link", "value": "https://designlibrary-marketing-full.netlify.app/"}]};
+                let currentGroup = '';
+                let sidebarHidden = false;
+                function init() {
+                    const groupNames = Object.keys(folderGroupsData);
+                    console.log("Folder groups:", folderGroupsData);
+                    if (groupNames.length > 0) {
+                        currentGroup = groupNames[0];
+                    }
+                    buildTopNav(groupNames);
+                    if (currentGroup) {
+                        setActiveGroup(currentGroup);
+                    }
+                }
+                function buildTopNav(groupNames) {
+                    const topNavGroups = document.getElementById('topNavGroups');
+                    topNavGroups.innerHTML = '';
+                    groupNames.forEach(name => {
+                        const btn = document.createElement('button');
+                        btn.classList.add('top-nav-button');
+                        btn.textContent = name;
+                        btn.onclick = () => setActiveGroup(name);
+                        topNavGroups.appendChild(btn);
+                    });
+                    const groupsDropdown = document.getElementById('groupsDropdown');
+                    groupsDropdown.innerHTML = '';
+                    groupNames.forEach(name => {
+                        const a = document.createElement('a');
+                        a.href = "#";
+                        a.textContent = name;
+                        a.onclick = (e) => {
+                            e.preventDefault();
+                            setActiveGroup(name);
+                            toggleGroupsDropdown();
+                        };
+                        groupsDropdown.appendChild(a);
+                    });
+                }
+                function setActiveGroup(groupName) {
+                    currentGroup = groupName;
+                    const sidebar = document.getElementById('sidebar');
+                    sidebar.classList.remove('hidden');
+                    sidebarHidden = false;
+                    const allButtons = document.querySelectorAll('.top-nav-button');
+                    allButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        if (btn.textContent === groupName) {
+                            btn.classList.add('active');
+                        }
+                    });
+                    buildSidebarSubfolders(folderGroupsData[groupName]);
+                    clearSearch();
+                    const subfolders = folderGroupsData[groupName];
+                    if (subfolders.length > 0) {
+                        const firstItem = subfolders[0];
+                        const folderId = firstItem.title.replace(/\s+/g, '_') + '_nav';
+                        if (firstItem.type === 'link') {
+                            loadExternalLink(firstItem.value, folderId);
+                        } else {
+                            const page = firstItem.title.replace(/\s+/g, '_') + '.html';
+                            loadContent(page, folderId);
+                        }
+                    }
+                }
+                function buildSidebarSubfolders(subfolderList) {
+                    const subfolderContainer = document.getElementById('subfolderContainer');
+                    const sidebarHeading = document.getElementById('sidebarHeading');
+                    subfolderContainer.innerHTML = '';
+                    sidebarHeading.textContent = 'مجلدات ' + currentGroup;
+                    subfolderList.forEach(item => {
+                        const title = item.title;
+                        const type = item.type;
+                        const value = item.value;
+                        const folderId = title.replace(/\s+/g, '_');
+                        const btn = document.createElement('div');
+                        btn.classList.add('sidebar-subfolder-button');
+                        btn.textContent = title;
+                        btn.id = folderId + '_nav';
+                        if (type === 'link') {
+                            btn.onclick = () => loadExternalLink(value, btn.id);
+                        } else {
+                            btn.onclick = () => loadContent(folderId + '.html', btn.id);
+                        }
+                        const copyButton = document.createElement('button');
+                        copyButton.textContent = 'نسخ';
+                        copyButton.classList.add('copy-link-button');
+                        copyButton.onclick = (e) => {
+                            e.stopPropagation();
+                            copyToClipboard(value);
+                            highlightButton(btn.id);
+                        };
+                        btn.appendChild(copyButton);
+                        subfolderContainer.appendChild(btn);
+                    });
+                }
+                function loadExternalLink(url, buttonId) {
+                    document.getElementById('loadingOverlay').style.display = 'flex';
+                    const iframe = document.getElementById('mainFrame');
+                    iframe.src = url;
+                    highlightButton(buttonId);
+                    const sidebar = document.getElementById('sidebar');
+                    sidebar.classList.add('hidden');
+                    sidebarHidden = true;
+                }
+                function loadContent(page, buttonId) {
+                    document.getElementById('loadingOverlay').style.display = 'flex';
+                    const iframe = document.getElementById('mainFrame');
+                    iframe.src = page;
+                    highlightButton(buttonId);
+                }
+                function highlightButton(buttonId) {
+                    const buttons = document.querySelectorAll('.sidebar-subfolder-button');
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    const selected = document.getElementById(buttonId);
+                    if (selected) {
+                        selected.classList.add('active');
+                    }
+                }
+                function filterSidebar() {
+                    const input = document.getElementById('searchInput');
+                    const clearButton = document.getElementById('clearButton');
+                    const filterValue = input.value.toLowerCase();
+                    clearButton.classList.toggle('visible', filterValue !== '');
+                    const subfolders = document.querySelectorAll('.sidebar-subfolder-button');
+                    subfolders.forEach(folder => {
+                        const text = folder.textContent.toLowerCase();
+                        folder.style.display = text.includes(filterValue) ? '' : 'none';
+                    });
+                }
+                function clearSearch() {
+                    const input = document.getElementById('searchInput');
+                    input.value = '';
+                    document.getElementById('clearButton').classList.remove('visible');
+                    filterSidebar();
+                }
+                function toggleSidebar() {
+                    const sidebar = document.getElementById('sidebar');
+                    sidebar.classList.toggle('hidden');
+                    sidebarHidden = !sidebarHidden;
+                }
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+                function scrollGroups(direction) {
+                    const container = document.getElementById('topNavGroups');
+                    const scrollAmount = 150;
+                    if (direction === 'left') {
+                        container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    } else if (direction === 'right') {
+                        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    }
+                }
+                function toggleGroupsDropdown() {
+                    const dropdown = document.getElementById('groupsDropdown');
+                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                }
+                window.onload = () => {
+                    init();
+                    document.getElementById('mainFrame').onload = function() {
+                        document.getElementById('loadingOverlay').style.display = 'none';
+                    };
+                };
+            </script>
+        </head>
+        <body>
+            <div class="top-nav">
+                <span class="top-nav-title">بعض محتويات مكتبة التصميم محمد ناجي</span>
+                <div class="top-nav-scroll-container">
+                    <button id="scrollLeftButton" class="scroll-button" onclick="scrollGroups('left')">←</button>
+                    <div class="top-nav-groups" id="topNavGroups"></div>
+                    <button id="scrollRightButton" class="scroll-button" onclick="scrollGroups('right')">→</button>
+                </div>
+                <div class="groups-dropdown-container">
+                    <button id="groupsDropdownButton" class="groups-dropdown-button" onclick="toggleGroupsDropdown()">المحتويات▼</button>
+                    <div id="groupsDropdown" class="groups-dropdown"></div>
+                </div>
+                <button class="burger-menu" onclick="toggleSidebar()">☰</button>
+            </div>
+            <div class="main-container">
+                <div class="content-area">
+                    <iframe id="mainFrame"></iframe>
+                    <div id="loadingOverlay">من فضلك انتظر جاري ظهور المحتويات</div>
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <h2 id="sidebarHeading"></h2>
+                    <div class="search-container">
+                        <input type="text" id="searchInput" onkeyup="filterSidebar()" placeholder="ابحث ضمن المجلدات...">
+                        <button id="clearButton" class="clear-button" onclick="clearSearch()">✖</button>
+                    </div>
+                    <div id="subfolderContainer"></div>
+                </div>
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/+201067498965" target="_blank">WhatsApp</a>
+                <a href="https://www.youtube.com/@3designlibrary" target="_blank">YouTube</a>
+                <a href="https://www.facebook.com/3DesignLibrary" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

@@ -1,0 +1,545 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>5 GB انديزاين</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>5 GB انديزاين</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=17dUEo2tkLLclH2qrdIh68v5IIEcauAOj&sz=w200" alt="Business Card Back Side.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Business Card Back Side.psd</h3>
+                            <p class="card-size">الحجم: 3.07 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=17dUEo2tkLLclH2qrdIh68v5IIEcauAOj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=17dUEo2tkLLclH2qrdIh68v5IIEcauAOj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=17dUEo2tkLLclH2qrdIh68v5IIEcauAOj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ONubBCpkYMGEeQsLKaC3Nlb6TzJaaz9k&sz=w200" alt="Business CardFront Side.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Business CardFront Side.psd</h3>
+                            <p class="card-size">الحجم: 3.13 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ONubBCpkYMGEeQsLKaC3Nlb6TzJaaz9k&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ONubBCpkYMGEeQsLKaC3Nlb6TzJaaz9k&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ONubBCpkYMGEeQsLKaC3Nlb6TzJaaz9k&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1hUC8daALzmDfPgxdUVmZ6vk9486G2jU2&sz=w200" alt="Cup Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Cup Design.psd</h3>
+                            <p class="card-size">الحجم: 6.08 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hUC8daALzmDfPgxdUVmZ6vk9486G2jU2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hUC8daALzmDfPgxdUVmZ6vk9486G2jU2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hUC8daALzmDfPgxdUVmZ6vk9486G2jU2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1tb68O9twHff9FKHm-eeffexfnHB_29B8&sz=w200" alt="DVD Cover.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">DVD Cover.psd</h3>
+                            <p class="card-size">الحجم: 2.96 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1tb68O9twHff9FKHm-eeffexfnHB_29B8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1tb68O9twHff9FKHm-eeffexfnHB_29B8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1tb68O9twHff9FKHm-eeffexfnHB_29B8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1avqpkVswxO0aiYshC3kc5v4NF53I1892&sz=w200" alt="DVD Lable.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">DVD Lable.psd</h3>
+                            <p class="card-size">الحجم: 3.57 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1avqpkVswxO0aiYshC3kc5v4NF53I1892&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1avqpkVswxO0aiYshC3kc5v4NF53I1892&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1avqpkVswxO0aiYshC3kc5v4NF53I1892&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1J58rEP8P91fda_tJ9jlidNZFdZ4CK-6i&sz=w200" alt="Envelope Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Envelope Design.psd</h3>
+                            <p class="card-size">الحجم: 12.56 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1J58rEP8P91fda_tJ9jlidNZFdZ4CK-6i&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1J58rEP8P91fda_tJ9jlidNZFdZ4CK-6i&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1J58rEP8P91fda_tJ9jlidNZFdZ4CK-6i&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Gcs4lsUUSIHYN1gibK5r7EAV3kYRpzaO&sz=w200" alt="Folder Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Folder Design.psd</h3>
+                            <p class="card-size">الحجم: 21.48 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Gcs4lsUUSIHYN1gibK5r7EAV3kYRpzaO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Gcs4lsUUSIHYN1gibK5r7EAV3kYRpzaO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Gcs4lsUUSIHYN1gibK5r7EAV3kYRpzaO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1e3slUf-COwi5h6WrJ_feOEkQg60HkOm3&sz=w200" alt="Letterhead  Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Letterhead  Design.psd</h3>
+                            <p class="card-size">الحجم: 10.78 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1e3slUf-COwi5h6WrJ_feOEkQg60HkOm3&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1e3slUf-COwi5h6WrJ_feOEkQg60HkOm3&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1e3slUf-COwi5h6WrJ_feOEkQg60HkOm3&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1k9j0xw5CpTMit2-QluYDUqelR7jFtATV&sz=w200" alt="PC Wallpaper  Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">PC Wallpaper  Design.psd</h3>
+                            <p class="card-size">الحجم: 3.31 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1k9j0xw5CpTMit2-QluYDUqelR7jFtATV&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1k9j0xw5CpTMit2-QluYDUqelR7jFtATV&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1k9j0xw5CpTMit2-QluYDUqelR7jFtATV&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=14DDPsDZ5rovzHqywIcJydTlWqumKcunF&sz=w200" alt="Pen  Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Pen  Design.psd</h3>
+                            <p class="card-size">الحجم: 2.29 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=14DDPsDZ5rovzHqywIcJydTlWqumKcunF&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=14DDPsDZ5rovzHqywIcJydTlWqumKcunF&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=14DDPsDZ5rovzHqywIcJydTlWqumKcunF&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ZfShqvwENEx715JywfLBHhkwbo97UJ91&sz=w200" alt="Phone Wallpaer Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Phone Wallpaer Design.psd</h3>
+                            <p class="card-size">الحجم: 1.93 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ZfShqvwENEx715JywfLBHhkwbo97UJ91&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ZfShqvwENEx715JywfLBHhkwbo97UJ91&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ZfShqvwENEx715JywfLBHhkwbo97UJ91&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1eXP6KLWG0gQ4jGvoel79E_2vAv3M_L4M&sz=w200" alt="3.5X2 Business Card.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">3.5X2 Business Card.psd</h3>
+                            <p class="card-size">الحجم: 9.47 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1eXP6KLWG0gQ4jGvoel79E_2vAv3M_L4M&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1eXP6KLWG0gQ4jGvoel79E_2vAv3M_L4M&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1eXP6KLWG0gQ4jGvoel79E_2vAv3M_L4M&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ZkdeELh7vcLfTgxm51FhJ2gweOo_se_k&sz=w200" alt="DVD Lable.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">DVD Lable.psd</h3>
+                            <p class="card-size">الحجم: 10.79 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ZkdeELh7vcLfTgxm51FhJ2gweOo_se_k&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ZkdeELh7vcLfTgxm51FhJ2gweOo_se_k&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ZkdeELh7vcLfTgxm51FhJ2gweOo_se_k&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nBW2DIxahlRGWhEKLV09KwIcT_qtxT6C&sz=w200" alt="Envelope.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Envelope.psd</h3>
+                            <p class="card-size">الحجم: 36.64 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nBW2DIxahlRGWhEKLV09KwIcT_qtxT6C&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nBW2DIxahlRGWhEKLV09KwIcT_qtxT6C&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nBW2DIxahlRGWhEKLV09KwIcT_qtxT6C&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1qCe11eZuHtwBkGo01hS5WpdxQAm4fbQX&sz=w200" alt="Fax.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Fax.psd</h3>
+                            <p class="card-size">الحجم: 4.88 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1qCe11eZuHtwBkGo01hS5WpdxQAm4fbQX&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1qCe11eZuHtwBkGo01hS5WpdxQAm4fbQX&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1qCe11eZuHtwBkGo01hS5WpdxQAm4fbQX&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1xwApX2GbBImsidIq_fP-ejA2BMHAaSTC&sz=w200" alt="Folder.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Folder.psd</h3>
+                            <p class="card-size">الحجم: 124.44 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1xwApX2GbBImsidIq_fP-ejA2BMHAaSTC&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1xwApX2GbBImsidIq_fP-ejA2BMHAaSTC&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1xwApX2GbBImsidIq_fP-ejA2BMHAaSTC&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1K1eZrM_X2ccpwqbsR_8Ol8bnCnp5_NrZ&sz=w200" alt="Invoice.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Invoice.psd</h3>
+                            <p class="card-size">الحجم: 10.50 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1K1eZrM_X2ccpwqbsR_8Ol8bnCnp5_NrZ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1K1eZrM_X2ccpwqbsR_8Ol8bnCnp5_NrZ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1K1eZrM_X2ccpwqbsR_8Ol8bnCnp5_NrZ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=12CWuFB4uYQCFhMngD5-xT2-VOc9zSQa3&sz=w200" alt="Letterhead.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Letterhead.psd</h3>
+                            <p class="card-size">الحجم: 7.49 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12CWuFB4uYQCFhMngD5-xT2-VOc9zSQa3&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12CWuFB4uYQCFhMngD5-xT2-VOc9zSQa3&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12CWuFB4uYQCFhMngD5-xT2-VOc9zSQa3&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1gbRNhRWKtWmAwN_eMtbXOTs1wjgLw3ws&sz=w200" alt="Wallpaper.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Wallpaper.psd</h3>
+                            <p class="card-size">الحجم: 14.11 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1gbRNhRWKtWmAwN_eMtbXOTs1wjgLw3ws&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1gbRNhRWKtWmAwN_eMtbXOTs1wjgLw3ws&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1gbRNhRWKtWmAwN_eMtbXOTs1wjgLw3ws&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="ان ديزاين.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">ان ديزاين.rar</h3>
+                            <p class="card-size">الحجم: 5.13 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1d56eT4S5htpIGWupAk9f3m4PYGL1TBwM&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1d56eT4S5htpIGWupAk9f3m4PYGL1TBwM&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1d56eT4S5htpIGWupAk9f3m4PYGL1TBwM&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

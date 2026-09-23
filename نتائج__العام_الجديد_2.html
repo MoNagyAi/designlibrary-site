@@ -1,0 +1,707 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>نتائج  العام الجديد 2</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>نتائج  العام الجديد 2</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1qtsRlLBJDA9DOPS-YYCXn9PGuQ9nnV8u&sz=w200" alt="_نتائج العام الجديد_ 1.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 1.jpg</h3>
+                            <p class="card-size">الحجم: 2.04 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1qtsRlLBJDA9DOPS-YYCXn9PGuQ9nnV8u&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1qtsRlLBJDA9DOPS-YYCXn9PGuQ9nnV8u&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1qtsRlLBJDA9DOPS-YYCXn9PGuQ9nnV8u&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 1.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 1.rar</h3>
+                            <p class="card-size">الحجم: 64.24 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QbGQYZ9dwk5yGEb2M9I7BTzVcA9wxF0S&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QbGQYZ9dwk5yGEb2M9I7BTzVcA9wxF0S&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QbGQYZ9dwk5yGEb2M9I7BTzVcA9wxF0S&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Ypy6nRPFTTdvNgCGtsEb4rdLbcvBh2R7&sz=w200" alt="_نتائج العام الجديد_ 10.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 10.jpg</h3>
+                            <p class="card-size">الحجم: 2.06 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Ypy6nRPFTTdvNgCGtsEb4rdLbcvBh2R7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Ypy6nRPFTTdvNgCGtsEb4rdLbcvBh2R7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Ypy6nRPFTTdvNgCGtsEb4rdLbcvBh2R7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 10.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 10.rar</h3>
+                            <p class="card-size">الحجم: 57.52 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1NcBBm8jpwzzdjEn87_OV_6hw2p05wGVb&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1NcBBm8jpwzzdjEn87_OV_6hw2p05wGVb&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1NcBBm8jpwzzdjEn87_OV_6hw2p05wGVb&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1jYj1Kk79MsWVjA793uaX0C5zShC2d1vY&sz=w200" alt="_نتائج العام الجديد_ 11.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 11.jpg</h3>
+                            <p class="card-size">الحجم: 4.06 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1jYj1Kk79MsWVjA793uaX0C5zShC2d1vY&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1jYj1Kk79MsWVjA793uaX0C5zShC2d1vY&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1jYj1Kk79MsWVjA793uaX0C5zShC2d1vY&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 11.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 11.rar</h3>
+                            <p class="card-size">الحجم: 52.18 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1UfLorbltXkAH0cNCiNDF3myzjoP6mOTe&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1UfLorbltXkAH0cNCiNDF3myzjoP6mOTe&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1UfLorbltXkAH0cNCiNDF3myzjoP6mOTe&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1okU9_fFd4FBKauYHE_bGm6gZmpiAOx7U&sz=w200" alt="_نتائج العام الجديد_ 12.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 12.jpg</h3>
+                            <p class="card-size">الحجم: 1.16 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1okU9_fFd4FBKauYHE_bGm6gZmpiAOx7U&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1okU9_fFd4FBKauYHE_bGm6gZmpiAOx7U&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1okU9_fFd4FBKauYHE_bGm6gZmpiAOx7U&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 12.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 12.rar</h3>
+                            <p class="card-size">الحجم: 68.80 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kNGhqWCs8aE6x5OHmO8NRR89E0TaUvOx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kNGhqWCs8aE6x5OHmO8NRR89E0TaUvOx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kNGhqWCs8aE6x5OHmO8NRR89E0TaUvOx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ahoNz-Yj9CTGScrpVvhPjIKUWUzWuZn9&sz=w200" alt="_نتائج العام الجديد_ 13.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 13.jpg</h3>
+                            <p class="card-size">الحجم: 1.86 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ahoNz-Yj9CTGScrpVvhPjIKUWUzWuZn9&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ahoNz-Yj9CTGScrpVvhPjIKUWUzWuZn9&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ahoNz-Yj9CTGScrpVvhPjIKUWUzWuZn9&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 13.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 13.rar</h3>
+                            <p class="card-size">الحجم: 48.24 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10J3B2-a8B1n-4cfA5nxT6ZgbmvrSwmFl&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10J3B2-a8B1n-4cfA5nxT6ZgbmvrSwmFl&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10J3B2-a8B1n-4cfA5nxT6ZgbmvrSwmFl&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1liId2gAGtSkvXbjS0nTAonqADmdEvTzC&sz=w200" alt="_نتائج العام الجديد_ 14.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 14.jpg</h3>
+                            <p class="card-size">الحجم: 1.63 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1liId2gAGtSkvXbjS0nTAonqADmdEvTzC&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1liId2gAGtSkvXbjS0nTAonqADmdEvTzC&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1liId2gAGtSkvXbjS0nTAonqADmdEvTzC&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 14.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 14.rar</h3>
+                            <p class="card-size">الحجم: 31.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10bBcqKSi3PBg4pRsApH1Lyt4Cfnd0EEO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10bBcqKSi3PBg4pRsApH1Lyt4Cfnd0EEO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10bBcqKSi3PBg4pRsApH1Lyt4Cfnd0EEO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1VvvH-O00TCZCW5gGHol5oJXQQSNSFpyo&sz=w200" alt="_نتائج العام الجديد_ 2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 2.jpg</h3>
+                            <p class="card-size">الحجم: 1.76 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1VvvH-O00TCZCW5gGHol5oJXQQSNSFpyo&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1VvvH-O00TCZCW5gGHol5oJXQQSNSFpyo&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1VvvH-O00TCZCW5gGHol5oJXQQSNSFpyo&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 2.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 2.rar</h3>
+                            <p class="card-size">الحجم: 92.66 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1diIUEUeaXbKuBM_xlSqRLuhSodlL-CT4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1diIUEUeaXbKuBM_xlSqRLuhSodlL-CT4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1diIUEUeaXbKuBM_xlSqRLuhSodlL-CT4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1suA9vjNGIni4sCfRAGf7HiAoHQgdAkbx&sz=w200" alt="_نتائج العام الجديد_ 3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 3.jpg</h3>
+                            <p class="card-size">الحجم: 1.75 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1suA9vjNGIni4sCfRAGf7HiAoHQgdAkbx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1suA9vjNGIni4sCfRAGf7HiAoHQgdAkbx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1suA9vjNGIni4sCfRAGf7HiAoHQgdAkbx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 3.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 3.rar</h3>
+                            <p class="card-size">الحجم: 77.68 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1VS_YpBrJxnKp99Ty9j66rRHPME4s2bqU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1VS_YpBrJxnKp99Ty9j66rRHPME4s2bqU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1VS_YpBrJxnKp99Ty9j66rRHPME4s2bqU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1P8KyBOS8KMw7ujKvQSrhxugiQNz66DlK&sz=w200" alt="_نتائج العام الجديد_ 4.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 4.jpg</h3>
+                            <p class="card-size">الحجم: 1.72 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1P8KyBOS8KMw7ujKvQSrhxugiQNz66DlK&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1P8KyBOS8KMw7ujKvQSrhxugiQNz66DlK&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1P8KyBOS8KMw7ujKvQSrhxugiQNz66DlK&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 4.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 4.rar</h3>
+                            <p class="card-size">الحجم: 34.45 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1SbPVLJ-oD8ufO9zzN6wYZBjsUyzi8qHS&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1SbPVLJ-oD8ufO9zzN6wYZBjsUyzi8qHS&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1SbPVLJ-oD8ufO9zzN6wYZBjsUyzi8qHS&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Bxbf2jm2aMDr2ihzXZy3qo9QK0nt61b4&sz=w200" alt="_نتائج العام الجديد_ 5.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 5.jpg</h3>
+                            <p class="card-size">الحجم: 1.78 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Bxbf2jm2aMDr2ihzXZy3qo9QK0nt61b4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Bxbf2jm2aMDr2ihzXZy3qo9QK0nt61b4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Bxbf2jm2aMDr2ihzXZy3qo9QK0nt61b4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 5.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 5.rar</h3>
+                            <p class="card-size">الحجم: 38.74 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1uSqCHqtLXF6PtBZ3kYC9EZCe3oMALdw4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1uSqCHqtLXF6PtBZ3kYC9EZCe3oMALdw4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1uSqCHqtLXF6PtBZ3kYC9EZCe3oMALdw4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1TkSO0-rsl1aitzLiZcHFb2OQ3o9RjNgf&sz=w200" alt="_نتائج العام الجديد_ 6.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 6.jpg</h3>
+                            <p class="card-size">الحجم: 2.16 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1TkSO0-rsl1aitzLiZcHFb2OQ3o9RjNgf&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1TkSO0-rsl1aitzLiZcHFb2OQ3o9RjNgf&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1TkSO0-rsl1aitzLiZcHFb2OQ3o9RjNgf&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 6.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 6.rar</h3>
+                            <p class="card-size">الحجم: 90.71 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1p9XC2M3uuFCmO_1fb2t7W7-KoZB7PYzb&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1p9XC2M3uuFCmO_1fb2t7W7-KoZB7PYzb&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1p9XC2M3uuFCmO_1fb2t7W7-KoZB7PYzb&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1JPp35kMHZZ0imeA64ycEpJAZfKFw-DvQ&sz=w200" alt="_نتائج العام الجديد_ 7.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 7.jpg</h3>
+                            <p class="card-size">الحجم: 1.83 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1JPp35kMHZZ0imeA64ycEpJAZfKFw-DvQ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1JPp35kMHZZ0imeA64ycEpJAZfKFw-DvQ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1JPp35kMHZZ0imeA64ycEpJAZfKFw-DvQ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 7.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 7.rar</h3>
+                            <p class="card-size">الحجم: 37.76 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ECYTUfZROnDutePaD2JtzvFP5GLtqlxL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ECYTUfZROnDutePaD2JtzvFP5GLtqlxL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ECYTUfZROnDutePaD2JtzvFP5GLtqlxL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1_sfgrOQpt_LAZC4p4-PKmFXaUGELsMB2&sz=w200" alt="_نتائج العام الجديد_ 8.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 8.jpg</h3>
+                            <p class="card-size">الحجم: 1.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1_sfgrOQpt_LAZC4p4-PKmFXaUGELsMB2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1_sfgrOQpt_LAZC4p4-PKmFXaUGELsMB2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1_sfgrOQpt_LAZC4p4-PKmFXaUGELsMB2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 8.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 8.rar</h3>
+                            <p class="card-size">الحجم: 88.74 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1BFSLRHywvIaEx3b9_gTJgJC4J-9h460E&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1BFSLRHywvIaEx3b9_gTJgJC4J-9h460E&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1BFSLRHywvIaEx3b9_gTJgJC4J-9h460E&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ec1qtvRBMZTwrn1txGUPWchEn47Zq0E5&sz=w200" alt="_نتائج العام الجديد_ 9.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 9.jpg</h3>
+                            <p class="card-size">الحجم: 1.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ec1qtvRBMZTwrn1txGUPWchEn47Zq0E5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ec1qtvRBMZTwrn1txGUPWchEn47Zq0E5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ec1qtvRBMZTwrn1txGUPWchEn47Zq0E5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ 9.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ 9.rar</h3>
+                            <p class="card-size">الحجم: 43.14 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1-r419cwffGvHsA-p5QU4hGjdiuhkLCeB&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1-r419cwffGvHsA-p5QU4hGjdiuhkLCeB&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1-r419cwffGvHsA-p5QU4hGjdiuhkLCeB&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="_نتائج العام الجديد_ desk_calendar_mockup_04.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_نتائج العام الجديد_ desk_calendar_mockup_04.rar</h3>
+                            <p class="card-size">الحجم: 67.62 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1GKTH6Ng0-PfLYumQIPke26cjZaQmGM2k&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1GKTH6Ng0-PfLYumQIPke26cjZaQmGM2k&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1GKTH6Ng0-PfLYumQIPke26cjZaQmGM2k&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

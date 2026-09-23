@@ -1,0 +1,401 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>كورس تعليم الوايت بورد عربي السبورة البيضاء+ البرنامج</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>كورس تعليم الوايت بورد عربي السبورة البيضاء+ البرنامج</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1yDJSMpHXszk4Cp4EzoSQi_gpVobwT1r_&sz=w200" alt="1. المقدمة_1. مقدمة.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">1. المقدمة_1. مقدمة.mp4</h3>
+                            <p class="card-size">الحجم: 66.18 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1yDJSMpHXszk4Cp4EzoSQi_gpVobwT1r_/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1yDJSMpHXszk4Cp4EzoSQi_gpVobwT1r_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1yDJSMpHXszk4Cp4EzoSQi_gpVobwT1r_/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1wVnYk1a7nNBeBqo-hejMVjYrPr4Fmvj2&sz=w200" alt="2. Course_1. تنزيل وتنصيب البرنامج.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">2. Course_1. تنزيل وتنصيب البرنامج.mp4</h3>
+                            <p class="card-size">الحجم: 17.99 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1wVnYk1a7nNBeBqo-hejMVjYrPr4Fmvj2/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1wVnYk1a7nNBeBqo-hejMVjYrPr4Fmvj2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1wVnYk1a7nNBeBqo-hejMVjYrPr4Fmvj2/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1E-9LkQmKfeIXLG4M_LSNhqs51OXi3V5o&sz=w200" alt="2. Course_2. شرح واجهة البرنامج.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">2. Course_2. شرح واجهة البرنامج.mp4</h3>
+                            <p class="card-size">الحجم: 39.41 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1E-9LkQmKfeIXLG4M_LSNhqs51OXi3V5o/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1E-9LkQmKfeIXLG4M_LSNhqs51OXi3V5o&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1E-9LkQmKfeIXLG4M_LSNhqs51OXi3V5o/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1zQ1q976NUSRIdCGAIMLXR4uOepMAU5zh&sz=w200" alt="2. Course_3. استيراد الصور للبرنامج.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">2. Course_3. استيراد الصور للبرنامج.mp4</h3>
+                            <p class="card-size">الحجم: 102.03 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1zQ1q976NUSRIdCGAIMLXR4uOepMAU5zh/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1zQ1q976NUSRIdCGAIMLXR4uOepMAU5zh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1zQ1q976NUSRIdCGAIMLXR4uOepMAU5zh/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1vzjKjStZ1URYobfnuO-iRPcIUVf1L7lM&sz=w200" alt="2. Course_4. إضافة الأصوات.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">2. Course_4. إضافة الأصوات.mp4</h3>
+                            <p class="card-size">الحجم: 95.99 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1vzjKjStZ1URYobfnuO-iRPcIUVf1L7lM/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1vzjKjStZ1URYobfnuO-iRPcIUVf1L7lM&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1vzjKjStZ1URYobfnuO-iRPcIUVf1L7lM/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1hV_ACDkIh_Q46VP1krssROEded9gZ1xz&sz=w200" alt="2. Course_5. تصدير الفيديو.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">2. Course_5. تصدير الفيديو.mp4</h3>
+                            <p class="card-size">الحجم: 22.71 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1hV_ACDkIh_Q46VP1krssROEded9gZ1xz/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1hV_ACDkIh_Q46VP1krssROEded9gZ1xz&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1hV_ACDkIh_Q46VP1krssROEded9gZ1xz/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Qt5bgf-SsqO9tsYo54_x2Ej_9Qy4BSic&sz=w200" alt="3. تحسينات ونصائح لفيديو متميز_1. الالتزام بستايل موحد.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">3. تحسينات ونصائح لفيديو متميز_1. الالتزام بستايل موحد.mp4</h3>
+                            <p class="card-size">الحجم: 9.48 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1Qt5bgf-SsqO9tsYo54_x2Ej_9Qy4BSic/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1Qt5bgf-SsqO9tsYo54_x2Ej_9Qy4BSic&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1Qt5bgf-SsqO9tsYo54_x2Ej_9Qy4BSic/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1SjDg8TFnV0JqiexBE7cbmyMVeGOJoXU5&sz=w200" alt="3. تحسينات ونصائح لفيديو متميز_2. التعامل مع الرسومات الملونة.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">3. تحسينات ونصائح لفيديو متميز_2. التعامل مع الرسومات الملونة.mp4</h3>
+                            <p class="card-size">الحجم: 45.89 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1SjDg8TFnV0JqiexBE7cbmyMVeGOJoXU5/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1SjDg8TFnV0JqiexBE7cbmyMVeGOJoXU5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1SjDg8TFnV0JqiexBE7cbmyMVeGOJoXU5/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1xwAJ-kTA08-ZfDiq7CxvVbEUYEPZoSqa&sz=w200" alt="3. تحسينات ونصائح لفيديو متميز_3. التعامل مع النصوص العربية.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">3. تحسينات ونصائح لفيديو متميز_3. التعامل مع النصوص العربية.mp4</h3>
+                            <p class="card-size">الحجم: 51.54 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1xwAJ-kTA08-ZfDiq7CxvVbEUYEPZoSqa/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1xwAJ-kTA08-ZfDiq7CxvVbEUYEPZoSqa&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1xwAJ-kTA08-ZfDiq7CxvVbEUYEPZoSqa/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1RPiIDwGRHIs-i503bMAeJR_Nvi4iAM45&sz=w200" alt="3. تحسينات ونصائح لفيديو متميز_4. الحصول على الرسومات من الإنترنت.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">3. تحسينات ونصائح لفيديو متميز_4. الحصول على الرسومات من الإنترنت.mp4</h3>
+                            <p class="card-size">الحجم: 38.01 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/1RPiIDwGRHIs-i503bMAeJR_Nvi4iAM45/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=1RPiIDwGRHIs-i503bMAeJR_Nvi4iAM45&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/1RPiIDwGRHIs-i503bMAeJR_Nvi4iAM45/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=11BjPd8KijE4caP_ppVL1WA38VJR8NFXc&sz=w200" alt="3. تحسينات ونصائح لفيديو متميز_5. إضافة الحركة للرسومات.mp4" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">3. تحسينات ونصائح لفيديو متميز_5. إضافة الحركة للرسومات.mp4</h3>
+                            <p class="card-size">الحجم: 19.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/file/d/11BjPd8KijE4caP_ppVL1WA38VJR8NFXc/preview" target="_blank">تشغيل</a>
+                            <a href="https://drive.google.com/uc?id=11BjPd8KijE4caP_ppVL1WA38VJR8NFXc&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/file/d/11BjPd8KijE4caP_ppVL1WA38VJR8NFXc/preview');">نسخ</button>
+                    
+                                <span class="file-extension">.MP4</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Sparkol_VideoScribe_Pro_3_14_1_x64_Full_Activated_Animated_Video.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Sparkol_VideoScribe_Pro_3_14_1_x64_Full_Activated_Animated_Video.zip</h3>
+                            <p class="card-size">الحجم: 134.62 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1FzfffstXyTbVxqdMzewT4JibP_XNsndE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1FzfffstXyTbVxqdMzewT4JibP_XNsndE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1FzfffstXyTbVxqdMzewT4JibP_XNsndE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

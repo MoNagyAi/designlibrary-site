@@ -1,0 +1,797 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>طابلوهات مجمعة</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>طابلوهات مجمعة</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1q8w6LrABnwcgnIgScUOY16aO7EqBgfoX&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 1.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 1.jpg</h3>
+                            <p class="card-size">الحجم: 1.45 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1q8w6LrABnwcgnIgScUOY16aO7EqBgfoX&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1q8w6LrABnwcgnIgScUOY16aO7EqBgfoX&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1q8w6LrABnwcgnIgScUOY16aO7EqBgfoX&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 1.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 1.rar</h3>
+                            <p class="card-size">الحجم: 201.63 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oZoSnWMCFnRfXRRc2pw40sS_e_xu6Jz7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oZoSnWMCFnRfXRRc2pw40sS_e_xu6Jz7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oZoSnWMCFnRfXRRc2pw40sS_e_xu6Jz7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1PPVMblH-u4kKPucfWFH68XHoUjnGc2BU&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 10.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 10.jpg</h3>
+                            <p class="card-size">الحجم: 1.08 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1PPVMblH-u4kKPucfWFH68XHoUjnGc2BU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1PPVMblH-u4kKPucfWFH68XHoUjnGc2BU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1PPVMblH-u4kKPucfWFH68XHoUjnGc2BU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 10.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 10.rar</h3>
+                            <p class="card-size">الحجم: 26.85 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mytqgXr-5vt-he-Oe-SqopTfwEoCvH2D&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mytqgXr-5vt-he-Oe-SqopTfwEoCvH2D&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mytqgXr-5vt-he-Oe-SqopTfwEoCvH2D&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1QosU4b3xx3botXCk7MjOQj6cugxEbsB2&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 11.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 11.jpg</h3>
+                            <p class="card-size">الحجم: 1.08 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QosU4b3xx3botXCk7MjOQj6cugxEbsB2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QosU4b3xx3botXCk7MjOQj6cugxEbsB2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QosU4b3xx3botXCk7MjOQj6cugxEbsB2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 11.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 11.rar</h3>
+                            <p class="card-size">الحجم: 21.66 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kkbNWt5TBBEywdhV8fu-yEsoQRyi7NHo&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kkbNWt5TBBEywdhV8fu-yEsoQRyi7NHo&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kkbNWt5TBBEywdhV8fu-yEsoQRyi7NHo&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1OCXEdGpTh8Q8AYJxP9rUX7ndPYgoLdzx&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 12.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 12.jpg</h3>
+                            <p class="card-size">الحجم: 1.08 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1OCXEdGpTh8Q8AYJxP9rUX7ndPYgoLdzx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1OCXEdGpTh8Q8AYJxP9rUX7ndPYgoLdzx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1OCXEdGpTh8Q8AYJxP9rUX7ndPYgoLdzx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 12.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 12.rar</h3>
+                            <p class="card-size">الحجم: 10.47 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1HlzJ_uiX07bAn8-8tLhZggmfjOVmXWsa&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1HlzJ_uiX07bAn8-8tLhZggmfjOVmXWsa&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1HlzJ_uiX07bAn8-8tLhZggmfjOVmXWsa&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1TiKqkdrqTGvntbajEmZIXIqvr_axzMTI&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 13.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 13.jpg</h3>
+                            <p class="card-size">الحجم: 986.33 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1TiKqkdrqTGvntbajEmZIXIqvr_axzMTI&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1TiKqkdrqTGvntbajEmZIXIqvr_axzMTI&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1TiKqkdrqTGvntbajEmZIXIqvr_axzMTI&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 13.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 13.rar</h3>
+                            <p class="card-size">الحجم: 16.19 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1j4YA_22fVVy2p1ixU2JxU4GTV_Cf5H2m&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1j4YA_22fVVy2p1ixU2JxU4GTV_Cf5H2m&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1j4YA_22fVVy2p1ixU2JxU4GTV_Cf5H2m&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mNqXdYu4v0xnCE0UtNawLwUspXKGPsNt&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 14.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 14.jpg</h3>
+                            <p class="card-size">الحجم: 1.12 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mNqXdYu4v0xnCE0UtNawLwUspXKGPsNt&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mNqXdYu4v0xnCE0UtNawLwUspXKGPsNt&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mNqXdYu4v0xnCE0UtNawLwUspXKGPsNt&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 14.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 14.rar</h3>
+                            <p class="card-size">الحجم: 23.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kU9cscuSx64p_AO3pRXl1EJILQI7eB7P&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kU9cscuSx64p_AO3pRXl1EJILQI7eB7P&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kU9cscuSx64p_AO3pRXl1EJILQI7eB7P&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1p0Kf0UV1ZBqKFFd12xMhYeGEb6eckwfD&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 15.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 15.jpg</h3>
+                            <p class="card-size">الحجم: 993.04 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1p0Kf0UV1ZBqKFFd12xMhYeGEb6eckwfD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1p0Kf0UV1ZBqKFFd12xMhYeGEb6eckwfD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1p0Kf0UV1ZBqKFFd12xMhYeGEb6eckwfD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 15.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 15.rar</h3>
+                            <p class="card-size">الحجم: 13.41 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1YKQLxp4zkXprZvoUfYDs-3BXaHr0hZRD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1YKQLxp4zkXprZvoUfYDs-3BXaHr0hZRD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1YKQLxp4zkXprZvoUfYDs-3BXaHr0hZRD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1rpmspAasqcbHNIx0vFx7QAccY8j57RVW&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 16.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 16.jpg</h3>
+                            <p class="card-size">الحجم: 928.70 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1rpmspAasqcbHNIx0vFx7QAccY8j57RVW&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1rpmspAasqcbHNIx0vFx7QAccY8j57RVW&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1rpmspAasqcbHNIx0vFx7QAccY8j57RVW&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 16.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 16.rar</h3>
+                            <p class="card-size">الحجم: 13.25 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1W5m0ii-xKpsaM2p2s6K-fLTLQ3QmUW9Q&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1W5m0ii-xKpsaM2p2s6K-fLTLQ3QmUW9Q&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1W5m0ii-xKpsaM2p2s6K-fLTLQ3QmUW9Q&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l7mmdMXylp2PtB0Del0H-dZlcpXc2wwh&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 17.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 17.jpg</h3>
+                            <p class="card-size">الحجم: 944.93 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l7mmdMXylp2PtB0Del0H-dZlcpXc2wwh&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l7mmdMXylp2PtB0Del0H-dZlcpXc2wwh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l7mmdMXylp2PtB0Del0H-dZlcpXc2wwh&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 17.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 17.rar</h3>
+                            <p class="card-size">الحجم: 20.97 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1yA45Zazhi5d4naqiJj05xf_R2sQyEAHJ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1yA45Zazhi5d4naqiJj05xf_R2sQyEAHJ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1yA45Zazhi5d4naqiJj05xf_R2sQyEAHJ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=18LmeoZorAIYNJPqLS-QWFVRhnrTMqSfp&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 2.jpg</h3>
+                            <p class="card-size">الحجم: 2.25 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=18LmeoZorAIYNJPqLS-QWFVRhnrTMqSfp&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=18LmeoZorAIYNJPqLS-QWFVRhnrTMqSfp&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=18LmeoZorAIYNJPqLS-QWFVRhnrTMqSfp&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 2.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 2.rar</h3>
+                            <p class="card-size">الحجم: 338.00 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1b3fjICbLMF8YVJbc6MhBQxTKCgyJNNW8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1b3fjICbLMF8YVJbc6MhBQxTKCgyJNNW8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1b3fjICbLMF8YVJbc6MhBQxTKCgyJNNW8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=17fiY0gK1sVK8d_Fwdgc1SuMA6WSw5iJj&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 3.jpg</h3>
+                            <p class="card-size">الحجم: 578.93 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=17fiY0gK1sVK8d_Fwdgc1SuMA6WSw5iJj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=17fiY0gK1sVK8d_Fwdgc1SuMA6WSw5iJj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=17fiY0gK1sVK8d_Fwdgc1SuMA6WSw5iJj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 3.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 3.rar</h3>
+                            <p class="card-size">الحجم: 19.19 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1qGSpueEv65G0jL1OTTmElBWyt51wmg-9&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1qGSpueEv65G0jL1OTTmElBWyt51wmg-9&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1qGSpueEv65G0jL1OTTmElBWyt51wmg-9&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=13619zRQXjE-rTXTVaafFX330nhXUDrtD&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 4.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 4.jpg</h3>
+                            <p class="card-size">الحجم: 340.46 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=13619zRQXjE-rTXTVaafFX330nhXUDrtD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=13619zRQXjE-rTXTVaafFX330nhXUDrtD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=13619zRQXjE-rTXTVaafFX330nhXUDrtD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 4.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 4.rar</h3>
+                            <p class="card-size">الحجم: 23.18 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hoMtMAVM8CCbHRI2sdkeSUL62qZu1c91&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hoMtMAVM8CCbHRI2sdkeSUL62qZu1c91&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hoMtMAVM8CCbHRI2sdkeSUL62qZu1c91&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1WIjJAMOGP41hFB40OFWR73Buf-_neyLg&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 5.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 5.jpg</h3>
+                            <p class="card-size">الحجم: 426.59 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1WIjJAMOGP41hFB40OFWR73Buf-_neyLg&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1WIjJAMOGP41hFB40OFWR73Buf-_neyLg&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1WIjJAMOGP41hFB40OFWR73Buf-_neyLg&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 5.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 5.rar</h3>
+                            <p class="card-size">الحجم: 33.89 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1qxXqYQ3jCeFvdEU2DaVViTA1nVk12eSD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1qxXqYQ3jCeFvdEU2DaVViTA1nVk12eSD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1qxXqYQ3jCeFvdEU2DaVViTA1nVk12eSD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1AIbbFogpVec7Rc-2pE5jQI-pq--Wwugp&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 6.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 6.jpg</h3>
+                            <p class="card-size">الحجم: 741.64 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1AIbbFogpVec7Rc-2pE5jQI-pq--Wwugp&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1AIbbFogpVec7Rc-2pE5jQI-pq--Wwugp&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1AIbbFogpVec7Rc-2pE5jQI-pq--Wwugp&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 6.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 6.rar</h3>
+                            <p class="card-size">الحجم: 27.72 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1MunuZZJYE6nO3xj4vCqlUOMR1Cw5XHX2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1MunuZZJYE6nO3xj4vCqlUOMR1Cw5XHX2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1MunuZZJYE6nO3xj4vCqlUOMR1Cw5XHX2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1deeRqxxfxQRVA-RPFK3zZ03wAT157CHH&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 7.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 7.jpg</h3>
+                            <p class="card-size">الحجم: 560.89 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1deeRqxxfxQRVA-RPFK3zZ03wAT157CHH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1deeRqxxfxQRVA-RPFK3zZ03wAT157CHH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1deeRqxxfxQRVA-RPFK3zZ03wAT157CHH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 7.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 7.rar</h3>
+                            <p class="card-size">الحجم: 26.73 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1PsH2aRQ66YG7k8VRPlhl3ljqlB7Za-8l&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1PsH2aRQ66YG7k8VRPlhl3ljqlB7Za-8l&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1PsH2aRQ66YG7k8VRPlhl3ljqlB7Za-8l&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1qrf6yc1_7Ct8eleiYCu4GioX0a0kM7IL&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 8.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 8.jpg</h3>
+                            <p class="card-size">الحجم: 388.47 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1qrf6yc1_7Ct8eleiYCu4GioX0a0kM7IL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1qrf6yc1_7Ct8eleiYCu4GioX0a0kM7IL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1qrf6yc1_7Ct8eleiYCu4GioX0a0kM7IL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 8.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 8.rar</h3>
+                            <p class="card-size">الحجم: 15.28 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=18IVC-Xwn3sw0ziJdL8FTPxGilgOBTXhj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=18IVC-Xwn3sw0ziJdL8FTPxGilgOBTXhj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=18IVC-Xwn3sw0ziJdL8FTPxGilgOBTXhj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1eO7hp1VhiDPvNK9JzqFKLcwqOzlRVK8R&sz=w200" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 9.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 9.jpg</h3>
+                            <p class="card-size">الحجم: 623.28 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1eO7hp1VhiDPvNK9JzqFKLcwqOzlRVK8R&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1eO7hp1VhiDPvNK9JzqFKLcwqOzlRVK8R&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1eO7hp1VhiDPvNK9JzqFKLcwqOzlRVK8R&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="_طابلوهات مجمعة_طابلوهات مجمعة_ 9.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">_طابلوهات مجمعة_طابلوهات مجمعة_ 9.rar</h3>
+                            <p class="card-size">الحجم: 26.64 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1iWEW0lwHJVKeRz9IyuUvDvfCjtJAFu-t&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1iWEW0lwHJVKeRz9IyuUvDvfCjtJAFu-t&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1iWEW0lwHJVKeRz9IyuUvDvfCjtJAFu-t&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

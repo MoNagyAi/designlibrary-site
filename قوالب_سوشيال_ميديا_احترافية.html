@@ -1,0 +1,797 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>قوالب سوشيال ميديا احترافية</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>قوالب سوشيال ميديا احترافية</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1G84QT43YuFPAxY_p54tsuLNeFPaqnSA1&sz=w200" alt="1.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">1.png</h3>
+                            <p class="card-size">الحجم: 4.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1G84QT43YuFPAxY_p54tsuLNeFPaqnSA1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1G84QT43YuFPAxY_p54tsuLNeFPaqnSA1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1G84QT43YuFPAxY_p54tsuLNeFPaqnSA1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="1.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">1.rar</h3>
+                            <p class="card-size">الحجم: 27.66 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=13VMdnTWeR_qFbhqfoEJJrEJSTGRgsixz&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=13VMdnTWeR_qFbhqfoEJJrEJSTGRgsixz&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=13VMdnTWeR_qFbhqfoEJJrEJSTGRgsixz&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1KflFm5eP_8wi9nusMQMEvcFM8ghWJtMQ&sz=w200" alt="10.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">10.png</h3>
+                            <p class="card-size">الحجم: 2.49 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1KflFm5eP_8wi9nusMQMEvcFM8ghWJtMQ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1KflFm5eP_8wi9nusMQMEvcFM8ghWJtMQ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1KflFm5eP_8wi9nusMQMEvcFM8ghWJtMQ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="10.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">10.rar</h3>
+                            <p class="card-size">الحجم: 14.70 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nIEAfgCZMBxMHrWbnLJgKLU-NrOPlEQp&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nIEAfgCZMBxMHrWbnLJgKLU-NrOPlEQp&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nIEAfgCZMBxMHrWbnLJgKLU-NrOPlEQp&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1QZMEWJvCed6P6bpcyS-j0qs-Vmog6J1M&sz=w200" alt="11.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">11.png</h3>
+                            <p class="card-size">الحجم: 1.28 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QZMEWJvCed6P6bpcyS-j0qs-Vmog6J1M&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QZMEWJvCed6P6bpcyS-j0qs-Vmog6J1M&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QZMEWJvCed6P6bpcyS-j0qs-Vmog6J1M&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="11.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">11.rar</h3>
+                            <p class="card-size">الحجم: 3.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1xEhlMEFpcky4seeQqiQHhpMPhG8Ijz9b&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1xEhlMEFpcky4seeQqiQHhpMPhG8Ijz9b&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1xEhlMEFpcky4seeQqiQHhpMPhG8Ijz9b&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1GGhx0JXyDTtMr-CQo7G7ZfO9owlPcofu&sz=w200" alt="12.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">12.png</h3>
+                            <p class="card-size">الحجم: 1.24 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1GGhx0JXyDTtMr-CQo7G7ZfO9owlPcofu&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1GGhx0JXyDTtMr-CQo7G7ZfO9owlPcofu&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1GGhx0JXyDTtMr-CQo7G7ZfO9owlPcofu&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="12.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">12.rar</h3>
+                            <p class="card-size">الحجم: 2.72 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Yg4BHD3-95q4sDiXPkDlC-bCl8eY3YJe&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Yg4BHD3-95q4sDiXPkDlC-bCl8eY3YJe&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Yg4BHD3-95q4sDiXPkDlC-bCl8eY3YJe&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1iRdAcQOpnKua4AvgR9JQKrP42spmfSjQ&sz=w200" alt="13.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">13.png</h3>
+                            <p class="card-size">الحجم: 893.77 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1iRdAcQOpnKua4AvgR9JQKrP42spmfSjQ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1iRdAcQOpnKua4AvgR9JQKrP42spmfSjQ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1iRdAcQOpnKua4AvgR9JQKrP42spmfSjQ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="13.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">13.rar</h3>
+                            <p class="card-size">الحجم: 26.73 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1qnIk7IpLAocutWSeuucSoADJw80ImE20&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1qnIk7IpLAocutWSeuucSoADJw80ImE20&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1qnIk7IpLAocutWSeuucSoADJw80ImE20&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1It4_HOiGDRSmY7p-lMrVmEo1K-Au9ARg&sz=w200" alt="14.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">14.png</h3>
+                            <p class="card-size">الحجم: 955.23 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1It4_HOiGDRSmY7p-lMrVmEo1K-Au9ARg&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1It4_HOiGDRSmY7p-lMrVmEo1K-Au9ARg&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1It4_HOiGDRSmY7p-lMrVmEo1K-Au9ARg&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="14.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">14.rar</h3>
+                            <p class="card-size">الحجم: 19.53 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1zZxmSVAv7SfNCjp-JId_rV6rpI8vm9A7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1zZxmSVAv7SfNCjp-JId_rV6rpI8vm9A7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1zZxmSVAv7SfNCjp-JId_rV6rpI8vm9A7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1yR1yOBT0pnW60eud3SmJdB3QkzsRH5Uh&sz=w200" alt="15.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">15.png</h3>
+                            <p class="card-size">الحجم: 1.03 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1yR1yOBT0pnW60eud3SmJdB3QkzsRH5Uh&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1yR1yOBT0pnW60eud3SmJdB3QkzsRH5Uh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1yR1yOBT0pnW60eud3SmJdB3QkzsRH5Uh&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="15.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">15.rar</h3>
+                            <p class="card-size">الحجم: 4.03 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1GvKSicqn2trhXeBLPN1lvDjq8q8r_2sE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1GvKSicqn2trhXeBLPN1lvDjq8q8r_2sE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1GvKSicqn2trhXeBLPN1lvDjq8q8r_2sE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1RzHL9OmploqfSK-c1HFl8ZqSjrqnfxJ7&sz=w200" alt="16.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">16.png</h3>
+                            <p class="card-size">الحجم: 875.98 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1RzHL9OmploqfSK-c1HFl8ZqSjrqnfxJ7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1RzHL9OmploqfSK-c1HFl8ZqSjrqnfxJ7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1RzHL9OmploqfSK-c1HFl8ZqSjrqnfxJ7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="16.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">16.rar</h3>
+                            <p class="card-size">الحجم: 5.41 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1sLTryJsHKyZveCxJZyk772JwglDR8Jfm&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1sLTryJsHKyZveCxJZyk772JwglDR8Jfm&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1sLTryJsHKyZveCxJZyk772JwglDR8Jfm&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mCnz5USRCksvy06SIFsEanhaCWDJMckg&sz=w200" alt="17.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">17.png</h3>
+                            <p class="card-size">الحجم: 1.37 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mCnz5USRCksvy06SIFsEanhaCWDJMckg&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mCnz5USRCksvy06SIFsEanhaCWDJMckg&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mCnz5USRCksvy06SIFsEanhaCWDJMckg&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="17.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">17.rar</h3>
+                            <p class="card-size">الحجم: 25.95 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kAwrxjBeUhMiOgMjhMp5ak298zpP17LQ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kAwrxjBeUhMiOgMjhMp5ak298zpP17LQ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kAwrxjBeUhMiOgMjhMp5ak298zpP17LQ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1bG04F-3c-_ox6SsJflmKalC6a8Wc6fyB&sz=w200" alt="2.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">2.png</h3>
+                            <p class="card-size">الحجم: 3.19 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1bG04F-3c-_ox6SsJflmKalC6a8Wc6fyB&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1bG04F-3c-_ox6SsJflmKalC6a8Wc6fyB&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1bG04F-3c-_ox6SsJflmKalC6a8Wc6fyB&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="2.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">2.rar</h3>
+                            <p class="card-size">الحجم: 10.77 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1De1SolRO3miAavDzkXUgGD0pgZ1aRs6v&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1De1SolRO3miAavDzkXUgGD0pgZ1aRs6v&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1De1SolRO3miAavDzkXUgGD0pgZ1aRs6v&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=16nFDAh5jZrtJhmqctpvKKykHg3GVWh-q&sz=w200" alt="3.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">3.png</h3>
+                            <p class="card-size">الحجم: 1.44 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=16nFDAh5jZrtJhmqctpvKKykHg3GVWh-q&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=16nFDAh5jZrtJhmqctpvKKykHg3GVWh-q&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=16nFDAh5jZrtJhmqctpvKKykHg3GVWh-q&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="3.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">3.rar</h3>
+                            <p class="card-size">الحجم: 10.40 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1CBznszGvLuMlVXpMxGiJHlIc_NA4_7L7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1CBznszGvLuMlVXpMxGiJHlIc_NA4_7L7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1CBznszGvLuMlVXpMxGiJHlIc_NA4_7L7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1UQ7vLtrxRFbfB4bfAYCVjrjE5jeBxxwB&sz=w200" alt="4.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">4.png</h3>
+                            <p class="card-size">الحجم: 6.35 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1UQ7vLtrxRFbfB4bfAYCVjrjE5jeBxxwB&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1UQ7vLtrxRFbfB4bfAYCVjrjE5jeBxxwB&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1UQ7vLtrxRFbfB4bfAYCVjrjE5jeBxxwB&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="4.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">4.rar</h3>
+                            <p class="card-size">الحجم: 18.64 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1HrMLPseZs8RjYqp_KDiyH91amQON0sf5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1HrMLPseZs8RjYqp_KDiyH91amQON0sf5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1HrMLPseZs8RjYqp_KDiyH91amQON0sf5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=17BKeuD1lJ7Bdyb88FUHeEuuqKTY-bpW8&sz=w200" alt="5.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">5.png</h3>
+                            <p class="card-size">الحجم: 4.60 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=17BKeuD1lJ7Bdyb88FUHeEuuqKTY-bpW8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=17BKeuD1lJ7Bdyb88FUHeEuuqKTY-bpW8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=17BKeuD1lJ7Bdyb88FUHeEuuqKTY-bpW8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="5.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">5.rar</h3>
+                            <p class="card-size">الحجم: 27.40 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1VEPyMvOpblHdI9fxAVt6bgcISE2uFpG2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1VEPyMvOpblHdI9fxAVt6bgcISE2uFpG2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1VEPyMvOpblHdI9fxAVt6bgcISE2uFpG2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1QQUXvnuh7TqnVfjyIOs_9T5ZPvXdkfEN&sz=w200" alt="6.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">6.png</h3>
+                            <p class="card-size">الحجم: 2.71 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QQUXvnuh7TqnVfjyIOs_9T5ZPvXdkfEN&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QQUXvnuh7TqnVfjyIOs_9T5ZPvXdkfEN&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QQUXvnuh7TqnVfjyIOs_9T5ZPvXdkfEN&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="6.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">6.rar</h3>
+                            <p class="card-size">الحجم: 8.27 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=16arQvKtsbwSA1o03m5gB_sKhlG_u8nx1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=16arQvKtsbwSA1o03m5gB_sKhlG_u8nx1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=16arQvKtsbwSA1o03m5gB_sKhlG_u8nx1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1eO7MrBJuCTNVhds3L3-fXN8TJh0_xiqU&sz=w200" alt="7.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">7.png</h3>
+                            <p class="card-size">الحجم: 1.37 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1eO7MrBJuCTNVhds3L3-fXN8TJh0_xiqU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1eO7MrBJuCTNVhds3L3-fXN8TJh0_xiqU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1eO7MrBJuCTNVhds3L3-fXN8TJh0_xiqU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="7.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">7.rar</h3>
+                            <p class="card-size">الحجم: 7.07 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Gz9o20fYVRN5mX0m0F9ghyM7IbrSSkqh&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Gz9o20fYVRN5mX0m0F9ghyM7IbrSSkqh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Gz9o20fYVRN5mX0m0F9ghyM7IbrSSkqh&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1f2E8IXP4svBEse9LMwdtFL_GS-hpFQhm&sz=w200" alt="8.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">8.png</h3>
+                            <p class="card-size">الحجم: 1.37 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1f2E8IXP4svBEse9LMwdtFL_GS-hpFQhm&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1f2E8IXP4svBEse9LMwdtFL_GS-hpFQhm&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1f2E8IXP4svBEse9LMwdtFL_GS-hpFQhm&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="8.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">8.rar</h3>
+                            <p class="card-size">الحجم: 3.57 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1SF8-njvCgJdE7Oi26E6AZj-02zvn_njj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1SF8-njvCgJdE7Oi26E6AZj-02zvn_njj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1SF8-njvCgJdE7Oi26E6AZj-02zvn_njj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=10R9QnushBRId2_IkSij9ae0srJqplwV2&sz=w200" alt="9.png" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">9.png</h3>
+                            <p class="card-size">الحجم: 1.92 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10R9QnushBRId2_IkSij9ae0srJqplwV2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10R9QnushBRId2_IkSij9ae0srJqplwV2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10R9QnushBRId2_IkSij9ae0srJqplwV2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="9.rar" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">9.rar</h3>
+                            <p class="card-size">الحجم: 6.13 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1iY-lJkRoCWEq0RfVE98wGd2AufzKJvhc&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1iY-lJkRoCWEq0RfVE98wGd2AufzKJvhc&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1iY-lJkRoCWEq0RfVE98wGd2AufzKJvhc&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.RAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

@@ -1,0 +1,725 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>SVG فيكتور</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>SVG فيكتور</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 300k bundle-20230615T184329Z-001.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 300k bundle-20230615T184329Z-001.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10A1eVgbpiJdK4dcJIKqo9Kzf5qPgkA_U&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10A1eVgbpiJdK4dcJIKqo9Kzf5qPgkA_U&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10A1eVgbpiJdK4dcJIKqo9Kzf5qPgkA_U&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 300k bundle-20230615T184329Z-002.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 300k bundle-20230615T184329Z-002.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1cmneRk9ZAhbfrup6C_Kva_XOyHi1V8bD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1cmneRk9ZAhbfrup6C_Kva_XOyHi1V8bD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1cmneRk9ZAhbfrup6C_Kva_XOyHi1V8bD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 300k bundle-20230615T184329Z-003.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 300k bundle-20230615T184329Z-003.zip</h3>
+                            <p class="card-size">الحجم: 2.01 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1CcL5YOGpXUs-xPBtngV3AlS0zynqf1Xr&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1CcL5YOGpXUs-xPBtngV3AlS0zynqf1Xr&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1CcL5YOGpXUs-xPBtngV3AlS0zynqf1Xr&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 300k bundle-20230615T184329Z-004.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 300k bundle-20230615T184329Z-004.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1cxJZV5hIbSU2GFUqvmN88bv8uPsten6C&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1cxJZV5hIbSU2GFUqvmN88bv8uPsten6C&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1cxJZV5hIbSU2GFUqvmN88bv8uPsten6C&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 300k bundle-20230615T184329Z-005.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 300k bundle-20230615T184329Z-005.zip</h3>
+                            <p class="card-size">الحجم: 1.89 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=19aRahdU9djydCz6IHPpYeRl9KFf5PyPQ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=19aRahdU9djydCz6IHPpYeRl9KFf5PyPQ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=19aRahdU9djydCz6IHPpYeRl9KFf5PyPQ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 300k bundle-20230615T184329Z-006.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 300k bundle-20230615T184329Z-006.zip</h3>
+                            <p class="card-size">الحجم: 825.56 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1IphI-9CEi5t0maegGYsRTFGm-OlBWqyn&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1IphI-9CEi5t0maegGYsRTFGm-OlBWqyn&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1IphI-9CEi5t0maegGYsRTFGm-OlBWqyn&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of EXCLUSIVE SVG BUNDLES-004.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of EXCLUSIVE SVG BUNDLES-004.zip</h3>
+                            <p class="card-size">الحجم: 2.41 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1UN_MFGwFE5lp_9sXMPk96U7EnfYSJth0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1UN_MFGwFE5lp_9sXMPk96U7EnfYSJth0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1UN_MFGwFE5lp_9sXMPk96U7EnfYSJth0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-001.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-001.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1yf-hgrEkzzjnzxmSoCoHXPTNa8EMSKs1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1yf-hgrEkzzjnzxmSoCoHXPTNa8EMSKs1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1yf-hgrEkzzjnzxmSoCoHXPTNa8EMSKs1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-002.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-002.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1dq5nXaLSyEXmWaqTp6jFke_Er93pbdja&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1dq5nXaLSyEXmWaqTp6jFke_Er93pbdja&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1dq5nXaLSyEXmWaqTp6jFke_Er93pbdja&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-003.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-003.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Gnk__xfPUbSAbMD8823_MCPVRZCSawyT&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Gnk__xfPUbSAbMD8823_MCPVRZCSawyT&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Gnk__xfPUbSAbMD8823_MCPVRZCSawyT&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-005.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-005.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1IaKpDiVKrh1ggCj8337S7xDD6Ejkuaf4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1IaKpDiVKrh1ggCj8337S7xDD6Ejkuaf4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1IaKpDiVKrh1ggCj8337S7xDD6Ejkuaf4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-006.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-006.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1n5lL0VFXC9PghbQbf9JIDn0pGEpG8Ezy&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1n5lL0VFXC9PghbQbf9JIDn0pGEpG8Ezy&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1n5lL0VFXC9PghbQbf9JIDn0pGEpG8Ezy&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-007.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-007.zip</h3>
+                            <p class="card-size">الحجم: 1.99 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1233DP8tsLEquj_f0mHYELzLKkvVpVsQD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1233DP8tsLEquj_f0mHYELzLKkvVpVsQD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1233DP8tsLEquj_f0mHYELzLKkvVpVsQD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-008.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-008.zip</h3>
+                            <p class="card-size">الحجم: 1.98 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=18SIKj07Fq0J-Xnf4X_jHszBfpo7tSpA_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=18SIKj07Fq0J-Xnf4X_jHszBfpo7tSpA_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=18SIKj07Fq0J-Xnf4X_jHszBfpo7tSpA_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-009.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-009.zip</h3>
+                            <p class="card-size">الحجم: 1.97 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10q4SnlkacYDvpeNQOke8vyHfLVZ3rZAJ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10q4SnlkacYDvpeNQOke8vyHfLVZ3rZAJ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10q4SnlkacYDvpeNQOke8vyHfLVZ3rZAJ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-010.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-010.zip</h3>
+                            <p class="card-size">الحجم: 1.94 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=13gxixaVzIj_0aN9S8hwu03Y_htyGkWpg&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=13gxixaVzIj_0aN9S8hwu03Y_htyGkWpg&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=13gxixaVzIj_0aN9S8hwu03Y_htyGkWpg&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-011.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-011.zip</h3>
+                            <p class="card-size">الحجم: 1.97 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=16F_-z6qo4RAiD4-6ORfQW2s4br-0roOp&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=16F_-z6qo4RAiD4-6ORfQW2s4br-0roOp&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=16F_-z6qo4RAiD4-6ORfQW2s4br-0roOp&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-012.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Svgbundle.net (200k Bundle)-20230615T185521Z-012.zip</h3>
+                            <p class="card-size">الحجم: 789.47 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1gViu6WVFq0Tc4ld_v_sph3idLjdN32S0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1gViu6WVFq0Tc4ld_v_sph3idLjdN32S0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1gViu6WVFq0Tc4ld_v_sph3idLjdN32S0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 75,000 Huge Bundle-20230615T185539Z-001.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 75,000 Huge Bundle-20230615T185539Z-001.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1i11iP7smyE_DTksfxEhT_MJujq8peH0Q&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1i11iP7smyE_DTksfxEhT_MJujq8peH0Q&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1i11iP7smyE_DTksfxEhT_MJujq8peH0Q&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 75,000 Huge Bundle-20230615T185539Z-002.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 75,000 Huge Bundle-20230615T185539Z-002.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=14hAdjUX47dtTlFxhcalhu-cZTRqBqIq7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=14hAdjUX47dtTlFxhcalhu-cZTRqBqIq7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=14hAdjUX47dtTlFxhcalhu-cZTRqBqIq7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 75,000 Huge Bundle-20230615T185539Z-003.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 75,000 Huge Bundle-20230615T185539Z-003.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1LpLuf4KErZ4ApPIiG6DXb6JziCaMLs1P&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1LpLuf4KErZ4ApPIiG6DXb6JziCaMLs1P&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1LpLuf4KErZ4ApPIiG6DXb6JziCaMLs1P&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 75,000 Huge Bundle-20230615T185539Z-004.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 75,000 Huge Bundle-20230615T185539Z-004.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1N9Bjngmadosm_lY2lvyAlmAvmCJn-l5C&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1N9Bjngmadosm_lY2lvyAlmAvmCJn-l5C&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1N9Bjngmadosm_lY2lvyAlmAvmCJn-l5C&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 75,000 Huge Bundle-20230615T185539Z-005.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 75,000 Huge Bundle-20230615T185539Z-005.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1z8gaWYGZzxxO0NvP51OcPO9mtjCNU8TX&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1z8gaWYGZzxxO0NvP51OcPO9mtjCNU8TX&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1z8gaWYGZzxxO0NvP51OcPO9mtjCNU8TX&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 75,000 Huge Bundle-20230615T185539Z-006.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 75,000 Huge Bundle-20230615T185539Z-006.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=18yw8vgaavuARslfyKFMpV1zmCzbwLSv7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=18yw8vgaavuARslfyKFMpV1zmCzbwLSv7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=18yw8vgaavuARslfyKFMpV1zmCzbwLSv7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 75,000 Huge Bundle-20230615T185539Z-007.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 75,000 Huge Bundle-20230615T185539Z-007.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=11cDsDmb7YWE_rDu5WiaKMxW0GYZMw-7U&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=11cDsDmb7YWE_rDu5WiaKMxW0GYZMw-7U&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=11cDsDmb7YWE_rDu5WiaKMxW0GYZMw-7U&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of 75,000 Huge Bundle-20230615T185539Z-008.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of 75,000 Huge Bundle-20230615T185539Z-008.zip</h3>
+                            <p class="card-size">الحجم: 679.89 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1MnDuUGhBS5pw1NTJT-RHeTG8GnKRz-PJ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1MnDuUGhBS5pw1NTJT-RHeTG8GnKRz-PJ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1MnDuUGhBS5pw1NTJT-RHeTG8GnKRz-PJ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of THE ULTIMATE BUNDLE-001.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of THE ULTIMATE BUNDLE-001.zip</h3>
+                            <p class="card-size">الحجم: 2.86 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Rmo45E8ZGqpri5HGJsu-rZPlSdnfImiz&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Rmo45E8ZGqpri5HGJsu-rZPlSdnfImiz&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Rmo45E8ZGqpri5HGJsu-rZPlSdnfImiz&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Ultimate SVG Files-20230615T185557Z-002.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Ultimate SVG Files-20230615T185557Z-002.zip</h3>
+                            <p class="card-size">الحجم: 2.00 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1jvG4UVmPTRnA-pG9VRiFUX0E1EQKAegl&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1jvG4UVmPTRnA-pG9VRiFUX0E1EQKAegl&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1jvG4UVmPTRnA-pG9VRiFUX0E1EQKAegl&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Ultimate SVG Files-20230615T185557Z-003.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Ultimate SVG Files-20230615T185557Z-003.zip</h3>
+                            <p class="card-size">الحجم: 1.44 GB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=14GYr3B3eUH9JN_smdUfw61eTxMr_FVSl&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=14GYr3B3eUH9JN_smdUfw61eTxMr_FVSl&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=14GYr3B3eUH9JN_smdUfw61eTxMr_FVSl&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="Copy of Ultimate SVG Files-20230615T185557Z-004.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Copy of Ultimate SVG Files-20230615T185557Z-004.zip</h3>
+                            <p class="card-size">الحجم: 490.01 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ttKTFbb2xw9W_VkyRjQf07HgrtSesobc&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ttKTFbb2xw9W_VkyRjQf07HgrtSesobc&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ttKTFbb2xw9W_VkyRjQf07HgrtSesobc&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

@@ -1,0 +1,1643 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>استايلات النصوص</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>استايلات النصوص</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mYmZTo8ao3EN7jZMuPM-K2ITPSWq2VvW&sz=w200" alt="AdobeStock_322204471.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_322204471.ai</h3>
+                            <p class="card-size">الحجم: 25.40 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mYmZTo8ao3EN7jZMuPM-K2ITPSWq2VvW&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mYmZTo8ao3EN7jZMuPM-K2ITPSWq2VvW&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mYmZTo8ao3EN7jZMuPM-K2ITPSWq2VvW&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Ouvi8Vsu0SHWG3_RPXhSAPglyDHbm5_G&sz=w200" alt="AdobeStock_330272697.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_330272697.ai</h3>
+                            <p class="card-size">الحجم: 16.11 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Ouvi8Vsu0SHWG3_RPXhSAPglyDHbm5_G&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Ouvi8Vsu0SHWG3_RPXhSAPglyDHbm5_G&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Ouvi8Vsu0SHWG3_RPXhSAPglyDHbm5_G&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1bYMIYnRSEaEGWQkYqTs15ALNQB1GF0SW&sz=w200" alt="AdobeStock_340372526.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_340372526.ai</h3>
+                            <p class="card-size">الحجم: 5.15 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1bYMIYnRSEaEGWQkYqTs15ALNQB1GF0SW&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1bYMIYnRSEaEGWQkYqTs15ALNQB1GF0SW&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1bYMIYnRSEaEGWQkYqTs15ALNQB1GF0SW&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1RrlrAj0wTUJqIA1CCMhb-afUCERhbK7C&sz=w200" alt="AdobeStock_345029791.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_345029791.ai</h3>
+                            <p class="card-size">الحجم: 4.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1RrlrAj0wTUJqIA1CCMhb-afUCERhbK7C&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1RrlrAj0wTUJqIA1CCMhb-afUCERhbK7C&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1RrlrAj0wTUJqIA1CCMhb-afUCERhbK7C&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1JYbdjlGEWNrgR30e4qKLGTooqQdFV8MA&sz=w200" alt="AdobeStock_345029828.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_345029828.ai</h3>
+                            <p class="card-size">الحجم: 3.84 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1JYbdjlGEWNrgR30e4qKLGTooqQdFV8MA&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1JYbdjlGEWNrgR30e4qKLGTooqQdFV8MA&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1JYbdjlGEWNrgR30e4qKLGTooqQdFV8MA&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1SMZ5RJyemXrnDC_smuC-Xt-m_6cyDnHw&sz=w200" alt="AdobeStock_351887604.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_351887604.ai</h3>
+                            <p class="card-size">الحجم: 6.28 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1SMZ5RJyemXrnDC_smuC-Xt-m_6cyDnHw&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1SMZ5RJyemXrnDC_smuC-Xt-m_6cyDnHw&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1SMZ5RJyemXrnDC_smuC-Xt-m_6cyDnHw&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Bo4t-bOdhuJ_pEpDkyDtSMuEj7b_WVq0&sz=w200" alt="AdobeStock_376459848.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_376459848.ai</h3>
+                            <p class="card-size">الحجم: 3.01 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Bo4t-bOdhuJ_pEpDkyDtSMuEj7b_WVq0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Bo4t-bOdhuJ_pEpDkyDtSMuEj7b_WVq0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Bo4t-bOdhuJ_pEpDkyDtSMuEj7b_WVq0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1_qUOZ99Jbq3_IOM4r77fuR6Ex-pn-45z&sz=w200" alt="AdobeStock_377128072.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_377128072.ai</h3>
+                            <p class="card-size">الحجم: 9.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1_qUOZ99Jbq3_IOM4r77fuR6Ex-pn-45z&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1_qUOZ99Jbq3_IOM4r77fuR6Ex-pn-45z&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1_qUOZ99Jbq3_IOM4r77fuR6Ex-pn-45z&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1t8m3Q4CyQvLFaSTSUGEzXoKK9K8UNg_z&sz=w200" alt="AdobeStock_383003676.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_383003676.ai</h3>
+                            <p class="card-size">الحجم: 25.54 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1t8m3Q4CyQvLFaSTSUGEzXoKK9K8UNg_z&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1t8m3Q4CyQvLFaSTSUGEzXoKK9K8UNg_z&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1t8m3Q4CyQvLFaSTSUGEzXoKK9K8UNg_z&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1xYHYyjVARxseFrbW7pvrRvV3_L7N1eh0&sz=w200" alt="AdobeStock_408447694.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_408447694.ai</h3>
+                            <p class="card-size">الحجم: 23.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1xYHYyjVARxseFrbW7pvrRvV3_L7N1eh0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1xYHYyjVARxseFrbW7pvrRvV3_L7N1eh0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1xYHYyjVARxseFrbW7pvrRvV3_L7N1eh0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1C3iCQQ68kIi4Pey89Ld4A_TJTFjdkX2w&sz=w200" alt="AdobeStock_414485906.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_414485906.ai</h3>
+                            <p class="card-size">الحجم: 7.04 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1C3iCQQ68kIi4Pey89Ld4A_TJTFjdkX2w&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1C3iCQQ68kIi4Pey89Ld4A_TJTFjdkX2w&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1C3iCQQ68kIi4Pey89Ld4A_TJTFjdkX2w&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1mTr2FTjKQ0QXYCE03lp2d9F0gV0WdNOB&sz=w200" alt="AdobeStock_423645410.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_423645410.ai</h3>
+                            <p class="card-size">الحجم: 15.22 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1mTr2FTjKQ0QXYCE03lp2d9F0gV0WdNOB&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1mTr2FTjKQ0QXYCE03lp2d9F0gV0WdNOB&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1mTr2FTjKQ0QXYCE03lp2d9F0gV0WdNOB&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1r6aKn75-7Yf7GK_duU0SSRnLejE6sGLC&sz=w200" alt="AdobeStock_436022364.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_436022364.ai</h3>
+                            <p class="card-size">الحجم: 1.54 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1r6aKn75-7Yf7GK_duU0SSRnLejE6sGLC&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1r6aKn75-7Yf7GK_duU0SSRnLejE6sGLC&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1r6aKn75-7Yf7GK_duU0SSRnLejE6sGLC&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lp6kdbsH_NJWypiR4pHacni77OTt3MO5&sz=w200" alt="AdobeStock_466289597.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_466289597.ai</h3>
+                            <p class="card-size">الحجم: 2.45 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lp6kdbsH_NJWypiR4pHacni77OTt3MO5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lp6kdbsH_NJWypiR4pHacni77OTt3MO5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lp6kdbsH_NJWypiR4pHacni77OTt3MO5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1hfsHLaCocTLtIZ5aTps_iICNLVZhoZtb&sz=w200" alt="AdobeStock_468380564.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_468380564.ai</h3>
+                            <p class="card-size">الحجم: 7.57 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hfsHLaCocTLtIZ5aTps_iICNLVZhoZtb&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hfsHLaCocTLtIZ5aTps_iICNLVZhoZtb&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hfsHLaCocTLtIZ5aTps_iICNLVZhoZtb&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1AIOWTl3UyTnw9gioVVxy0UrkqaOPXEIy&sz=w200" alt="AdobeStock_472907001.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_472907001.ai</h3>
+                            <p class="card-size">الحجم: 5.40 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1AIOWTl3UyTnw9gioVVxy0UrkqaOPXEIy&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1AIOWTl3UyTnw9gioVVxy0UrkqaOPXEIy&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1AIOWTl3UyTnw9gioVVxy0UrkqaOPXEIy&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1u13ad72uFzdgbMTXQWTqUDLZt4Ofis1m&sz=w200" alt="AdobeStock_473055923.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_473055923.ai</h3>
+                            <p class="card-size">الحجم: 5.83 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1u13ad72uFzdgbMTXQWTqUDLZt4Ofis1m&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1u13ad72uFzdgbMTXQWTqUDLZt4Ofis1m&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1u13ad72uFzdgbMTXQWTqUDLZt4Ofis1m&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ehS9Db6M6HUCudHEShCC39zvFuxynEB4&sz=w200" alt="AdobeStock_477913864.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_477913864.ai</h3>
+                            <p class="card-size">الحجم: 30.90 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ehS9Db6M6HUCudHEShCC39zvFuxynEB4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ehS9Db6M6HUCudHEShCC39zvFuxynEB4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ehS9Db6M6HUCudHEShCC39zvFuxynEB4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1xEYXAwYZtmc-YBf_pCyMt23vgSzv0B0_&sz=w200" alt="AdobeStock_479034932.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_479034932.ai</h3>
+                            <p class="card-size">الحجم: 9.40 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1xEYXAwYZtmc-YBf_pCyMt23vgSzv0B0_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1xEYXAwYZtmc-YBf_pCyMt23vgSzv0B0_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1xEYXAwYZtmc-YBf_pCyMt23vgSzv0B0_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1B-WKPrhJwhvf_3Low0ZsXEVOmK9YV3Pj&sz=w200" alt="AdobeStock_480708799.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_480708799.ai</h3>
+                            <p class="card-size">الحجم: 4.85 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1B-WKPrhJwhvf_3Low0ZsXEVOmK9YV3Pj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1B-WKPrhJwhvf_3Low0ZsXEVOmK9YV3Pj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1B-WKPrhJwhvf_3Low0ZsXEVOmK9YV3Pj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1s9cg2WcTetcBbUBoVe9PnK9SvF3ANP4S&sz=w200" alt="AdobeStock_485265462.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_485265462.ai</h3>
+                            <p class="card-size">الحجم: 26.35 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1s9cg2WcTetcBbUBoVe9PnK9SvF3ANP4S&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1s9cg2WcTetcBbUBoVe9PnK9SvF3ANP4S&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1s9cg2WcTetcBbUBoVe9PnK9SvF3ANP4S&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ZcHr2lm1ti2BhPphVOcIBBh3mN2xk1L0&sz=w200" alt="AdobeStock_486727138.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_486727138.ai</h3>
+                            <p class="card-size">الحجم: 30.45 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ZcHr2lm1ti2BhPphVOcIBBh3mN2xk1L0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ZcHr2lm1ti2BhPphVOcIBBh3mN2xk1L0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ZcHr2lm1ti2BhPphVOcIBBh3mN2xk1L0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1GwBbuEGbbKkBbLKUvAwsC4bUvOGOaApU&sz=w200" alt="AdobeStock_487683810.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_487683810.ai</h3>
+                            <p class="card-size">الحجم: 12.39 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1GwBbuEGbbKkBbLKUvAwsC4bUvOGOaApU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1GwBbuEGbbKkBbLKUvAwsC4bUvOGOaApU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1GwBbuEGbbKkBbLKUvAwsC4bUvOGOaApU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1nA8fmCAHPlP78ypnyKdiQ6X_7zgGzf4q&sz=w200" alt="AdobeStock_492506685.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_492506685.ai</h3>
+                            <p class="card-size">الحجم: 2.63 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nA8fmCAHPlP78ypnyKdiQ6X_7zgGzf4q&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nA8fmCAHPlP78ypnyKdiQ6X_7zgGzf4q&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nA8fmCAHPlP78ypnyKdiQ6X_7zgGzf4q&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1NwMHLWD5VA-f2M4FbXJYG9A_TN99FVsx&sz=w200" alt="AdobeStock_508938681.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_508938681.ai</h3>
+                            <p class="card-size">الحجم: 1.73 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1NwMHLWD5VA-f2M4FbXJYG9A_TN99FVsx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1NwMHLWD5VA-f2M4FbXJYG9A_TN99FVsx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1NwMHLWD5VA-f2M4FbXJYG9A_TN99FVsx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Lc3AlwxMLHqecnC5bbmOC_BPx4qu0Ct-&sz=w200" alt="AdobeStock_514873349.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_514873349.ai</h3>
+                            <p class="card-size">الحجم: 19.15 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Lc3AlwxMLHqecnC5bbmOC_BPx4qu0Ct-&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Lc3AlwxMLHqecnC5bbmOC_BPx4qu0Ct-&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Lc3AlwxMLHqecnC5bbmOC_BPx4qu0Ct-&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1I3F_bmKibPAXDbU528HMPH3ZoxDl12yJ&sz=w200" alt="AdobeStock_514980606.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_514980606.ai</h3>
+                            <p class="card-size">الحجم: 2.74 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1I3F_bmKibPAXDbU528HMPH3ZoxDl12yJ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1I3F_bmKibPAXDbU528HMPH3ZoxDl12yJ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1I3F_bmKibPAXDbU528HMPH3ZoxDl12yJ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1RKu6QkJwDrMZ7dSFZPJrgfRqIHuDRIjm&sz=w200" alt="AdobeStock_518793162.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_518793162.ai</h3>
+                            <p class="card-size">الحجم: 17.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1RKu6QkJwDrMZ7dSFZPJrgfRqIHuDRIjm&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1RKu6QkJwDrMZ7dSFZPJrgfRqIHuDRIjm&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1RKu6QkJwDrMZ7dSFZPJrgfRqIHuDRIjm&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1myOEdDKEy4ltx8wxfjc8yRAYKSNV6kuT&sz=w200" alt="AdobeStock_525687610.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_525687610.ai</h3>
+                            <p class="card-size">الحجم: 9.01 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1myOEdDKEy4ltx8wxfjc8yRAYKSNV6kuT&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1myOEdDKEy4ltx8wxfjc8yRAYKSNV6kuT&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1myOEdDKEy4ltx8wxfjc8yRAYKSNV6kuT&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1hw6XaT2l9_2sHly_MJkrvgLlW6SPVaOP&sz=w200" alt="AdobeStock_527272762.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_527272762.ai</h3>
+                            <p class="card-size">الحجم: 2.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hw6XaT2l9_2sHly_MJkrvgLlW6SPVaOP&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hw6XaT2l9_2sHly_MJkrvgLlW6SPVaOP&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hw6XaT2l9_2sHly_MJkrvgLlW6SPVaOP&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oKef7OeaNj5NzSNSDsmI1raYYmz_wBmG&sz=w200" alt="AdobeStock_528955856.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_528955856.ai</h3>
+                            <p class="card-size">الحجم: 2.37 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oKef7OeaNj5NzSNSDsmI1raYYmz_wBmG&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oKef7OeaNj5NzSNSDsmI1raYYmz_wBmG&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oKef7OeaNj5NzSNSDsmI1raYYmz_wBmG&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1S7PBZTdfukgGFstUTqg5ejqu7wFwwMtF&sz=w200" alt="AdobeStock_614365219.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_614365219.ai</h3>
+                            <p class="card-size">الحجم: 3.75 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1S7PBZTdfukgGFstUTqg5ejqu7wFwwMtF&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1S7PBZTdfukgGFstUTqg5ejqu7wFwwMtF&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1S7PBZTdfukgGFstUTqg5ejqu7wFwwMtF&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1AZ84H6GPNr4Iopf2ktMsC4BwtQOUHO0E&sz=w200" alt="AdobeStock_620087966.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_620087966.ai</h3>
+                            <p class="card-size">الحجم: 2.77 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1AZ84H6GPNr4Iopf2ktMsC4BwtQOUHO0E&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1AZ84H6GPNr4Iopf2ktMsC4BwtQOUHO0E&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1AZ84H6GPNr4Iopf2ktMsC4BwtQOUHO0E&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=10I4BlRH7wlvccvkvFdXeUHohiPod3614&sz=w200" alt="AdobeStock_620706768.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_620706768.ai</h3>
+                            <p class="card-size">الحجم: 5.73 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10I4BlRH7wlvccvkvFdXeUHohiPod3614&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10I4BlRH7wlvccvkvFdXeUHohiPod3614&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10I4BlRH7wlvccvkvFdXeUHohiPod3614&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Jn5ZHLJeIzPx1yYoF1oWho8jsQo4jvO3&sz=w200" alt="AdobeStock_622175918.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_622175918.ai</h3>
+                            <p class="card-size">الحجم: 10.29 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Jn5ZHLJeIzPx1yYoF1oWho8jsQo4jvO3&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Jn5ZHLJeIzPx1yYoF1oWho8jsQo4jvO3&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Jn5ZHLJeIzPx1yYoF1oWho8jsQo4jvO3&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1huNie6VQHrr7Xq4yFY1ejUFKd9G4Hfd0&sz=w200" alt="AdobeStock_622678156.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_622678156.ai</h3>
+                            <p class="card-size">الحجم: 30.95 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1huNie6VQHrr7Xq4yFY1ejUFKd9G4Hfd0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1huNie6VQHrr7Xq4yFY1ejUFKd9G4Hfd0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1huNie6VQHrr7Xq4yFY1ejUFKd9G4Hfd0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=14Rhu5eJkvzk_eiVvJr-2lhhcfiF6QgDs&sz=w200" alt="AdobeStock_624973847.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_624973847.ai</h3>
+                            <p class="card-size">الحجم: 3.14 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=14Rhu5eJkvzk_eiVvJr-2lhhcfiF6QgDs&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=14Rhu5eJkvzk_eiVvJr-2lhhcfiF6QgDs&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=14Rhu5eJkvzk_eiVvJr-2lhhcfiF6QgDs&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1yA51gfGItsiWe5PfX45b5M7cRpidG-tR&sz=w200" alt="AdobeStock_632676114.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_632676114.ai</h3>
+                            <p class="card-size">الحجم: 2.27 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1yA51gfGItsiWe5PfX45b5M7cRpidG-tR&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1yA51gfGItsiWe5PfX45b5M7cRpidG-tR&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1yA51gfGItsiWe5PfX45b5M7cRpidG-tR&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1-cCo6OtWIJUpQyKzDLQli1MA1m9mRjZi&sz=w200" alt="AdobeStock_633575664.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_633575664.ai</h3>
+                            <p class="card-size">الحجم: 3.48 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1-cCo6OtWIJUpQyKzDLQli1MA1m9mRjZi&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1-cCo6OtWIJUpQyKzDLQli1MA1m9mRjZi&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1-cCo6OtWIJUpQyKzDLQli1MA1m9mRjZi&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1BFdxJHqc_RUWG1zwAENN20LfYvdyAeX5&sz=w200" alt="AdobeStock_638276555.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_638276555.ai</h3>
+                            <p class="card-size">الحجم: 5.41 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1BFdxJHqc_RUWG1zwAENN20LfYvdyAeX5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1BFdxJHqc_RUWG1zwAENN20LfYvdyAeX5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1BFdxJHqc_RUWG1zwAENN20LfYvdyAeX5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=108xa63ZnCDitnjqs_MOgOJ_liW_9d3IX&sz=w200" alt="AdobeStock_645547228.ai" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">AdobeStock_645547228.ai</h3>
+                            <p class="card-size">الحجم: 8.88 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=108xa63ZnCDitnjqs_MOgOJ_liW_9d3IX&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=108xa63ZnCDitnjqs_MOgOJ_liW_9d3IX&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=108xa63ZnCDitnjqs_MOgOJ_liW_9d3IX&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="action-text-effect-template.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">action-text-effect-template.jpg.zip</h3>
+                            <p class="card-size">الحجم: 6.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1jNPOgMViAqsmOOBM_C9z1dCOYpdPN3-E&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1jNPOgMViAqsmOOBM_C9z1dCOYpdPN3-E&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1jNPOgMViAqsmOOBM_C9z1dCOYpdPN3-E&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="awesome-vibes-editable-text-effect-with-modern-simple-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">awesome-vibes-editable-text-effect-with-modern-simple-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 28.81 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kbqqiQcATd1z4UP-DM1UqMA1sa_xZ_FV&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kbqqiQcATd1z4UP-DM1UqMA1sa_xZ_FV&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kbqqiQcATd1z4UP-DM1UqMA1sa_xZ_FV&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="bold-text-effect-style-editable-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">bold-text-effect-style-editable-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 3.89 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1NAdN9bFIrlpO5gUmipJRDmGnIOsMcTAk&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1NAdN9bFIrlpO5gUmipJRDmGnIOsMcTAk&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1NAdN9bFIrlpO5gUmipJRDmGnIOsMcTAk&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="boss-3d-bold-style-editable-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">boss-3d-bold-style-editable-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 1.77 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=13zF1QVTLb3JxXVoNtdGtzhjsisxmBfys&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=13zF1QVTLb3JxXVoNtdGtzhjsisxmBfys&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=13zF1QVTLb3JxXVoNtdGtzhjsisxmBfys&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="cartoon-high-text-effect-editable-comic-funny-text-style.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">cartoon-high-text-effect-editable-comic-funny-text-style.zip</h3>
+                            <p class="card-size">الحجم: 19.81 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1bEC1r2k1wdNcIXXT15MiRtDd-OVWsmEu&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1bEC1r2k1wdNcIXXT15MiRtDd-OVWsmEu&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1bEC1r2k1wdNcIXXT15MiRtDd-OVWsmEu&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="cartoon-movie-text-effect-editable-animation-family-entertainment-customizable-font-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">cartoon-movie-text-effect-editable-animation-family-entertainment-customizable-font-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 8.21 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1beu0K4nFKHPueFUft2y1mw2oDCgZOgj7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1beu0K4nFKHPueFUft2y1mw2oDCgZOgj7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1beu0K4nFKHPueFUft2y1mw2oDCgZOgj7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="comic-hero-text-effect-editable-kids-cartoon-text-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">comic-hero-text-effect-editable-kids-cartoon-text-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 8.54 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pkl3jPrnQnMc4oeXY7vtAxkOfz4yVT5H&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pkl3jPrnQnMc4oeXY7vtAxkOfz4yVT5H&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pkl3jPrnQnMc4oeXY7vtAxkOfz4yVT5H&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="creative-sunset-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">creative-sunset-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 988.09 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1snm0rknkvSY2ZnqN_MJEW9ZFgoXMc0yE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1snm0rknkvSY2ZnqN_MJEW9ZFgoXMc0yE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1snm0rknkvSY2ZnqN_MJEW9ZFgoXMc0yE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-3d-child-text-effect-fancy-cartoon-text-effect-perfect-logotype-heading-title.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-3d-child-text-effect-fancy-cartoon-text-effect-perfect-logotype-heading-title.jpg.zip</h3>
+                            <p class="card-size">الحجم: 3.72 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=14eSfH5lDirOkQ8siswSlAmBv7txVNujz&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=14eSfH5lDirOkQ8siswSlAmBv7txVNujz&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=14eSfH5lDirOkQ8siswSlAmBv7txVNujz&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-3d-thank-you-500k-followers-text-style-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-3d-thank-you-500k-followers-text-style-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 2.59 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hGXxzUsuvkzukiamOu7bIKMNhd1W7mTZ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hGXxzUsuvkzukiamOu7bIKMNhd1W7mTZ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hGXxzUsuvkzukiamOu7bIKMNhd1W7mTZ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-3d-trendy-lettering-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-3d-trendy-lettering-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 7.08 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QEHw0DOPIahZXowWbYjqh42j4FHE7mJI&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QEHw0DOPIahZXowWbYjqh42j4FHE7mJI&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QEHw0DOPIahZXowWbYjqh42j4FHE7mJI&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-cartoon-text-effect-illustrator.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-cartoon-text-effect-illustrator.jpg.zip</h3>
+                            <p class="card-size">الحجم: 7.80 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1OgsQ_cwr8ceWEd6caNvNVkiJCh1iUkXo&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1OgsQ_cwr8ceWEd6caNvNVkiJCh1iUkXo&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1OgsQ_cwr8ceWEd6caNvNVkiJCh1iUkXo&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-lemon-text-logo-template.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-lemon-text-logo-template.jpg.zip</h3>
+                            <p class="card-size">الحجم: 1.76 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1qhGKHM_-KqgA-YKUP_I__SqHxBk-Ukbq&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1qhGKHM_-KqgA-YKUP_I__SqHxBk-Ukbq&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1qhGKHM_-KqgA-YKUP_I__SqHxBk-Ukbq&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-text-effect-blue-emboss-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-text-effect-blue-emboss-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 3.25 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1-GIEFMVB3vHQCXwOliq7wiWTRHSpiUv7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1-GIEFMVB3vHQCXwOliq7wiWTRHSpiUv7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1-GIEFMVB3vHQCXwOliq7wiWTRHSpiUv7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-text-effect-illustrator.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-text-effect-illustrator.jpg.zip</h3>
+                            <p class="card-size">الحجم: 7.29 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1iWAGveoKOKm2FZ-o9bvQGUIjuoNgFOCn&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1iWAGveoKOKm2FZ-o9bvQGUIjuoNgFOCn&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1iWAGveoKOKm2FZ-o9bvQGUIjuoNgFOCn&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-text-effect-shiny.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-text-effect-shiny.jpg.zip</h3>
+                            <p class="card-size">الحجم: 1.62 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l8Qvf2XmMUOIEowuMQrU9HFpoDFBEr5s&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l8Qvf2XmMUOIEowuMQrU9HFpoDFBEr5s&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l8Qvf2XmMUOIEowuMQrU9HFpoDFBEr5s&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-text-effect-story-time-3d-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-text-effect-story-time-3d-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 6.18 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1-jL8og8xmTdmSYZtovwvWOX6PxrK47Y-&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1-jL8og8xmTdmSYZtovwvWOX6PxrK47Y-&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1-jL8og8xmTdmSYZtovwvWOX6PxrK47Y-&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="editable-text-effect-virus-title-with-texture-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">editable-text-effect-virus-title-with-texture-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 15.26 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1BBAMbD0MNNgEyDRX8WvgB_AQTkl8m0ff&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1BBAMbD0MNNgEyDRX8WvgB_AQTkl8m0ff&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1BBAMbD0MNNgEyDRX8WvgB_AQTkl8m0ff&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="epic-cartoon-3d-game-movie-font.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">epic-cartoon-3d-game-movie-font.zip</h3>
+                            <p class="card-size">الحجم: 1.51 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1PT7HbR6Z8aEJ92lo2MkWrblTj5RjcLqh&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1PT7HbR6Z8aEJ92lo2MkWrblTj5RjcLqh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1PT7HbR6Z8aEJ92lo2MkWrblTj5RjcLqh&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="finish-font-text-effect-editable.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">finish-font-text-effect-editable.jpg.zip</h3>
+                            <p class="card-size">الحجم: 1.50 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1_wDT3bYJRvokK2HN9pMVFOkuEg83rFa1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1_wDT3bYJRvokK2HN9pMVFOkuEg83rFa1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1_wDT3bYJRvokK2HN9pMVFOkuEg83rFa1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="food-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">food-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 4.31 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=19lPPEGOWQ7eDAhlw8oH9dc0x1AciSzZh&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=19lPPEGOWQ7eDAhlw8oH9dc0x1AciSzZh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=19lPPEGOWQ7eDAhlw8oH9dc0x1AciSzZh&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="frog-text-effect-editable-cartoon-funny-text-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">frog-text-effect-editable-cartoon-funny-text-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 8.68 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1TXhfMPwoiI0AJzUpEBkzSvzObiRH-BYQ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1TXhfMPwoiI0AJzUpEBkzSvzObiRH-BYQ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1TXhfMPwoiI0AJzUpEBkzSvzObiRH-BYQ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="games-blues-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">games-blues-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 7.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=16VHpQwFTJi3tuALTWnddJZBvdMvAyqCP&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=16VHpQwFTJi3tuALTWnddJZBvdMvAyqCP&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=16VHpQwFTJi3tuALTWnddJZBvdMvAyqCP&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="ghost-text-effect-editable-horror-cartoon-text-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">ghost-text-effect-editable-horror-cartoon-text-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 11.73 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Pwavkyzo_gYrKLs3kshw1Q6IuVk6n_xq&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Pwavkyzo_gYrKLs3kshw1Q6IuVk6n_xq&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Pwavkyzo_gYrKLs3kshw1Q6IuVk6n_xq&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="ghost-text-effect-editable-misty-horror-text-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">ghost-text-effect-editable-misty-horror-text-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 9.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=13tv2vIPOiNmYf__sRkG9gfitHt0OPFpi&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=13tv2vIPOiNmYf__sRkG9gfitHt0OPFpi&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=13tv2vIPOiNmYf__sRkG9gfitHt0OPFpi&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="gradient-candy-pastel-color-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">gradient-candy-pastel-color-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 1.80 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1nsn5hk47VyJJ2t46cG8tHsNZJDb8Lz_j&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1nsn5hk47VyJJ2t46cG8tHsNZJDb8Lz_j&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1nsn5hk47VyJJ2t46cG8tHsNZJDb8Lz_j&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="gradient-candyd-pastel-color-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">gradient-candyd-pastel-color-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 2.47 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ZHlvIXthlda8za9gg0S7xS-yZKVKvdiG&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ZHlvIXthlda8za9gg0S7xS-yZKVKvdiG&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ZHlvIXthlda8za9gg0S7xS-yZKVKvdiG&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="graffiti-3d-text-effect-generator.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">graffiti-3d-text-effect-generator.jpg.zip</h3>
+                            <p class="card-size">الحجم: 2.34 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ALeeSj-2P5HgmFLEWCoAzC0HSb0xD5BO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ALeeSj-2P5HgmFLEWCoAzC0HSb0xD5BO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ALeeSj-2P5HgmFLEWCoAzC0HSb0xD5BO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="juicy-text-effect-editable-fresh-organic-text-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">juicy-text-effect-editable-fresh-organic-text-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 11.51 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1bcNBByvdhdv-8jds2ttcmPv7nGMIvtxE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1bcNBByvdhdv-8jds2ttcmPv7nGMIvtxE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1bcNBByvdhdv-8jds2ttcmPv7nGMIvtxE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="keep-bold-3d-editable-text-effect-modern-blue-text-comic-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">keep-bold-3d-editable-text-effect-modern-blue-text-comic-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 2.11 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1aWGKsStJYJOJBJIHY0QTJcF_nAOHuhCF&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1aWGKsStJYJOJBJIHY0QTJcF_nAOHuhCF&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1aWGKsStJYJOJBJIHY0QTJcF_nAOHuhCF&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="kick-shiny-gold-dot-black-editable-text-style-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">kick-shiny-gold-dot-black-editable-text-style-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 7.50 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1aEf1ZOS5Ty_0QK78w6m6deqJLoEWKi0U&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1aEf1ZOS5Ty_0QK78w6m6deqJLoEWKi0U&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1aEf1ZOS5Ty_0QK78w6m6deqJLoEWKi0U&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="legend-text-effect-editable-kingdom-pirate-text-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">legend-text-effect-editable-kingdom-pirate-text-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 8.90 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=10INOPnTOGS4EFVNWq9S211nmgdIVm60V&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=10INOPnTOGS4EFVNWq9S211nmgdIVm60V&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=10INOPnTOGS4EFVNWq9S211nmgdIVm60V&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="lettering-calligraphic-vintage.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">lettering-calligraphic-vintage.zip</h3>
+                            <p class="card-size">الحجم: 762.41 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1LcsxCGHS6hikdt7Os0yaXaErqV81pSZU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1LcsxCGHS6hikdt7Os0yaXaErqV81pSZU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1LcsxCGHS6hikdt7Os0yaXaErqV81pSZU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="nice-3d-comic-style-txt-effect-premium-vectors.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">nice-3d-comic-style-txt-effect-premium-vectors.jpg.zip</h3>
+                            <p class="card-size">الحجم: 21.72 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1rfPSESdFeUC_UcMtHhdF_vDhMFxkUHnN&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1rfPSESdFeUC_UcMtHhdF_vDhMFxkUHnN&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1rfPSESdFeUC_UcMtHhdF_vDhMFxkUHnN&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="polish-editable-text-effect-fashion-glossy-text-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">polish-editable-text-effect-fashion-glossy-text-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 5.07 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pyAVjcPpAdJWivr0Kt9d1kdAaMi1o7Fw&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pyAVjcPpAdJWivr0Kt9d1kdAaMi1o7Fw&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pyAVjcPpAdJWivr0Kt9d1kdAaMi1o7Fw&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="power-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">power-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 2.13 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1RddBnMa6DpO5By453OiYrQ_sBNPHFoTR&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1RddBnMa6DpO5By453OiYrQ_sBNPHFoTR&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1RddBnMa6DpO5By453OiYrQ_sBNPHFoTR&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="smile-editable-text-effect-vector-illustration.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">smile-editable-text-effect-vector-illustration.jpg.zip</h3>
+                            <p class="card-size">الحجم: 3.65 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kpC_46Y_YzXSFos_V--Y5kV4gvEOL9jy&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kpC_46Y_YzXSFos_V--Y5kV4gvEOL9jy&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kpC_46Y_YzXSFos_V--Y5kV4gvEOL9jy&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="true-editable-text-effect-modern-trend-style.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">true-editable-text-effect-modern-trend-style.jpg.zip</h3>
+                            <p class="card-size">الحجم: 10.88 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1aIjLsFSYCKGAOZ6qPlUDWtWbnUz9EapO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1aIjLsFSYCKGAOZ6qPlUDWtWbnUz9EapO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1aIjLsFSYCKGAOZ6qPlUDWtWbnUz9EapO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="yeah-text-effect.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">yeah-text-effect.jpg.zip</h3>
+                            <p class="card-size">الحجم: 4.74 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1iW2NKkaQLphqLXQbhIBS95_YEb3wDUv5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1iW2NKkaQLphqLXQbhIBS95_YEb3wDUv5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1iW2NKkaQLphqLXQbhIBS95_YEb3wDUv5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://res.cloudinary.com/proffat7i/image/upload/v1739350959/rar-archive_11_ssayar.png" alt="yellow-3d-text-editable-style-effect-template.jpg.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">yellow-3d-text-editable-style-effect-template.jpg.zip</h3>
+                            <p class="card-size">الحجم: 12.95 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1MrR2FDiKIYlMClQ4Tj84fzFl6U4pWT2n&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1MrR2FDiKIYlMClQ4Tj84fzFl6U4pWT2n&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1MrR2FDiKIYlMClQ4Tj84fzFl6U4pWT2n&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

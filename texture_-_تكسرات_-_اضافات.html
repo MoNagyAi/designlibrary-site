@@ -1,0 +1,1823 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>texture - تكسرات - اضافات</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>texture - تكسرات - اضافات</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lXsNx1qgm5wQEUXyeY9VleDkYUXvz2dV&sz=w200" alt="abstract-brown-recycle-crumpled-paper-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">abstract-brown-recycle-crumpled-paper-background.jpg</h3>
+                            <p class="card-size">الحجم: 18.32 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lXsNx1qgm5wQEUXyeY9VleDkYUXvz2dV&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lXsNx1qgm5wQEUXyeY9VleDkYUXvz2dV&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lXsNx1qgm5wQEUXyeY9VleDkYUXvz2dV&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kj-93fo9iPhnorNwmWvSZWTn7QASshtB&sz=w200" alt="abstract-decoration-textured-background-paper-crushed.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">abstract-decoration-textured-background-paper-crushed.jpg</h3>
+                            <p class="card-size">الحجم: 2.25 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kj-93fo9iPhnorNwmWvSZWTn7QASshtB&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kj-93fo9iPhnorNwmWvSZWTn7QASshtB&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kj-93fo9iPhnorNwmWvSZWTn7QASshtB&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l6w2cACG-5jpLjZ5IMiwuklzQa2TgZbS&sz=w200" alt="black-clumped-paper-texture-background-kraft-paper-horizontal-with-unique-design-paper-natural-paper-style-aesthetic-creative-design.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-clumped-paper-texture-background-kraft-paper-horizontal-with-unique-design-paper-natural-paper-style-aesthetic-creative-design.jpg</h3>
+                            <p class="card-size">الحجم: 6.64 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l6w2cACG-5jpLjZ5IMiwuklzQa2TgZbS&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l6w2cACG-5jpLjZ5IMiwuklzQa2TgZbS&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l6w2cACG-5jpLjZ5IMiwuklzQa2TgZbS&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1klcdZMB7XDghDMAcW6hhqSKOCTIuiJGa&sz=w200" alt="black-creased-crumpled-paper-background-grunge-texture-backdrop.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-creased-crumpled-paper-background-grunge-texture-backdrop.jpg</h3>
+                            <p class="card-size">الحجم: 539.76 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1klcdZMB7XDghDMAcW6hhqSKOCTIuiJGa&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1klcdZMB7XDghDMAcW6hhqSKOCTIuiJGa&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1klcdZMB7XDghDMAcW6hhqSKOCTIuiJGa&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l0TRFmYvxdR5Uy6fxdYt0X4XlapOGor0&sz=w200" alt="black-crumpled-background-paper-texture-high-quality-background-copy-space-text.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-crumpled-background-paper-texture-high-quality-background-copy-space-text.jpg</h3>
+                            <p class="card-size">الحجم: 3.86 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l0TRFmYvxdR5Uy6fxdYt0X4XlapOGor0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l0TRFmYvxdR5Uy6fxdYt0X4XlapOGor0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l0TRFmYvxdR5Uy6fxdYt0X4XlapOGor0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1laLRv6iX1-zLxCJaBCDAcLcA7NdbZ47Z&sz=w200" alt="black-crumpled-paper-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-crumpled-paper-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 11.64 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1laLRv6iX1-zLxCJaBCDAcLcA7NdbZ47Z&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1laLRv6iX1-zLxCJaBCDAcLcA7NdbZ47Z&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1laLRv6iX1-zLxCJaBCDAcLcA7NdbZ47Z&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1krGsybhExY8JWh6RBjPuDmyCMUksvMho&sz=w200" alt="black-electrical-tape-isolated-set.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-electrical-tape-isolated-set.jpg</h3>
+                            <p class="card-size">الحجم: 2.49 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1krGsybhExY8JWh6RBjPuDmyCMUksvMho&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1krGsybhExY8JWh6RBjPuDmyCMUksvMho&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1krGsybhExY8JWh6RBjPuDmyCMUksvMho&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lIdo3slCM1bR6CyfSa94kokSW7PYG867&sz=w200" alt="black-paper-texture-blank-paper-background-text.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-paper-texture-blank-paper-background-text.jpg</h3>
+                            <p class="card-size">الحجم: 11.14 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lIdo3slCM1bR6CyfSa94kokSW7PYG867&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lIdo3slCM1bR6CyfSa94kokSW7PYG867&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lIdo3slCM1bR6CyfSa94kokSW7PYG867&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kzZ9egj84ZgK6i1az3sWl5jk28Jhwlp6&sz=w200" alt="black-torn-paper-collage-closeup.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-torn-paper-collage-closeup.jpg</h3>
+                            <p class="card-size">الحجم: 4.28 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kzZ9egj84ZgK6i1az3sWl5jk28Jhwlp6&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kzZ9egj84ZgK6i1az3sWl5jk28Jhwlp6&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kzZ9egj84ZgK6i1az3sWl5jk28Jhwlp6&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lFtPJ75OLHCNgApzA4WofMtN9Ao4Y3Ir&sz=w200" alt="black-vintage-old-looking-crumpled-paper-background-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-vintage-old-looking-crumpled-paper-background-2.jpg</h3>
+                            <p class="card-size">الحجم: 3.72 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lFtPJ75OLHCNgApzA4WofMtN9Ao4Y3Ir&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lFtPJ75OLHCNgApzA4WofMtN9Ao4Y3Ir&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lFtPJ75OLHCNgApzA4WofMtN9Ao4Y3Ir&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ktIBAUtHJ5rI8MRuiVFEvjTtjUTTNseL&sz=w200" alt="black-vintage-old-looking-crumpled-paper-background-3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-vintage-old-looking-crumpled-paper-background-3.jpg</h3>
+                            <p class="card-size">الحجم: 3.72 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ktIBAUtHJ5rI8MRuiVFEvjTtjUTTNseL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ktIBAUtHJ5rI8MRuiVFEvjTtjUTTNseL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ktIBAUtHJ5rI8MRuiVFEvjTtjUTTNseL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lCKmXwgRhazsegyCPtmyfTahbeT-okcK&sz=w200" alt="black-vintage-old-looking-crumpled-paper-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-vintage-old-looking-crumpled-paper-background.jpg</h3>
+                            <p class="card-size">الحجم: 3.59 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lCKmXwgRhazsegyCPtmyfTahbeT-okcK&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lCKmXwgRhazsegyCPtmyfTahbeT-okcK&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lCKmXwgRhazsegyCPtmyfTahbeT-okcK&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lMW9-0Tb22xWIcyoRjY4swH2Mb1VIg76&sz=w200" alt="blank-white-crumpled-creased-paper-poster-texture-background-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">blank-white-crumpled-creased-paper-poster-texture-background-2.jpg</h3>
+                            <p class="card-size">الحجم: 6.86 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lMW9-0Tb22xWIcyoRjY4swH2Mb1VIg76&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lMW9-0Tb22xWIcyoRjY4swH2Mb1VIg76&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lMW9-0Tb22xWIcyoRjY4swH2Mb1VIg76&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lMDA5yizb9EVnZrEL3ypk5e8_p9RTe5Y&sz=w200" alt="blank-white-crumpled-creased-paper-poster-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">blank-white-crumpled-creased-paper-poster-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 6.92 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lMDA5yizb9EVnZrEL3ypk5e8_p9RTe5Y&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lMDA5yizb9EVnZrEL3ypk5e8_p9RTe5Y&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lMDA5yizb9EVnZrEL3ypk5e8_p9RTe5Y&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lUy08BXt5BuwXfZ6A3WP-pzB4ju3CCjd&sz=w200" alt="blank-white-crumpled-creased-paper.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">blank-white-crumpled-creased-paper.jpg</h3>
+                            <p class="card-size">الحجم: 6.43 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lUy08BXt5BuwXfZ6A3WP-pzB4ju3CCjd&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lUy08BXt5BuwXfZ6A3WP-pzB4ju3CCjd&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lUy08BXt5BuwXfZ6A3WP-pzB4ju3CCjd&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kvinNEQm2CbSoc32rG7a2zJU69QpeimK&sz=w200" alt="blank-white-paper-dark-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">blank-white-paper-dark-background.jpg</h3>
+                            <p class="card-size">الحجم: 2.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kvinNEQm2CbSoc32rG7a2zJU69QpeimK&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kvinNEQm2CbSoc32rG7a2zJU69QpeimK&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kvinNEQm2CbSoc32rG7a2zJU69QpeimK&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lA_YpkHGnbmywkasutDO7Zj3oGWnnUAd&sz=w200" alt="close-up-adhesive-tapes-wrinkle-set-white-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">close-up-adhesive-tapes-wrinkle-set-white-background.jpg</h3>
+                            <p class="card-size">الحجم: 8.19 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lA_YpkHGnbmywkasutDO7Zj3oGWnnUAd&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lA_YpkHGnbmywkasutDO7Zj3oGWnnUAd&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lA_YpkHGnbmywkasutDO7Zj3oGWnnUAd&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lSU20uV2ETFzCADjOlIKwvfYeHe3sjU9&sz=w200" alt="close-up-white-paper-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">close-up-white-paper-texture.jpg</h3>
+                            <p class="card-size">الحجم: 7.30 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lSU20uV2ETFzCADjOlIKwvfYeHe3sjU9&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lSU20uV2ETFzCADjOlIKwvfYeHe3sjU9&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lSU20uV2ETFzCADjOlIKwvfYeHe3sjU9&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lV7bZDDt92iddoAKvm8nR-zSoAS2-NVd&sz=w200" alt="close-up-white-poster-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">close-up-white-poster-texture.jpg</h3>
+                            <p class="card-size">الحجم: 6.90 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lV7bZDDt92iddoAKvm8nR-zSoAS2-NVd&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lV7bZDDt92iddoAKvm8nR-zSoAS2-NVd&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lV7bZDDt92iddoAKvm8nR-zSoAS2-NVd&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l_UDzDML3mSFatM3z58RYVMbDixms19W&sz=w200" alt="copy-space-paper-poster-wall-blank-place-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">copy-space-paper-poster-wall-blank-place-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 19.90 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l_UDzDML3mSFatM3z58RYVMbDixms19W&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l_UDzDML3mSFatM3z58RYVMbDixms19W&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l_UDzDML3mSFatM3z58RYVMbDixms19W&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lV3hC_jYujwXDYVCWkWkFG_NDdv4koRf&sz=w200" alt="crumpled-black-brown-paper-abstract-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">crumpled-black-brown-paper-abstract-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 16.85 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lV3hC_jYujwXDYVCWkWkFG_NDdv4koRf&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lV3hC_jYujwXDYVCWkWkFG_NDdv4koRf&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lV3hC_jYujwXDYVCWkWkFG_NDdv4koRf&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lAHkTBLLnrQDScstPy-wo8uvMg7aPrtm&sz=w200" alt="crumpled-paper-background-9.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">crumpled-paper-background-9.jpg</h3>
+                            <p class="card-size">الحجم: 2.15 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lAHkTBLLnrQDScstPy-wo8uvMg7aPrtm&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lAHkTBLLnrQDScstPy-wo8uvMg7aPrtm&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lAHkTBLLnrQDScstPy-wo8uvMg7aPrtm&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lLWtEtt4PJuWoNCocK4MBNN8DVUIFQV0&sz=w200" alt="different-sized-tapes-black-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">different-sized-tapes-black-background.jpg</h3>
+                            <p class="card-size">الحجم: 12.48 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lLWtEtt4PJuWoNCocK4MBNN8DVUIFQV0&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lLWtEtt4PJuWoNCocK4MBNN8DVUIFQV0&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lLWtEtt4PJuWoNCocK4MBNN8DVUIFQV0&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lMLn392JM0JAGUasRw3Rttpmi_Fv0PdH&sz=w200" alt="light-brown-kraft-paper-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">light-brown-kraft-paper-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 11.46 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lMLn392JM0JAGUasRw3Rttpmi_Fv0PdH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lMLn392JM0JAGUasRw3Rttpmi_Fv0PdH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lMLn392JM0JAGUasRw3Rttpmi_Fv0PdH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l_IEUa83bgh24jmzmyjI4J905SKHoG7p&sz=w200" alt="old-black-torn-paper-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">old-black-torn-paper-background.jpg</h3>
+                            <p class="card-size">الحجم: 14.11 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l_IEUa83bgh24jmzmyjI4J905SKHoG7p&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l_IEUa83bgh24jmzmyjI4J905SKHoG7p&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l_IEUa83bgh24jmzmyjI4J905SKHoG7p&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lHqgaWV0kXxUH6RNGyXetJIrw6b7fYGH&sz=w200" alt="panorama-brown-paper-surface-texture-background-with-copy-space.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">panorama-brown-paper-surface-texture-background-with-copy-space.jpg</h3>
+                            <p class="card-size">الحجم: 12.74 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lHqgaWV0kXxUH6RNGyXetJIrw6b7fYGH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lHqgaWV0kXxUH6RNGyXetJIrw6b7fYGH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lHqgaWV0kXxUH6RNGyXetJIrw6b7fYGH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lWSdEZjZ3vFN0aXpAhyUkDWeNt0u51aj&sz=w200" alt="paper-texture-vintage-background-beige-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">paper-texture-vintage-background-beige-2.jpg</h3>
+                            <p class="card-size">الحجم: 19.92 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lWSdEZjZ3vFN0aXpAhyUkDWeNt0u51aj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lWSdEZjZ3vFN0aXpAhyUkDWeNt0u51aj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lWSdEZjZ3vFN0aXpAhyUkDWeNt0u51aj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lY0gCguXhsdzzbQINeRI1sFbpaxAnQML&sz=w200" alt="paper-texture-vintage-background-beige-3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">paper-texture-vintage-background-beige-3.jpg</h3>
+                            <p class="card-size">الحجم: 18.77 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lY0gCguXhsdzzbQINeRI1sFbpaxAnQML&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lY0gCguXhsdzzbQINeRI1sFbpaxAnQML&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lY0gCguXhsdzzbQINeRI1sFbpaxAnQML&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l_iRJoZxiOHGYo90NBrISHOUDePgjuLU&sz=w200" alt="paper-texture-vintage-background-beige.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">paper-texture-vintage-background-beige.jpg</h3>
+                            <p class="card-size">الحجم: 19.66 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l_iRJoZxiOHGYo90NBrISHOUDePgjuLU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l_iRJoZxiOHGYo90NBrISHOUDePgjuLU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l_iRJoZxiOHGYo90NBrISHOUDePgjuLU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l5P5MxHzDMQEBmn-yadNWOPghpAMXaRD&sz=w200" alt="pieces-torn-paper-texture-background-with-copy-space-text-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">pieces-torn-paper-texture-background-with-copy-space-text-2.jpg</h3>
+                            <p class="card-size">الحجم: 4.20 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l5P5MxHzDMQEBmn-yadNWOPghpAMXaRD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l5P5MxHzDMQEBmn-yadNWOPghpAMXaRD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l5P5MxHzDMQEBmn-yadNWOPghpAMXaRD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kzOcrXYZlgAdCXkDKp5QrfjgceJl6w0X&sz=w200" alt="pieces-torn-paper-texture-background-with-copy-space-text-3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">pieces-torn-paper-texture-background-with-copy-space-text-3.jpg</h3>
+                            <p class="card-size">الحجم: 4.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kzOcrXYZlgAdCXkDKp5QrfjgceJl6w0X&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kzOcrXYZlgAdCXkDKp5QrfjgceJl6w0X&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kzOcrXYZlgAdCXkDKp5QrfjgceJl6w0X&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kx-lKVnmrH7pjGg0yYPGBUq-SWmu6Ie4&sz=w200" alt="pieces-torn-paper-texture-background-with-copy-space-text-4.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">pieces-torn-paper-texture-background-with-copy-space-text-4.jpg</h3>
+                            <p class="card-size">الحجم: 3.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kx-lKVnmrH7pjGg0yYPGBUq-SWmu6Ie4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kx-lKVnmrH7pjGg0yYPGBUq-SWmu6Ie4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kx-lKVnmrH7pjGg0yYPGBUq-SWmu6Ie4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l6G5uFjZAnhPt4wCWcOhLqukaB1YEj49&sz=w200" alt="pieces-torn-paper-texture-background-with-copy-space-text.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">pieces-torn-paper-texture-background-with-copy-space-text.jpg</h3>
+                            <p class="card-size">الحجم: 4.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l6G5uFjZAnhPt4wCWcOhLqukaB1YEj49&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l6G5uFjZAnhPt4wCWcOhLqukaB1YEj49&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l6G5uFjZAnhPt4wCWcOhLqukaB1YEj49&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kvUHix2CsHRX57vzYTAa9lsSS-awCQF3&sz=w200" alt="pieces-torn-paper-texture-copy-space.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">pieces-torn-paper-texture-copy-space.jpg</h3>
+                            <p class="card-size">الحجم: 1.22 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kvUHix2CsHRX57vzYTAa9lsSS-awCQF3&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kvUHix2CsHRX57vzYTAa9lsSS-awCQF3&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kvUHix2CsHRX57vzYTAa9lsSS-awCQF3&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l1s9DctvdLuV8OzPGncmWqq4btW9W69G&sz=w200" alt="pieces-torn-paper-white-background-with-copy-space-text.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">pieces-torn-paper-white-background-with-copy-space-text.jpg</h3>
+                            <p class="card-size">الحجم: 2.62 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l1s9DctvdLuV8OzPGncmWqq4btW9W69G&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l1s9DctvdLuV8OzPGncmWqq4btW9W69G&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l1s9DctvdLuV8OzPGncmWqq4btW9W69G&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lT_InOIroalSBZ4x_HY42gwmAKD0rkTt&sz=w200" alt="recycled-white-paper-texture-background-vintage-wallpaper.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">recycled-white-paper-texture-background-vintage-wallpaper.jpg</h3>
+                            <p class="card-size">الحجم: 12.81 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lT_InOIroalSBZ4x_HY42gwmAKD0rkTt&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lT_InOIroalSBZ4x_HY42gwmAKD0rkTt&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lT_InOIroalSBZ4x_HY42gwmAKD0rkTt&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l5F24lc9BtQws-IBJVBa2ShfcfSava3G&sz=w200" alt="tape-parts-black-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">tape-parts-black-background.jpg</h3>
+                            <p class="card-size">الحجم: 6.46 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l5F24lc9BtQws-IBJVBa2ShfcfSava3G&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l5F24lc9BtQws-IBJVBa2ShfcfSava3G&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l5F24lc9BtQws-IBJVBa2ShfcfSava3G&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l2qk3TcW53T5xqZbvcM8VXlfTxf9kFyO&sz=w200" alt="torn-paper-with-adhesive-tape.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">torn-paper-with-adhesive-tape.jpg</h3>
+                            <p class="card-size">الحجم: 4.37 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l2qk3TcW53T5xqZbvcM8VXlfTxf9kFyO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l2qk3TcW53T5xqZbvcM8VXlfTxf9kFyO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l2qk3TcW53T5xqZbvcM8VXlfTxf9kFyO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lN0mvJ-42uzsK7eFARMkgHBFkw2-71gG&sz=w200" alt="torn-stacked-cardboard-shadows-art-craft-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">torn-stacked-cardboard-shadows-art-craft-background.jpg</h3>
+                            <p class="card-size">الحجم: 9.91 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lN0mvJ-42uzsK7eFARMkgHBFkw2-71gG&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lN0mvJ-42uzsK7eFARMkgHBFkw2-71gG&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lN0mvJ-42uzsK7eFARMkgHBFkw2-71gG&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lF6XS09WlmE1ueP6qBVtO07cFr8C9T4_&sz=w200" alt="torn-stickers-tape-paper-piece-yellow-blue-mock-up-blank-banners-tags-labels-template-design-isolated-white-background-with-clipping-path.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">torn-stickers-tape-paper-piece-yellow-blue-mock-up-blank-banners-tags-labels-template-design-isolated-white-background-with-clipping-path.jpg</h3>
+                            <p class="card-size">الحجم: 8.09 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lF6XS09WlmE1ueP6qBVtO07cFr8C9T4_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lF6XS09WlmE1ueP6qBVtO07cFr8C9T4_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lF6XS09WlmE1ueP6qBVtO07cFr8C9T4_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lTpfKSj-84_3haIlbbE5hhMvZTeKYS4-&sz=w200" alt="vertical-white-watercolor-papar-texture-background-cover-card-design-overlay-aon-paint-art-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">vertical-white-watercolor-papar-texture-background-cover-card-design-overlay-aon-paint-art-background.jpg</h3>
+                            <p class="card-size">الحجم: 6.14 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lTpfKSj-84_3haIlbbE5hhMvZTeKYS4-&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lTpfKSj-84_3haIlbbE5hhMvZTeKYS4-&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lTpfKSj-84_3haIlbbE5hhMvZTeKYS4-&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kr5y5roW83R4-8JzKsFu_jJ3pvTYnw5w&sz=w200" alt="wall-full-newspapers-including-one-that-says-ww-o.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">wall-full-newspapers-including-one-that-says-ww-o.jpg</h3>
+                            <p class="card-size">الحجم: 3.54 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kr5y5roW83R4-8JzKsFu_jJ3pvTYnw5w&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kr5y5roW83R4-8JzKsFu_jJ3pvTYnw5w&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kr5y5roW83R4-8JzKsFu_jJ3pvTYnw5w&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lD1FMUje1W5-wJLOGzijxIf-M0URBMYS&sz=w200" alt="white-crumpled-creased-paper-poster-texture-background-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-crumpled-creased-paper-poster-texture-background-2.jpg</h3>
+                            <p class="card-size">الحجم: 5.99 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lD1FMUje1W5-wJLOGzijxIf-M0URBMYS&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lD1FMUje1W5-wJLOGzijxIf-M0URBMYS&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lD1FMUje1W5-wJLOGzijxIf-M0URBMYS&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lA8ewMt5w6jz3nhmWWPCquz1xL4QEbCO&sz=w200" alt="white-crumpled-creased-paper-poster-texture-background-3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-crumpled-creased-paper-poster-texture-background-3.jpg</h3>
+                            <p class="card-size">الحجم: 5.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lA8ewMt5w6jz3nhmWWPCquz1xL4QEbCO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lA8ewMt5w6jz3nhmWWPCquz1xL4QEbCO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lA8ewMt5w6jz3nhmWWPCquz1xL4QEbCO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lEAbTnJoix-MtnkX-JONGpEM827gwFlH&sz=w200" alt="white-crumpled-creased-paper-poster-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-crumpled-creased-paper-poster-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 5.03 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lEAbTnJoix-MtnkX-JONGpEM827gwFlH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lEAbTnJoix-MtnkX-JONGpEM827gwFlH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lEAbTnJoix-MtnkX-JONGpEM827gwFlH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lKzZXShaa9-4o-XeCnEaykdg7Wi2VfPa&sz=w200" alt="white-crumpled-paper-abstract-background-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-crumpled-paper-abstract-background-texture.jpg</h3>
+                            <p class="card-size">الحجم: 6.13 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lKzZXShaa9-4o-XeCnEaykdg7Wi2VfPa&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lKzZXShaa9-4o-XeCnEaykdg7Wi2VfPa&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lKzZXShaa9-4o-XeCnEaykdg7Wi2VfPa&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lPZQpoF8cKJUVGVXmHonWkFjIJVugpQ6&sz=w200" alt="white-crumpled-paper-paper-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-crumpled-paper-paper-texture.jpg</h3>
+                            <p class="card-size">الحجم: 3.87 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lPZQpoF8cKJUVGVXmHonWkFjIJVugpQ6&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lPZQpoF8cKJUVGVXmHonWkFjIJVugpQ6&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lPZQpoF8cKJUVGVXmHonWkFjIJVugpQ6&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lPbYkgpld2VKs0u2uZXnHalXhRXrGM-7&sz=w200" alt="white-folded-wrinkled-paper-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-folded-wrinkled-paper-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 5.09 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lPbYkgpld2VKs0u2uZXnHalXhRXrGM-7&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lPbYkgpld2VKs0u2uZXnHalXhRXrGM-7&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lPbYkgpld2VKs0u2uZXnHalXhRXrGM-7&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lHoC3kljGzXUcpuQ6MlO-_N-MCakUT2Z&sz=w200" alt="white-old-vintage-aged-paper-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-old-vintage-aged-paper-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 12.81 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lHoC3kljGzXUcpuQ6MlO-_N-MCakUT2Z&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lHoC3kljGzXUcpuQ6MlO-_N-MCakUT2Z&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lHoC3kljGzXUcpuQ6MlO-_N-MCakUT2Z&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l9jFZWRFczUvnge-SfY5WAp4ZcBTpowH&sz=w200" alt="white-paper-texture-background-crumpled-white-paper-abstract-shape-background-with-space-paper-recycle-text.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-paper-texture-background-crumpled-white-paper-abstract-shape-background-with-space-paper-recycle-text.jpg</h3>
+                            <p class="card-size">الحجم: 5.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l9jFZWRFczUvnge-SfY5WAp4ZcBTpowH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l9jFZWRFczUvnge-SfY5WAp4ZcBTpowH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l9jFZWRFczUvnge-SfY5WAp4ZcBTpowH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1l5NnSvI8ZCyslfLiY0rT8BOstd-8xjMT&sz=w200" alt="white-paper-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-paper-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 2.96 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1l5NnSvI8ZCyslfLiY0rT8BOstd-8xjMT&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1l5NnSvI8ZCyslfLiY0rT8BOstd-8xjMT&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1l5NnSvI8ZCyslfLiY0rT8BOstd-8xjMT&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lTdx64FL0bw75uZCvJPIl3hEoitoaXsH&sz=w200" alt="white-watercolor-papar-texture-background-cover-card-design-overlay-paint-art-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-watercolor-papar-texture-background-cover-card-design-overlay-paint-art-background.jpg</h3>
+                            <p class="card-size">الحجم: 7.60 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lTdx64FL0bw75uZCvJPIl3hEoitoaXsH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lTdx64FL0bw75uZCvJPIl3hEoitoaXsH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lTdx64FL0bw75uZCvJPIl3hEoitoaXsH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1lH0Sa03ddrJ6DdYZamFNHDRGB3D1zS-E&sz=w200" alt="white-wrinkle-recycle-paper-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-wrinkle-recycle-paper-background.jpg</h3>
+                            <p class="card-size">الحجم: 4.25 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lH0Sa03ddrJ6DdYZamFNHDRGB3D1zS-E&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lH0Sa03ddrJ6DdYZamFNHDRGB3D1zS-E&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lH0Sa03ddrJ6DdYZamFNHDRGB3D1zS-E&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kgbR7jHMnj1A99rCMNZmCfznFziTae6F&sz=w200" alt="black-crumpled-creased-plastic-poster-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">black-crumpled-creased-plastic-poster-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 5.55 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kgbR7jHMnj1A99rCMNZmCfznFziTae6F&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kgbR7jHMnj1A99rCMNZmCfznFziTae6F&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kgbR7jHMnj1A99rCMNZmCfznFziTae6F&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kbzVq9fhaFJfi-DZ4ZZg-Dr57ZlrjZJ8&sz=w200" alt="ice-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">ice-texture.jpg</h3>
+                            <p class="card-size">الحجم: 20.70 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kbzVq9fhaFJfi-DZ4ZZg-Dr57ZlrjZJ8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kbzVq9fhaFJfi-DZ4ZZg-Dr57ZlrjZJ8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kbzVq9fhaFJfi-DZ4ZZg-Dr57ZlrjZJ8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kQdn-whLglaw9mLD19KWpzy05WSR0qQ1&sz=w200" alt="plastc-wrap-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">plastc-wrap-texture.jpg</h3>
+                            <p class="card-size">الحجم: 1.78 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kQdn-whLglaw9mLD19KWpzy05WSR0qQ1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kQdn-whLglaw9mLD19KWpzy05WSR0qQ1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kQdn-whLglaw9mLD19KWpzy05WSR0qQ1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kpQJj4psXlhMW6kBfdQzW_fpYZY5IjCJ&sz=w200" alt="plastic-film-wrap-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">plastic-film-wrap-texture.jpg</h3>
+                            <p class="card-size">الحجم: 6.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kpQJj4psXlhMW6kBfdQzW_fpYZY5IjCJ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kpQJj4psXlhMW6kBfdQzW_fpYZY5IjCJ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kpQJj4psXlhMW6kBfdQzW_fpYZY5IjCJ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kRS8IacJOnZYlsG-UI2xTQGDGlLqtVVT&sz=w200" alt="plastic-warp-black-background-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">plastic-warp-black-background-texture.jpg</h3>
+                            <p class="card-size">الحجم: 2.33 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kRS8IacJOnZYlsG-UI2xTQGDGlLqtVVT&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kRS8IacJOnZYlsG-UI2xTQGDGlLqtVVT&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kRS8IacJOnZYlsG-UI2xTQGDGlLqtVVT&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kS03DLMUyom-RCuOPxsxRPzoLC8ae8eW&sz=w200" alt="plastic-wrap-isolated-black-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">plastic-wrap-isolated-black-background.jpg</h3>
+                            <p class="card-size">الحجم: 852.99 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kS03DLMUyom-RCuOPxsxRPzoLC8ae8eW&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kS03DLMUyom-RCuOPxsxRPzoLC8ae8eW&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kS03DLMUyom-RCuOPxsxRPzoLC8ae8eW&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kZJl0qR9J29Z5m-D4JH4YPhbI0gnbuub&sz=w200" alt="plastic-wrap-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">plastic-wrap-texture.jpg</h3>
+                            <p class="card-size">الحجم: 2.03 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kZJl0qR9J29Z5m-D4JH4YPhbI0gnbuub&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kZJl0qR9J29Z5m-D4JH4YPhbI0gnbuub&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kZJl0qR9J29Z5m-D4JH4YPhbI0gnbuub&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1krmpoRB2MjfnQ-IsUwLKaljq-UfokdUb&sz=w200" alt="texture-polyethylene-mirror.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">texture-polyethylene-mirror.jpg</h3>
+                            <p class="card-size">الحجم: 10.45 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1krmpoRB2MjfnQ-IsUwLKaljq-UfokdUb&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1krmpoRB2MjfnQ-IsUwLKaljq-UfokdUb&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1krmpoRB2MjfnQ-IsUwLKaljq-UfokdUb&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1klEFCMP3as5lObVIrb1LRa8W6u7-tgzZ&sz=w200" alt="transparent-plastic-film-wrap-overlay-texture-background-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">transparent-plastic-film-wrap-overlay-texture-background-2.jpg</h3>
+                            <p class="card-size">الحجم: 4.52 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1klEFCMP3as5lObVIrb1LRa8W6u7-tgzZ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1klEFCMP3as5lObVIrb1LRa8W6u7-tgzZ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1klEFCMP3as5lObVIrb1LRa8W6u7-tgzZ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kaRBhkhCuSaW13KKlWa63z8LatJEhHOc&sz=w200" alt="transparent-plastic-film-wrap-overlay-texture-background-3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">transparent-plastic-film-wrap-overlay-texture-background-3.jpg</h3>
+                            <p class="card-size">الحجم: 4.91 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kaRBhkhCuSaW13KKlWa63z8LatJEhHOc&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kaRBhkhCuSaW13KKlWa63z8LatJEhHOc&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kaRBhkhCuSaW13KKlWa63z8LatJEhHOc&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kU82ojcMu1gbxmNvYXd4-ycP8jgfxCJ_&sz=w200" alt="transparent-plastic-film-wrap-overlay-texture-background-4.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">transparent-plastic-film-wrap-overlay-texture-background-4.jpg</h3>
+                            <p class="card-size">الحجم: 4.91 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kU82ojcMu1gbxmNvYXd4-ycP8jgfxCJ_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kU82ojcMu1gbxmNvYXd4-ycP8jgfxCJ_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kU82ojcMu1gbxmNvYXd4-ycP8jgfxCJ_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kODF1Sc49VrqA4zulpMYQobcib5bMgrN&sz=w200" alt="transparent-plastic-film-wrap-overlay-texture-background-5.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">transparent-plastic-film-wrap-overlay-texture-background-5.jpg</h3>
+                            <p class="card-size">الحجم: 3.62 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kODF1Sc49VrqA4zulpMYQobcib5bMgrN&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kODF1Sc49VrqA4zulpMYQobcib5bMgrN&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kODF1Sc49VrqA4zulpMYQobcib5bMgrN&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kWlM2IRPaQUBufjwHnbhMqoQHB7u3x6u&sz=w200" alt="transparent-plastic-film-wrap-overlay-texture-background-6.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">transparent-plastic-film-wrap-overlay-texture-background-6.jpg</h3>
+                            <p class="card-size">الحجم: 4.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kWlM2IRPaQUBufjwHnbhMqoQHB7u3x6u&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kWlM2IRPaQUBufjwHnbhMqoQHB7u3x6u&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kWlM2IRPaQUBufjwHnbhMqoQHB7u3x6u&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kORzWxxQeD0Zl264hcYoiS5dhGZ7eBPE&sz=w200" alt="transparent-plastic-film-wrap-overlay-texture-background-7.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">transparent-plastic-film-wrap-overlay-texture-background-7.jpg</h3>
+                            <p class="card-size">الحجم: 3.51 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kORzWxxQeD0Zl264hcYoiS5dhGZ7eBPE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kORzWxxQeD0Zl264hcYoiS5dhGZ7eBPE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kORzWxxQeD0Zl264hcYoiS5dhGZ7eBPE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kmlznRkVN7laHrAZ5HsqrmufqDyUvPrN&sz=w200" alt="transparent-plastic-film-wrap-overlay-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">transparent-plastic-film-wrap-overlay-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 4.29 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kmlznRkVN7laHrAZ5HsqrmufqDyUvPrN&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kmlznRkVN7laHrAZ5HsqrmufqDyUvPrN&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kmlznRkVN7laHrAZ5HsqrmufqDyUvPrN&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kuPc-0NBVzLhrZPijo_9SxI256ASAOWE&sz=w200" alt="white-cloth-background-abstract-with-soft-waves.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-cloth-background-abstract-with-soft-waves.jpg</h3>
+                            <p class="card-size">الحجم: 8.80 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kuPc-0NBVzLhrZPijo_9SxI256ASAOWE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kuPc-0NBVzLhrZPijo_9SxI256ASAOWE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kuPc-0NBVzLhrZPijo_9SxI256ASAOWE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kbYQ-Ahaa7JApp1MEg6JcXyNxm7Yrni1&sz=w200" alt="white-plastic-film-wrap-texture-background-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-plastic-film-wrap-texture-background-2.jpg</h3>
+                            <p class="card-size">الحجم: 7.93 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kbYQ-Ahaa7JApp1MEg6JcXyNxm7Yrni1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kbYQ-Ahaa7JApp1MEg6JcXyNxm7Yrni1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kbYQ-Ahaa7JApp1MEg6JcXyNxm7Yrni1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kqVLZplaZlRUKQSS27iRnMTv7GtSS718&sz=w200" alt="white-plastic-film-wrap-texture-background-3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-plastic-film-wrap-texture-background-3.jpg</h3>
+                            <p class="card-size">الحجم: 7.03 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kqVLZplaZlRUKQSS27iRnMTv7GtSS718&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kqVLZplaZlRUKQSS27iRnMTv7GtSS718&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kqVLZplaZlRUKQSS27iRnMTv7GtSS718&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kYLkn3_RSGiBCTnq63J3MEqTAKxnk7VK&sz=w200" alt="white-plastic-film-wrap-texture-background-4.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-plastic-film-wrap-texture-background-4.jpg</h3>
+                            <p class="card-size">الحجم: 6.67 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kYLkn3_RSGiBCTnq63J3MEqTAKxnk7VK&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kYLkn3_RSGiBCTnq63J3MEqTAKxnk7VK&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kYLkn3_RSGiBCTnq63J3MEqTAKxnk7VK&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ko7Hahyh6oitqm4q30r2Z2s9lP7nRqY3&sz=w200" alt="white-plastic-film-wrap-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-plastic-film-wrap-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 6.92 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ko7Hahyh6oitqm4q30r2Z2s9lP7nRqY3&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ko7Hahyh6oitqm4q30r2Z2s9lP7nRqY3&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ko7Hahyh6oitqm4q30r2Z2s9lP7nRqY3&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kPQGglQY5k-p2AU57p98H2aF61IKz21X&sz=w200" alt="white-silk-satin-luxury-cloth-texture-background-can-use-as-wedding-backdrop-elegant-wallpaper-design.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-silk-satin-luxury-cloth-texture-background-can-use-as-wedding-backdrop-elegant-wallpaper-design.jpg</h3>
+                            <p class="card-size">الحجم: 2.57 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kPQGglQY5k-p2AU57p98H2aF61IKz21X&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kPQGglQY5k-p2AU57p98H2aF61IKz21X&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kPQGglQY5k-p2AU57p98H2aF61IKz21X&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kYc1jSrohShluFz1ClhArovpYrO0V6yu&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-10.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-10.jpg</h3>
+                            <p class="card-size">الحجم: 4.68 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kYc1jSrohShluFz1ClhArovpYrO0V6yu&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kYc1jSrohShluFz1ClhArovpYrO0V6yu&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kYc1jSrohShluFz1ClhArovpYrO0V6yu&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kcqwOYOE8qedAGydB0bDT2W4jX39RVa8&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-2.jpg</h3>
+                            <p class="card-size">الحجم: 4.98 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kcqwOYOE8qedAGydB0bDT2W4jX39RVa8&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kcqwOYOE8qedAGydB0bDT2W4jX39RVa8&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kcqwOYOE8qedAGydB0bDT2W4jX39RVa8&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kd1O9fXMonIFl77zj5hxv41HEGmDjUT2&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-3.jpg</h3>
+                            <p class="card-size">الحجم: 5.04 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kd1O9fXMonIFl77zj5hxv41HEGmDjUT2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kd1O9fXMonIFl77zj5hxv41HEGmDjUT2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kd1O9fXMonIFl77zj5hxv41HEGmDjUT2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kbCHxUmG8nmKaYxhUG6MpXJ0IxW9_-st&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-4.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-4.jpg</h3>
+                            <p class="card-size">الحجم: 5.04 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kbCHxUmG8nmKaYxhUG6MpXJ0IxW9_-st&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kbCHxUmG8nmKaYxhUG6MpXJ0IxW9_-st&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kbCHxUmG8nmKaYxhUG6MpXJ0IxW9_-st&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kZI2l6JIcQgDscR2LnRRFgCiaFQyN_pR&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-5.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-5.jpg</h3>
+                            <p class="card-size">الحجم: 5.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kZI2l6JIcQgDscR2LnRRFgCiaFQyN_pR&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kZI2l6JIcQgDscR2LnRRFgCiaFQyN_pR&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kZI2l6JIcQgDscR2LnRRFgCiaFQyN_pR&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kUO8w-BNTsf9fL0PTzrtUWfJKaQNtcb5&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-6.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-6.jpg</h3>
+                            <p class="card-size">الحجم: 4.82 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kUO8w-BNTsf9fL0PTzrtUWfJKaQNtcb5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kUO8w-BNTsf9fL0PTzrtUWfJKaQNtcb5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kUO8w-BNTsf9fL0PTzrtUWfJKaQNtcb5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kYflEVmYF7ZnlfENVtBnCd2wNm9mbl16&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-7.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-7.jpg</h3>
+                            <p class="card-size">الحجم: 4.70 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kYflEVmYF7ZnlfENVtBnCd2wNm9mbl16&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kYflEVmYF7ZnlfENVtBnCd2wNm9mbl16&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kYflEVmYF7ZnlfENVtBnCd2wNm9mbl16&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kZMcfUuqnzGpDZUS_Zpy5xbjPTHZuZZE&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-8.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-8.jpg</h3>
+                            <p class="card-size">الحجم: 5.15 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kZMcfUuqnzGpDZUS_Zpy5xbjPTHZuZZE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kZMcfUuqnzGpDZUS_Zpy5xbjPTHZuZZE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kZMcfUuqnzGpDZUS_Zpy5xbjPTHZuZZE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1k_nOcLb6_83YQ-Pyv9UZJ3rN2BmGRJUM&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-9.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background-9.jpg</h3>
+                            <p class="card-size">الحجم: 4.83 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1k_nOcLb6_83YQ-Pyv9UZJ3rN2BmGRJUM&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1k_nOcLb6_83YQ-Pyv9UZJ3rN2BmGRJUM&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1k_nOcLb6_83YQ-Pyv9UZJ3rN2BmGRJUM&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kjvIJnLea2j4SiEWjBcVaFY8k5UJnX1r&sz=w200" alt="white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-crumpled-creased-plastic-poster-texture-background-wet-plastic-wrap-white-background.jpg</h3>
+                            <p class="card-size">الحجم: 5.12 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kjvIJnLea2j4SiEWjBcVaFY8k5UJnX1r&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kjvIJnLea2j4SiEWjBcVaFY8k5UJnX1r&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kjvIJnLea2j4SiEWjBcVaFY8k5UJnX1r&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kbhrzNgoRkfjyRLbsNGZtab3_W7-8ICT&sz=w200" alt="white-transparent-plastic-film-wrap-texture-background-2.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-plastic-film-wrap-texture-background-2.jpg</h3>
+                            <p class="card-size">الحجم: 4.99 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kbhrzNgoRkfjyRLbsNGZtab3_W7-8ICT&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kbhrzNgoRkfjyRLbsNGZtab3_W7-8ICT&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kbhrzNgoRkfjyRLbsNGZtab3_W7-8ICT&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kWpbymiMBmmklc0r5ZM9bWSSIt3ap8Pt&sz=w200" alt="white-transparent-plastic-film-wrap-texture-background-3.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-plastic-film-wrap-texture-background-3.jpg</h3>
+                            <p class="card-size">الحجم: 5.81 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kWpbymiMBmmklc0r5ZM9bWSSIt3ap8Pt&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kWpbymiMBmmklc0r5ZM9bWSSIt3ap8Pt&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kWpbymiMBmmklc0r5ZM9bWSSIt3ap8Pt&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kZg3KY9JynD218oRZaIQQaD_uFJagoel&sz=w200" alt="white-transparent-plastic-film-wrap-texture-background.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-transparent-plastic-film-wrap-texture-background.jpg</h3>
+                            <p class="card-size">الحجم: 5.26 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kZg3KY9JynD218oRZaIQQaD_uFJagoel&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kZg3KY9JynD218oRZaIQQaD_uFJagoel&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kZg3KY9JynD218oRZaIQQaD_uFJagoel&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kTzIA_EROQDmUgUg18To5ENbOVkBjT3N&sz=w200" alt="white-wrinkle-background-shiny-material-fluttering-abstract-motion-blur.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">white-wrinkle-background-shiny-material-fluttering-abstract-motion-blur.jpg</h3>
+                            <p class="card-size">الحجم: 576.70 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kTzIA_EROQDmUgUg18To5ENbOVkBjT3N&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kTzIA_EROQDmUgUg18To5ENbOVkBjT3N&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kTzIA_EROQDmUgUg18To5ENbOVkBjT3N&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kPycBHdrqdRdSyO2_ha99y_VnRpNkbMn&sz=w200" alt="wrinkled-plastic-wrap-texture-black-background-cellophane-package-wallpaper.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">wrinkled-plastic-wrap-texture-black-background-cellophane-package-wallpaper.jpg</h3>
+                            <p class="card-size">الحجم: 2.69 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kPycBHdrqdRdSyO2_ha99y_VnRpNkbMn&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kPycBHdrqdRdSyO2_ha99y_VnRpNkbMn&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kPycBHdrqdRdSyO2_ha99y_VnRpNkbMn&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kREAsLZ5Zi-GkDRCZoKIxbjEMRmzXmN4&sz=w200" alt="wrinkled-plastic-wrap-white-color-background-crumpled-transparent-plastic-cellophan.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">wrinkled-plastic-wrap-white-color-background-crumpled-transparent-plastic-cellophan.jpg</h3>
+                            <p class="card-size">الحجم: 5.32 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kREAsLZ5Zi-GkDRCZoKIxbjEMRmzXmN4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kREAsLZ5Zi-GkDRCZoKIxbjEMRmzXmN4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kREAsLZ5Zi-GkDRCZoKIxbjEMRmzXmN4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kW8cAs0eV4o1RyOmNeta07T1aunOUblI&sz=w200" alt="wrinkled-stretch-black-plastic-wrap-surface-texture.jpg" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">wrinkled-stretch-black-plastic-wrap-surface-texture.jpg</h3>
+                            <p class="card-size">الحجم: 8.54 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kW8cAs0eV4o1RyOmNeta07T1aunOUblI&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kW8cAs0eV4o1RyOmNeta07T1aunOUblI&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kW8cAs0eV4o1RyOmNeta07T1aunOUblI&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.JPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

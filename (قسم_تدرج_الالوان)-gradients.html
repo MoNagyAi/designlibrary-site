@@ -1,0 +1,833 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>(قسم تدرج الالوان)-Gradients</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>(قسم تدرج الالوان)-Gradients</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="15-iridescent-gradients.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">15-iridescent-gradients.zip</h3>
+                            <p class="card-size">الحجم: 30.84 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kcZHLbI-0ZY4c8a_f6oeAb7hFpyHSHTl&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kcZHLbI-0ZY4c8a_f6oeAb7hFpyHSHTl&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kcZHLbI-0ZY4c8a_f6oeAb7hFpyHSHTl&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="20-neon-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">20-neon-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.46 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1cJcFdV39L4Cgp2LWMynY3qcDX_0YJJkh&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1cJcFdV39L4Cgp2LWMynY3qcDX_0YJJkh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1cJcFdV39L4Cgp2LWMynY3qcDX_0YJJkh&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-colors-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-colors-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.26 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1wjYND7CQdp8o6aTT1JNRzTCBGTzAhcoV&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1wjYND7CQdp8o6aTT1JNRzTCBGTzAhcoV&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1wjYND7CQdp8o6aTT1JNRzTCBGTzAhcoV&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-cream-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-cream-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.20 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1lZr_zLjovcrKN3CxoKIka75LiUrHpDvO&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1lZr_zLjovcrKN3CxoKIka75LiUrHpDvO&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1lZr_zLjovcrKN3CxoKIka75LiUrHpDvO&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-earth-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-earth-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.28 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1yMT02aqAdX6bo_H2RiEOnyrPl3Rc9Aza&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1yMT02aqAdX6bo_H2RiEOnyrPl3Rc9Aza&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1yMT02aqAdX6bo_H2RiEOnyrPl3Rc9Aza&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-fall-gradien.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-fall-gradien.zip</h3>
+                            <p class="card-size">الحجم: 2.07 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1vaOGuPb3Z7BxYLXfCRhPhfXFuipPwSo_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1vaOGuPb3Z7BxYLXfCRhPhfXFuipPwSo_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1vaOGuPb3Z7BxYLXfCRhPhfXFuipPwSo_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-golden-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-golden-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.50 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hC-sutosZ5W9XU8kdE2EZl6s75dRTCc5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hC-sutosZ5W9XU8kdE2EZl6s75dRTCc5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hC-sutosZ5W9XU8kdE2EZl6s75dRTCc5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-happy-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-happy-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.23 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=151w_zXfOwzxZ4P-iIuwInHBbRfoeL9ss&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=151w_zXfOwzxZ4P-iIuwInHBbRfoeL9ss&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=151w_zXfOwzxZ4P-iIuwInHBbRfoeL9ss&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-night-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-night-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.28 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1iU8Podoc2PF3sLsJcfZGD_m5vv3qBfAk&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1iU8Podoc2PF3sLsJcfZGD_m5vv3qBfAk&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1iU8Podoc2PF3sLsJcfZGD_m5vv3qBfAk&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-sea-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-sea-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.24 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1fkxcv_Ci82G1cMRjyDerYBhaE6h9Anxx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1fkxcv_Ci82G1cMRjyDerYBhaE6h9Anxx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1fkxcv_Ci82G1cMRjyDerYBhaE6h9Anxx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-space-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-space-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.20 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1KKPCyeVyUsVGZrFvYrvwgmQ2KvFfUkTP&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1KKPCyeVyUsVGZrFvYrvwgmQ2KvFfUkTP&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1KKPCyeVyUsVGZrFvYrvwgmQ2KvFfUkTP&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="24-warm-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">24-warm-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.16 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kE3PwTwcNQOwo4wDjGRvApKeSDFx3dvQ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kE3PwTwcNQOwo4wDjGRvApKeSDFx3dvQ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kE3PwTwcNQOwo4wDjGRvApKeSDFx3dvQ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="36-neon-gradients-photoshop.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">36-neon-gradients-photoshop.zip</h3>
+                            <p class="card-size">الحجم: 2.56 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=18BvZkxUhFgsWG1Z5Gyj-UQL2LSDAIdmY&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=18BvZkxUhFgsWG1Z5Gyj-UQL2LSDAIdmY&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=18BvZkxUhFgsWG1Z5Gyj-UQL2LSDAIdmY&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="36-pastel-photoshop-gradients.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">36-pastel-photoshop-gradients.zip</h3>
+                            <p class="card-size">الحجم: 2.45 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1fXIlIfh3-V4fJtQSulN5-kUwHVjDM7rE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1fXIlIfh3-V4fJtQSulN5-kUwHVjDM7rE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1fXIlIfh3-V4fJtQSulN5-kUwHVjDM7rE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="36-winter-photoshop-gradients.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">36-winter-photoshop-gradients.zip</h3>
+                            <p class="card-size">الحجم: 3.15 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=194DYCjgEdtFc23BUOriwOv-coU9Kwh7M&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=194DYCjgEdtFc23BUOriwOv-coU9Kwh7M&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=194DYCjgEdtFc23BUOriwOv-coU9Kwh7M&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="bold-15-creative-gradients.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">bold-15-creative-gradients.zip</h3>
+                            <p class="card-size">الحجم: 30.84 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1r_UvK0qtlKjbjqHQZxKJ65pbvqgggLjk&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1r_UvK0qtlKjbjqHQZxKJ65pbvqgggLjk&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1r_UvK0qtlKjbjqHQZxKJ65pbvqgggLjk&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://www.win-rar.com/uploads/pics/rar-archive-8_d8215f_12.png" alt="psychedelic-gradients.zip" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">psychedelic-gradients.zip</h3>
+                            <p class="card-size">الحجم: 3.59 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=14XOa1sDVbiIA1kB9e0PYjdrqn1ziEVOt&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=14XOa1sDVbiIA1kB9e0PYjdrqn1ziEVOt&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=14XOa1sDVbiIA1kB9e0PYjdrqn1ziEVOt&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.ZIP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1uIla0KhC9Ke15vwPx3p3GO5ZDjO-j8EY&sz=w200" alt="5000+ Gradient.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">5000+ Gradient.grd</h3>
+                            <p class="card-size">الحجم: 9.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1uIla0KhC9Ke15vwPx3p3GO5ZDjO-j8EY&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1uIla0KhC9Ke15vwPx3p3GO5ZDjO-j8EY&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1uIla0KhC9Ke15vwPx3p3GO5ZDjO-j8EY&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Yo9fNJRBrrF5C3nerpy431YjhuHylP4s&sz=w200" alt="80s Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">80s Gradients.grd</h3>
+                            <p class="card-size">الحجم: 199.88 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Yo9fNJRBrrF5C3nerpy431YjhuHylP4s&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Yo9fNJRBrrF5C3nerpy431YjhuHylP4s&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Yo9fNJRBrrF5C3nerpy431YjhuHylP4s&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1gCWWHOCPR_sjzO5ON-qO3z8aIcivJRd4&sz=w200" alt="90s Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">90s Gradients.grd</h3>
+                            <p class="card-size">الحجم: 173.06 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1gCWWHOCPR_sjzO5ON-qO3z8aIcivJRd4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1gCWWHOCPR_sjzO5ON-qO3z8aIcivJRd4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1gCWWHOCPR_sjzO5ON-qO3z8aIcivJRd4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1aL21M7c4ARQcfMI8nTuqHHOy5gX96-qw&sz=w200" alt="Blue Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Blue Gradients.grd</h3>
+                            <p class="card-size">الحجم: 235.46 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1aL21M7c4ARQcfMI8nTuqHHOy5gX96-qw&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1aL21M7c4ARQcfMI8nTuqHHOy5gX96-qw&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1aL21M7c4ARQcfMI8nTuqHHOy5gX96-qw&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1fjQGW5fVcK3s8ZiKbNmtAIZOy-7uDgJL&sz=w200" alt="Bronze Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Bronze Gradients.grd</h3>
+                            <p class="card-size">الحجم: 247.80 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1fjQGW5fVcK3s8ZiKbNmtAIZOy-7uDgJL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1fjQGW5fVcK3s8ZiKbNmtAIZOy-7uDgJL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1fjQGW5fVcK3s8ZiKbNmtAIZOy-7uDgJL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1LHLeF7OSQ1R-wsWDtiwBmeyYETdDSVOI&sz=w200" alt="Chrome Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Chrome Gradients.grd</h3>
+                            <p class="card-size">الحجم: 284.08 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1LHLeF7OSQ1R-wsWDtiwBmeyYETdDSVOI&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1LHLeF7OSQ1R-wsWDtiwBmeyYETdDSVOI&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1LHLeF7OSQ1R-wsWDtiwBmeyYETdDSVOI&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Y2d-tq0sY7umSVr6vAkkspn36l2HhnEr&sz=w200" alt="Duotone Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Duotone Gradients.grd</h3>
+                            <p class="card-size">الحجم: 156.19 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Y2d-tq0sY7umSVr6vAkkspn36l2HhnEr&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Y2d-tq0sY7umSVr6vAkkspn36l2HhnEr&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Y2d-tq0sY7umSVr6vAkkspn36l2HhnEr&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1IdOQSIW2PLSorl9KyL9W_jAjR9oyVZFt&sz=w200" alt="Gold Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Gold Gradients.grd</h3>
+                            <p class="card-size">الحجم: 347.13 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1IdOQSIW2PLSorl9KyL9W_jAjR9oyVZFt&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1IdOQSIW2PLSorl9KyL9W_jAjR9oyVZFt&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1IdOQSIW2PLSorl9KyL9W_jAjR9oyVZFt&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=12Z-Nutm3NgJX-ju1eoDEu3rwiofFiGa-&sz=w200" alt="Gradient Maps.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Gradient Maps.grd</h3>
+                            <p class="card-size">الحجم: 258.61 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12Z-Nutm3NgJX-ju1eoDEu3rwiofFiGa-&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12Z-Nutm3NgJX-ju1eoDEu3rwiofFiGa-&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12Z-Nutm3NgJX-ju1eoDEu3rwiofFiGa-&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1wHvaqObeyydAmXkoRfU22c7OzH_m9jZx&sz=w200" alt="Green Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Green Gradients.grd</h3>
+                            <p class="card-size">الحجم: 205.76 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1wHvaqObeyydAmXkoRfU22c7OzH_m9jZx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1wHvaqObeyydAmXkoRfU22c7OzH_m9jZx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1wHvaqObeyydAmXkoRfU22c7OzH_m9jZx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1DgzWF90hqUiuVJ7be7AhqK5uParg1Qao&sz=w200" alt="Holographic Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Holographic Gradients.grd</h3>
+                            <p class="card-size">الحجم: 291.08 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1DgzWF90hqUiuVJ7be7AhqK5uParg1Qao&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1DgzWF90hqUiuVJ7be7AhqK5uParg1Qao&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1DgzWF90hqUiuVJ7be7AhqK5uParg1Qao&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1OLad-bFbjkkWQ1LdGOyzrKPnuBw1V2uM&sz=w200" alt="Orange Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Orange Gradients.grd</h3>
+                            <p class="card-size">الحجم: 177.59 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1OLad-bFbjkkWQ1LdGOyzrKPnuBw1V2uM&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1OLad-bFbjkkWQ1LdGOyzrKPnuBw1V2uM&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1OLad-bFbjkkWQ1LdGOyzrKPnuBw1V2uM&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=162gTOtLJZdSVWdbGsYqJMd8A06cT-gWw&sz=w200" alt="Pastel Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Pastel Gradients.grd</h3>
+                            <p class="card-size">الحجم: 168.35 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=162gTOtLJZdSVWdbGsYqJMd8A06cT-gWw&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=162gTOtLJZdSVWdbGsYqJMd8A06cT-gWw&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=162gTOtLJZdSVWdbGsYqJMd8A06cT-gWw&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1EtVxMYAChSJtti88ioliJYmxudWJxY8t&sz=w200" alt="Purple Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Purple Gradients.grd</h3>
+                            <p class="card-size">الحجم: 204.80 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1EtVxMYAChSJtti88ioliJYmxudWJxY8t&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1EtVxMYAChSJtti88ioliJYmxudWJxY8t&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1EtVxMYAChSJtti88ioliJYmxudWJxY8t&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1a_mE7wnwHBy8BYbdi38L4UHcCCrzmVgD&sz=w200" alt="Red Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Red Gradients.grd</h3>
+                            <p class="card-size">الحجم: 230.67 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1a_mE7wnwHBy8BYbdi38L4UHcCCrzmVgD&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1a_mE7wnwHBy8BYbdi38L4UHcCCrzmVgD&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1a_mE7wnwHBy8BYbdi38L4UHcCCrzmVgD&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1-UINoA213p2gZkvFdnCorr_YJp0gXULk&sz=w200" alt="Rose Gold Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Rose Gold Gradients.grd</h3>
+                            <p class="card-size">الحجم: 247.00 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1-UINoA213p2gZkvFdnCorr_YJp0gXULk&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1-UINoA213p2gZkvFdnCorr_YJp0gXULk&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1-UINoA213p2gZkvFdnCorr_YJp0gXULk&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1AWdMh3DeiwCRM66-wPW2f3C4gRorsh0I&sz=w200" alt="Silver Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Silver Gradients.grd</h3>
+                            <p class="card-size">الحجم: 247.30 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1AWdMh3DeiwCRM66-wPW2f3C4gRorsh0I&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1AWdMh3DeiwCRM66-wPW2f3C4gRorsh0I&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1AWdMh3DeiwCRM66-wPW2f3C4gRorsh0I&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1rfp6B6oaIWTzKtcthEgKNV2YgErk395R&sz=w200" alt="Sky Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Sky Gradients.grd</h3>
+                            <p class="card-size">الحجم: 250.30 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1rfp6B6oaIWTzKtcthEgKNV2YgErk395R&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1rfp6B6oaIWTzKtcthEgKNV2YgErk395R&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1rfp6B6oaIWTzKtcthEgKNV2YgErk395R&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1INcTknBeDeXA0hTZUVg4bJoIVKBht7j_&sz=w200" alt="Sunset Gradients.grd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Sunset Gradients.grd</h3>
+                            <p class="card-size">الحجم: 252.84 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1INcTknBeDeXA0hTZUVg4bJoIVKBht7j_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1INcTknBeDeXA0hTZUVg4bJoIVKBht7j_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1INcTknBeDeXA0hTZUVg4bJoIVKBht7j_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.GRD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

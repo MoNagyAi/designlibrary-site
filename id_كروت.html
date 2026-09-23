@@ -1,0 +1,383 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>id كروت</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>id كروت</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=19cohqc0rLyxdC2Kkda5aKxUm7loy-Rr1&sz=w200" alt="Black and Orange ID Card Design Template.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Black and Orange ID Card Design Template.psd</h3>
+                            <p class="card-size">الحجم: 10.23 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=19cohqc0rLyxdC2Kkda5aKxUm7loy-Rr1&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=19cohqc0rLyxdC2Kkda5aKxUm7loy-Rr1&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=19cohqc0rLyxdC2Kkda5aKxUm7loy-Rr1&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1wiCoyu0AECSnoHLrwZAZE4NEHDIejJzN&sz=w200" alt="Employee Horizontal Id Card Design PSD.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Employee Horizontal Id Card Design PSD.psd</h3>
+                            <p class="card-size">الحجم: 6.78 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1wiCoyu0AECSnoHLrwZAZE4NEHDIejJzN&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1wiCoyu0AECSnoHLrwZAZE4NEHDIejJzN&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1wiCoyu0AECSnoHLrwZAZE4NEHDIejJzN&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1iBJkgb9lD4VtjeUH6xMrMMyop1rUJwQU&sz=w200" alt="Employee Vertical Id Card Design PSD 1.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Employee Vertical Id Card Design PSD 1.psd</h3>
+                            <p class="card-size">الحجم: 89.64 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1iBJkgb9lD4VtjeUH6xMrMMyop1rUJwQU&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1iBJkgb9lD4VtjeUH6xMrMMyop1rUJwQU&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1iBJkgb9lD4VtjeUH6xMrMMyop1rUJwQU&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1e2MwRWHAfX0pbQDJjM_RNBcvVL9fsSCv&sz=w200" alt="Employee Vertical Id Card Design PSD 2.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Employee Vertical Id Card Design PSD 2.psd</h3>
+                            <p class="card-size">الحجم: 42.91 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1e2MwRWHAfX0pbQDJjM_RNBcvVL9fsSCv&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1e2MwRWHAfX0pbQDJjM_RNBcvVL9fsSCv&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1e2MwRWHAfX0pbQDJjM_RNBcvVL9fsSCv&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1xYQoyAUuLiJlelnl7Y3C3BHSbZscqtrd&sz=w200" alt="IT Company Id Card Design Template PSD.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">IT Company Id Card Design Template PSD.psd</h3>
+                            <p class="card-size">الحجم: 32.64 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1xYQoyAUuLiJlelnl7Y3C3BHSbZscqtrd&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1xYQoyAUuLiJlelnl7Y3C3BHSbZscqtrd&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1xYQoyAUuLiJlelnl7Y3C3BHSbZscqtrd&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1wJ4glZVSCnppvxW65QiRlB1g0juzIP04&sz=w200" alt="Id Card Design PART 2.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Id Card Design PART 2.psd</h3>
+                            <p class="card-size">الحجم: 5.17 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1wJ4glZVSCnppvxW65QiRlB1g0juzIP04&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1wJ4glZVSCnppvxW65QiRlB1g0juzIP04&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1wJ4glZVSCnppvxW65QiRlB1g0juzIP04&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1dwY96dfxmJ84pmVXTKikCe53VVCdI_8w&sz=w200" alt="Id Card Design part 1.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Id Card Design part 1.psd</h3>
+                            <p class="card-size">الحجم: 8.70 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1dwY96dfxmJ84pmVXTKikCe53VVCdI_8w&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1dwY96dfxmJ84pmVXTKikCe53VVCdI_8w&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1dwY96dfxmJ84pmVXTKikCe53VVCdI_8w&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1OVRoVDaju3KLXBLo8mz2GV_GzURYhKdM&sz=w200" alt="Id Card Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Id Card Design.psd</h3>
+                            <p class="card-size">الحجم: 12.56 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1OVRoVDaju3KLXBLo8mz2GV_GzURYhKdM&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1OVRoVDaju3KLXBLo8mz2GV_GzURYhKdM&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1OVRoVDaju3KLXBLo8mz2GV_GzURYhKdM&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1iL5eC_GipTeFIbDIc0wCF7NubzOa6pyL&sz=w200" alt="Professional Employee Photo ID Card.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Professional Employee Photo ID Card.psd</h3>
+                            <p class="card-size">الحجم: 57.68 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1iL5eC_GipTeFIbDIc0wCF7NubzOa6pyL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1iL5eC_GipTeFIbDIc0wCF7NubzOa6pyL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1iL5eC_GipTeFIbDIc0wCF7NubzOa6pyL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=19BN2SSECR2Nr4kuXIJROr7k3S2NEyLpK&sz=w200" alt="Professional Purple Id Card Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Professional Purple Id Card Design.psd</h3>
+                            <p class="card-size">الحجم: 6.09 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=19BN2SSECR2Nr4kuXIJROr7k3S2NEyLpK&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=19BN2SSECR2Nr4kuXIJROr7k3S2NEyLpK&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=19BN2SSECR2Nr4kuXIJROr7k3S2NEyLpK&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1JugK7gTpDjTTrBBv2i3k0aQvRoqw5r7v&sz=w200" alt="Purple _ Black Creative Id card Design.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Purple _ Black Creative Id card Design.psd</h3>
+                            <p class="card-size">الحجم: 17.20 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1JugK7gTpDjTTrBBv2i3k0aQvRoqw5r7v&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1JugK7gTpDjTTrBBv2i3k0aQvRoqw5r7v&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1JugK7gTpDjTTrBBv2i3k0aQvRoqw5r7v&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        

@@ -1,0 +1,1301 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Youtube صور مصغرة</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                * { box-sizing: border-box; }
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f7fa;
+                    text-align: center;
+                }
+                h1 { margin-bottom: 30px; }
+                .cards-container {
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 20px;
+                    align-items: start;
+                }
+                .card {
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                }
+                .card-img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .card-body { padding: 10px; }
+                .card-title {
+                    margin: 0 0 6px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+                .card-size {
+                    margin: 0 0 10px;
+                    color: #777;
+                    font-size: 0.8rem;
+                }
+                .card-links a {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #3498db;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .card-links a:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+                .copy-link-button {
+                    display: inline-block;
+                    margin: 5px 8px;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #27ae60;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    font-size: 0.85rem;
+                }
+                .copy-link-button:hover {
+                    background-color: #219653;
+                    transform: scale(1.05);
+                }
+                
+        /* تنسيق زر التواصل الدائري */
+        #contactButtonContainer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        #contactButton {
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 28px;
+        }
+        #contactMenu {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #contactMenu a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        #contactMenu a:last-child {
+            border-bottom: none;
+        }
+        #contactMenu a:hover {
+            background-color: #f0f0f0;
+        }
+        .file-extension {
+            background-color: #ddd;
+            color: #333;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        
+            </style>
+            <script>
+                function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        console.log('تم نسخ الرابط: ' + text);
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <h1>Youtube صور مصغرة</h1>
+            <div class="cards-container">
+                
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1m3Ty7W8q-ya0AKiTWUl_Gnldf4yWxnOL&sz=w200" alt="Youtube صور مصغرة_001.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_001.psd</h3>
+                            <p class="card-size">الحجم: 19.46 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1m3Ty7W8q-ya0AKiTWUl_Gnldf4yWxnOL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1m3Ty7W8q-ya0AKiTWUl_Gnldf4yWxnOL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1m3Ty7W8q-ya0AKiTWUl_Gnldf4yWxnOL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1OLrAZ0KtEddLkJpwvrnoYWJUeFK7L3Na&sz=w200" alt="Youtube صور مصغرة_002.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_002.psd</h3>
+                            <p class="card-size">الحجم: 19.46 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1OLrAZ0KtEddLkJpwvrnoYWJUeFK7L3Na&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1OLrAZ0KtEddLkJpwvrnoYWJUeFK7L3Na&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1OLrAZ0KtEddLkJpwvrnoYWJUeFK7L3Na&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1KcxMxGPF5vC7bs7xKH9r_KRc9HXiDiWx&sz=w200" alt="Youtube صور مصغرة_003.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_003.psd</h3>
+                            <p class="card-size">الحجم: 19.85 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1KcxMxGPF5vC7bs7xKH9r_KRc9HXiDiWx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1KcxMxGPF5vC7bs7xKH9r_KRc9HXiDiWx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1KcxMxGPF5vC7bs7xKH9r_KRc9HXiDiWx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1H07K4iAhztiaXnoAAY8KwNlVKaz7CSao&sz=w200" alt="Youtube صور مصغرة_004.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_004.psd</h3>
+                            <p class="card-size">الحجم: 17.61 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1H07K4iAhztiaXnoAAY8KwNlVKaz7CSao&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1H07K4iAhztiaXnoAAY8KwNlVKaz7CSao&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1H07K4iAhztiaXnoAAY8KwNlVKaz7CSao&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1fVdzDzG_qPzYQ536vnJzXHQ6nVvJiCZ2&sz=w200" alt="Youtube صور مصغرة_005.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_005.psd</h3>
+                            <p class="card-size">الحجم: 17.93 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1fVdzDzG_qPzYQ536vnJzXHQ6nVvJiCZ2&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1fVdzDzG_qPzYQ536vnJzXHQ6nVvJiCZ2&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1fVdzDzG_qPzYQ536vnJzXHQ6nVvJiCZ2&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1OLGr4eklYPJMDSPkdACINg4lQPqRdklu&sz=w200" alt="Youtube صور مصغرة_006.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_006.psd</h3>
+                            <p class="card-size">الحجم: 23.50 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1OLGr4eklYPJMDSPkdACINg4lQPqRdklu&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1OLGr4eklYPJMDSPkdACINg4lQPqRdklu&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1OLGr4eklYPJMDSPkdACINg4lQPqRdklu&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1R32H8lAnLI6M9iRG3dWx_qRpiv4lWqwz&sz=w200" alt="Youtube صور مصغرة_01.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_01.psd</h3>
+                            <p class="card-size">الحجم: 6.85 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1R32H8lAnLI6M9iRG3dWx_qRpiv4lWqwz&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1R32H8lAnLI6M9iRG3dWx_qRpiv4lWqwz&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1R32H8lAnLI6M9iRG3dWx_qRpiv4lWqwz&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=11myLyZaqfKkQ3SySdB5oypdP39Q82so5&sz=w200" alt="Youtube صور مصغرة_02.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_02.psd</h3>
+                            <p class="card-size">الحجم: 14.69 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=11myLyZaqfKkQ3SySdB5oypdP39Q82so5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=11myLyZaqfKkQ3SySdB5oypdP39Q82so5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=11myLyZaqfKkQ3SySdB5oypdP39Q82so5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1CvX_KjFcsJoKI4mRiRqc6SPNdrb7YXZa&sz=w200" alt="Youtube صور مصغرة_03.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_03.psd</h3>
+                            <p class="card-size">الحجم: 7.49 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1CvX_KjFcsJoKI4mRiRqc6SPNdrb7YXZa&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1CvX_KjFcsJoKI4mRiRqc6SPNdrb7YXZa&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1CvX_KjFcsJoKI4mRiRqc6SPNdrb7YXZa&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kdXNo3rg2NIewNw_P_tLhf0t5h2PZSGY&sz=w200" alt="Youtube صور مصغرة_04.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_04.psd</h3>
+                            <p class="card-size">الحجم: 1.43 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kdXNo3rg2NIewNw_P_tLhf0t5h2PZSGY&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kdXNo3rg2NIewNw_P_tLhf0t5h2PZSGY&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kdXNo3rg2NIewNw_P_tLhf0t5h2PZSGY&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1dhpjvCQMCDfUhgH-SUH7TgKbtrjl25DA&sz=w200" alt="Youtube صور مصغرة_05.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_05.psd</h3>
+                            <p class="card-size">الحجم: 2.46 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1dhpjvCQMCDfUhgH-SUH7TgKbtrjl25DA&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1dhpjvCQMCDfUhgH-SUH7TgKbtrjl25DA&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1dhpjvCQMCDfUhgH-SUH7TgKbtrjl25DA&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=16p2E-zhr4BV-uVRiQZGykWk6sKUVpy4q&sz=w200" alt="Youtube صور مصغرة_06.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_06.psd</h3>
+                            <p class="card-size">الحجم: 1.56 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=16p2E-zhr4BV-uVRiQZGykWk6sKUVpy4q&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=16p2E-zhr4BV-uVRiQZGykWk6sKUVpy4q&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=16p2E-zhr4BV-uVRiQZGykWk6sKUVpy4q&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=17o2de4CJ053kA-S89QjBXF_U9qGilk51&sz=w200" alt="Youtube صور مصغرة_07.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_07.psd</h3>
+                            <p class="card-size">الحجم: 1.46 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=17o2de4CJ053kA-S89QjBXF_U9qGilk51&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=17o2de4CJ053kA-S89QjBXF_U9qGilk51&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=17o2de4CJ053kA-S89QjBXF_U9qGilk51&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1KXtzNlIIjUfiUNF7FlPxfCfmRxEyBjlv&sz=w200" alt="Youtube صور مصغرة_08.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_08.psd</h3>
+                            <p class="card-size">الحجم: 3.91 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1KXtzNlIIjUfiUNF7FlPxfCfmRxEyBjlv&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1KXtzNlIIjUfiUNF7FlPxfCfmRxEyBjlv&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1KXtzNlIIjUfiUNF7FlPxfCfmRxEyBjlv&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1B066RuQIWyq1h-CGT8qYQgBx07BnFHnh&sz=w200" alt="Youtube صور مصغرة_09.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_09.psd</h3>
+                            <p class="card-size">الحجم: 3.47 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1B066RuQIWyq1h-CGT8qYQgBx07BnFHnh&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1B066RuQIWyq1h-CGT8qYQgBx07BnFHnh&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1B066RuQIWyq1h-CGT8qYQgBx07BnFHnh&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1GnzLL5C-sliJpezhghrmLtnVe5GstOF4&sz=w200" alt="Youtube صور مصغرة_10.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_10.psd</h3>
+                            <p class="card-size">الحجم: 1.65 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1GnzLL5C-sliJpezhghrmLtnVe5GstOF4&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1GnzLL5C-sliJpezhghrmLtnVe5GstOF4&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1GnzLL5C-sliJpezhghrmLtnVe5GstOF4&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1sJpPQuoTiDenDPG3cIROpiYB6GYjtdaz&sz=w200" alt="Youtube صور مصغرة_11.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_11.psd</h3>
+                            <p class="card-size">الحجم: 2.03 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1sJpPQuoTiDenDPG3cIROpiYB6GYjtdaz&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1sJpPQuoTiDenDPG3cIROpiYB6GYjtdaz&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1sJpPQuoTiDenDPG3cIROpiYB6GYjtdaz&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1XHCJ7T2tjbUIYyutXDDnfey3KUtdCcwL&sz=w200" alt="Youtube صور مصغرة_12.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_12.psd</h3>
+                            <p class="card-size">الحجم: 1.42 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1XHCJ7T2tjbUIYyutXDDnfey3KUtdCcwL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1XHCJ7T2tjbUIYyutXDDnfey3KUtdCcwL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1XHCJ7T2tjbUIYyutXDDnfey3KUtdCcwL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=12xi6xRb4cVOL10zTfio6AkQimzRQVc9A&sz=w200" alt="Youtube صور مصغرة_13.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_13.psd</h3>
+                            <p class="card-size">الحجم: 1.50 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12xi6xRb4cVOL10zTfio6AkQimzRQVc9A&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12xi6xRb4cVOL10zTfio6AkQimzRQVc9A&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12xi6xRb4cVOL10zTfio6AkQimzRQVc9A&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1jqUxmpPtH-91pKwkGvTkELHGvibOGKFH&sz=w200" alt="Youtube صور مصغرة_14.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_14.psd</h3>
+                            <p class="card-size">الحجم: 2.00 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1jqUxmpPtH-91pKwkGvTkELHGvibOGKFH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1jqUxmpPtH-91pKwkGvTkELHGvibOGKFH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1jqUxmpPtH-91pKwkGvTkELHGvibOGKFH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oPetJeGU0sIxnyHY0JfT6aq-IkiCc6e6&sz=w200" alt="Youtube صور مصغرة_15.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_15.psd</h3>
+                            <p class="card-size">الحجم: 2.21 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oPetJeGU0sIxnyHY0JfT6aq-IkiCc6e6&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oPetJeGU0sIxnyHY0JfT6aq-IkiCc6e6&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oPetJeGU0sIxnyHY0JfT6aq-IkiCc6e6&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1a1uT5FyRbpYHesSmVe14SJZaooc16MnA&sz=w200" alt="Youtube صور مصغرة_16.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_16.psd</h3>
+                            <p class="card-size">الحجم: 9.00 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1a1uT5FyRbpYHesSmVe14SJZaooc16MnA&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1a1uT5FyRbpYHesSmVe14SJZaooc16MnA&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1a1uT5FyRbpYHesSmVe14SJZaooc16MnA&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1EsK-2T610KAxL1QUpydQ7tvDvLx9OiyM&sz=w200" alt="Youtube صور مصغرة_17.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_17.psd</h3>
+                            <p class="card-size">الحجم: 2.27 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1EsK-2T610KAxL1QUpydQ7tvDvLx9OiyM&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1EsK-2T610KAxL1QUpydQ7tvDvLx9OiyM&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1EsK-2T610KAxL1QUpydQ7tvDvLx9OiyM&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1c6WXqykdGkP11LworPwPUMdDcCARqWE9&sz=w200" alt="Youtube صور مصغرة_18.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_18.psd</h3>
+                            <p class="card-size">الحجم: 2.03 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1c6WXqykdGkP11LworPwPUMdDcCARqWE9&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1c6WXqykdGkP11LworPwPUMdDcCARqWE9&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1c6WXqykdGkP11LworPwPUMdDcCARqWE9&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1zjwgmBG1P0Q57vnV0ClwYdo3ZW2HPNde&sz=w200" alt="Youtube صور مصغرة_19.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_19.psd</h3>
+                            <p class="card-size">الحجم: 1.21 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1zjwgmBG1P0Q57vnV0ClwYdo3ZW2HPNde&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1zjwgmBG1P0Q57vnV0ClwYdo3ZW2HPNde&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1zjwgmBG1P0Q57vnV0ClwYdo3ZW2HPNde&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1kCQmdELM8iMTGBXq66gRIrWbaS_3Nin5&sz=w200" alt="Youtube صور مصغرة_20.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_20.psd</h3>
+                            <p class="card-size">الحجم: 1.04 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1kCQmdELM8iMTGBXq66gRIrWbaS_3Nin5&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1kCQmdELM8iMTGBXq66gRIrWbaS_3Nin5&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1kCQmdELM8iMTGBXq66gRIrWbaS_3Nin5&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1PrWCeMU2JfDNQCXYQEC1Ne94LsJpsFWi&sz=w200" alt="Youtube صور مصغرة_21.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_21.psd</h3>
+                            <p class="card-size">الحجم: 1.71 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1PrWCeMU2JfDNQCXYQEC1Ne94LsJpsFWi&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1PrWCeMU2JfDNQCXYQEC1Ne94LsJpsFWi&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1PrWCeMU2JfDNQCXYQEC1Ne94LsJpsFWi&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1QKHRwI3ilrihBf8Xdrzy6mKKlOkk6Ifj&sz=w200" alt="Youtube صور مصغرة_22.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_22.psd</h3>
+                            <p class="card-size">الحجم: 2.06 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QKHRwI3ilrihBf8Xdrzy6mKKlOkk6Ifj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QKHRwI3ilrihBf8Xdrzy6mKKlOkk6Ifj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QKHRwI3ilrihBf8Xdrzy6mKKlOkk6Ifj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1QtKR1X3IkRh0zNUSA_1ExSyWJKYMWotL&sz=w200" alt="Youtube صور مصغرة_23.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_23.psd</h3>
+                            <p class="card-size">الحجم: 2.57 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QtKR1X3IkRh0zNUSA_1ExSyWJKYMWotL&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QtKR1X3IkRh0zNUSA_1ExSyWJKYMWotL&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QtKR1X3IkRh0zNUSA_1ExSyWJKYMWotL&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1DbcsCSiVCUbwaDtDM_Y4QgpmpaeUFNwn&sz=w200" alt="Youtube صور مصغرة_24.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_24.psd</h3>
+                            <p class="card-size">الحجم: 3.37 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1DbcsCSiVCUbwaDtDM_Y4QgpmpaeUFNwn&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1DbcsCSiVCUbwaDtDM_Y4QgpmpaeUFNwn&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1DbcsCSiVCUbwaDtDM_Y4QgpmpaeUFNwn&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1JpRP2x2nHwsh1pkKRbAcwNJa_rvr4XLE&sz=w200" alt="Youtube صور مصغرة_25.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_25.psd</h3>
+                            <p class="card-size">الحجم: 2.55 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1JpRP2x2nHwsh1pkKRbAcwNJa_rvr4XLE&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1JpRP2x2nHwsh1pkKRbAcwNJa_rvr4XLE&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1JpRP2x2nHwsh1pkKRbAcwNJa_rvr4XLE&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=19G7ynRKp2ByNdCXd1bTdiIbxpX7Mem_R&sz=w200" alt="Youtube صور مصغرة_26.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_26.psd</h3>
+                            <p class="card-size">الحجم: 1.59 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=19G7ynRKp2ByNdCXd1bTdiIbxpX7Mem_R&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=19G7ynRKp2ByNdCXd1bTdiIbxpX7Mem_R&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=19G7ynRKp2ByNdCXd1bTdiIbxpX7Mem_R&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1OksFzh6tHPS_dKP1o3n_DH1NgqxWWpNx&sz=w200" alt="Youtube صور مصغرة_27.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_27.psd</h3>
+                            <p class="card-size">الحجم: 1.30 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1OksFzh6tHPS_dKP1o3n_DH1NgqxWWpNx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1OksFzh6tHPS_dKP1o3n_DH1NgqxWWpNx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1OksFzh6tHPS_dKP1o3n_DH1NgqxWWpNx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1QXioTDtCXeJ5KO0p5FSZgiqRJakKM7KX&sz=w200" alt="Youtube صور مصغرة_28.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_28.psd</h3>
+                            <p class="card-size">الحجم: 1.32 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1QXioTDtCXeJ5KO0p5FSZgiqRJakKM7KX&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1QXioTDtCXeJ5KO0p5FSZgiqRJakKM7KX&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1QXioTDtCXeJ5KO0p5FSZgiqRJakKM7KX&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1ireje9U9YCQQkJIJw86u47DgXt8HThzx&sz=w200" alt="Youtube صور مصغرة_29.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_29.psd</h3>
+                            <p class="card-size">الحجم: 1.31 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1ireje9U9YCQQkJIJw86u47DgXt8HThzx&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1ireje9U9YCQQkJIJw86u47DgXt8HThzx&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1ireje9U9YCQQkJIJw86u47DgXt8HThzx&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=17GF7xtq-P-K07G97SqNextzEoGG8fg5c&sz=w200" alt="Youtube صور مصغرة_30.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_30.psd</h3>
+                            <p class="card-size">الحجم: 1.39 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=17GF7xtq-P-K07G97SqNextzEoGG8fg5c&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=17GF7xtq-P-K07G97SqNextzEoGG8fg5c&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=17GF7xtq-P-K07G97SqNextzEoGG8fg5c&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1KxiffaioeW0F68x0kS3FKh7C2WgaP_JT&sz=w200" alt="Youtube صور مصغرة_31.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_31.psd</h3>
+                            <p class="card-size">الحجم: 1.19 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1KxiffaioeW0F68x0kS3FKh7C2WgaP_JT&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1KxiffaioeW0F68x0kS3FKh7C2WgaP_JT&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1KxiffaioeW0F68x0kS3FKh7C2WgaP_JT&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1gtC02it4-TigaMjySkhr4mpbQrLnSujj&sz=w200" alt="Youtube صور مصغرة_32.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_32.psd</h3>
+                            <p class="card-size">الحجم: 2.61 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1gtC02it4-TigaMjySkhr4mpbQrLnSujj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1gtC02it4-TigaMjySkhr4mpbQrLnSujj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1gtC02it4-TigaMjySkhr4mpbQrLnSujj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1oDbtdW1pMtNqFtJZZDHcVe2LAxsKYJBv&sz=w200" alt="Youtube صور مصغرة_33.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_33.psd</h3>
+                            <p class="card-size">الحجم: 3.48 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1oDbtdW1pMtNqFtJZZDHcVe2LAxsKYJBv&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1oDbtdW1pMtNqFtJZZDHcVe2LAxsKYJBv&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1oDbtdW1pMtNqFtJZZDHcVe2LAxsKYJBv&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1RNEk5oQgDvNO34vzMpwyXnfgjlKoNr8w&sz=w200" alt="Youtube صور مصغرة_34.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_34.psd</h3>
+                            <p class="card-size">الحجم: 1.73 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1RNEk5oQgDvNO34vzMpwyXnfgjlKoNr8w&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1RNEk5oQgDvNO34vzMpwyXnfgjlKoNr8w&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1RNEk5oQgDvNO34vzMpwyXnfgjlKoNr8w&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1hW3LTNiQDfUvQ1rmeyvSkh8hSPPTYf0P&sz=w200" alt="Youtube صور مصغرة_35.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_35.psd</h3>
+                            <p class="card-size">الحجم: 4.91 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1hW3LTNiQDfUvQ1rmeyvSkh8hSPPTYf0P&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1hW3LTNiQDfUvQ1rmeyvSkh8hSPPTYf0P&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1hW3LTNiQDfUvQ1rmeyvSkh8hSPPTYf0P&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1_mU-aeJgLKFAK3CkJoStLAmymIOCAlWs&sz=w200" alt="Youtube صور مصغرة_36.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_36.psd</h3>
+                            <p class="card-size">الحجم: 1.56 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1_mU-aeJgLKFAK3CkJoStLAmymIOCAlWs&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1_mU-aeJgLKFAK3CkJoStLAmymIOCAlWs&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1_mU-aeJgLKFAK3CkJoStLAmymIOCAlWs&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1V_F6SebK4igPKx-V1nD-X09lZ6kEkmai&sz=w200" alt="Youtube صور مصغرة_37.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_37.psd</h3>
+                            <p class="card-size">الحجم: 1.13 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1V_F6SebK4igPKx-V1nD-X09lZ6kEkmai&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1V_F6SebK4igPKx-V1nD-X09lZ6kEkmai&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1V_F6SebK4igPKx-V1nD-X09lZ6kEkmai&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1WtmJX2ALJ156C43XNGqvOdedk6ROLAJZ&sz=w200" alt="Youtube صور مصغرة_370.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_370.psd</h3>
+                            <p class="card-size">الحجم: 25.54 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1WtmJX2ALJ156C43XNGqvOdedk6ROLAJZ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1WtmJX2ALJ156C43XNGqvOdedk6ROLAJZ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1WtmJX2ALJ156C43XNGqvOdedk6ROLAJZ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=12TXtFFnKVB_oV01V_jZX_QcWC__tyYuJ&sz=w200" alt="Youtube صور مصغرة_38.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_38.psd</h3>
+                            <p class="card-size">الحجم: 1.56 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=12TXtFFnKVB_oV01V_jZX_QcWC__tyYuJ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=12TXtFFnKVB_oV01V_jZX_QcWC__tyYuJ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=12TXtFFnKVB_oV01V_jZX_QcWC__tyYuJ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1A82zlII5zjFtzwmbfs1zWw0OjntagZTf&sz=w200" alt="Youtube صور مصغرة_39.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_39.psd</h3>
+                            <p class="card-size">الحجم: 1.27 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1A82zlII5zjFtzwmbfs1zWw0OjntagZTf&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1A82zlII5zjFtzwmbfs1zWw0OjntagZTf&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1A82zlII5zjFtzwmbfs1zWw0OjntagZTf&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1OBV1qyWsyHceqwG7KM_nPZzh8mxlk6og&sz=w200" alt="Youtube صور مصغرة_40.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_40.psd</h3>
+                            <p class="card-size">الحجم: 2.22 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1OBV1qyWsyHceqwG7KM_nPZzh8mxlk6og&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1OBV1qyWsyHceqwG7KM_nPZzh8mxlk6og&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1OBV1qyWsyHceqwG7KM_nPZzh8mxlk6og&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1Ue7zOVxNonmGqY0Ua0tvNowdHRuwabF3&sz=w200" alt="Youtube صور مصغرة_41.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_41.psd</h3>
+                            <p class="card-size">الحجم: 985.44 KB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1Ue7zOVxNonmGqY0Ua0tvNowdHRuwabF3&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1Ue7zOVxNonmGqY0Ua0tvNowdHRuwabF3&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1Ue7zOVxNonmGqY0Ua0tvNowdHRuwabF3&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1BAKtW5pUu4LX3jFdfujuqIMJ2RvgiOXv&sz=w200" alt="Youtube صور مصغرة_42.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_42.psd</h3>
+                            <p class="card-size">الحجم: 3.49 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1BAKtW5pUu4LX3jFdfujuqIMJ2RvgiOXv&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1BAKtW5pUu4LX3jFdfujuqIMJ2RvgiOXv&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1BAKtW5pUu4LX3jFdfujuqIMJ2RvgiOXv&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1WZrcicwhgoHjJm2tXY2KkxZWDszd18Iv&sz=w200" alt="Youtube صور مصغرة_43.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_43.psd</h3>
+                            <p class="card-size">الحجم: 4.42 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1WZrcicwhgoHjJm2tXY2KkxZWDszd18Iv&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1WZrcicwhgoHjJm2tXY2KkxZWDszd18Iv&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1WZrcicwhgoHjJm2tXY2KkxZWDszd18Iv&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1aJit5yU5y8ZBfmiirMP02UtzsKUZimtJ&sz=w200" alt="Youtube صور مصغرة_44.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_44.psd</h3>
+                            <p class="card-size">الحجم: 1.16 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1aJit5yU5y8ZBfmiirMP02UtzsKUZimtJ&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1aJit5yU5y8ZBfmiirMP02UtzsKUZimtJ&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1aJit5yU5y8ZBfmiirMP02UtzsKUZimtJ&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1BRjCtEXlg9VUn-gkFOMdzP4XXZRA138y&sz=w200" alt="Youtube صور مصغرة_45.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_45.psd</h3>
+                            <p class="card-size">الحجم: 2.96 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1BRjCtEXlg9VUn-gkFOMdzP4XXZRA138y&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1BRjCtEXlg9VUn-gkFOMdzP4XXZRA138y&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1BRjCtEXlg9VUn-gkFOMdzP4XXZRA138y&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=159o45bjEcXGSTOt-iHb9P_yysJxpAcIj&sz=w200" alt="Youtube صور مصغرة_46.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_46.psd</h3>
+                            <p class="card-size">الحجم: 2.41 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=159o45bjEcXGSTOt-iHb9P_yysJxpAcIj&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=159o45bjEcXGSTOt-iHb9P_yysJxpAcIj&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=159o45bjEcXGSTOt-iHb9P_yysJxpAcIj&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1vajwX3fnMsN3l-ET1HsJYTIxxx6b9Mrt&sz=w200" alt="Youtube صور مصغرة_47.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_47.psd</h3>
+                            <p class="card-size">الحجم: 1.86 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1vajwX3fnMsN3l-ET1HsJYTIxxx6b9Mrt&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1vajwX3fnMsN3l-ET1HsJYTIxxx6b9Mrt&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1vajwX3fnMsN3l-ET1HsJYTIxxx6b9Mrt&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=17AeKMwppoRHF6cqebXnT1PgTUllIFyRH&sz=w200" alt="Youtube صور مصغرة_48.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_48.psd</h3>
+                            <p class="card-size">الحجم: 1.59 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=17AeKMwppoRHF6cqebXnT1PgTUllIFyRH&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=17AeKMwppoRHF6cqebXnT1PgTUllIFyRH&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=17AeKMwppoRHF6cqebXnT1PgTUllIFyRH&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1cocNY8IP3BZKnfq__f7QnrALriwA5CLV&sz=w200" alt="Youtube صور مصغرة_49.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_49.psd</h3>
+                            <p class="card-size">الحجم: 3.49 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1cocNY8IP3BZKnfq__f7QnrALriwA5CLV&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1cocNY8IP3BZKnfq__f7QnrALriwA5CLV&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1cocNY8IP3BZKnfq__f7QnrALriwA5CLV&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1UMVUMfVrgk2ozjOfQAnwFtB6aes77GG_&sz=w200" alt="Youtube صور مصغرة_50.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_50.psd</h3>
+                            <p class="card-size">الحجم: 2.36 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1UMVUMfVrgk2ozjOfQAnwFtB6aes77GG_&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1UMVUMfVrgk2ozjOfQAnwFtB6aes77GG_&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1UMVUMfVrgk2ozjOfQAnwFtB6aes77GG_&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1MUMcErc0r5pop1v0oEExiS10VTSQoU9W&sz=w200" alt="Youtube صور مصغرة_YT-Banner Template-01-ai.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_YT-Banner Template-01-ai.psd</h3>
+                            <p class="card-size">الحجم: 1.55 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1MUMcErc0r5pop1v0oEExiS10VTSQoU9W&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1MUMcErc0r5pop1v0oEExiS10VTSQoU9W&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1MUMcErc0r5pop1v0oEExiS10VTSQoU9W&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1jlpNw2I35muDpbg82wod8RP646U5giLq&sz=w200" alt="Youtube صور مصغرة_YT-Banner Template-02-ai.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_YT-Banner Template-02-ai.psd</h3>
+                            <p class="card-size">الحجم: 3.79 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1jlpNw2I35muDpbg82wod8RP646U5giLq&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1jlpNw2I35muDpbg82wod8RP646U5giLq&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1jlpNw2I35muDpbg82wod8RP646U5giLq&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1pKomeZvkw2ovK7gGoPMUNPCgwu-EijiK&sz=w200" alt="Youtube صور مصغرة_YT-Banner Template-03-ai.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_YT-Banner Template-03-ai.psd</h3>
+                            <p class="card-size">الحجم: 1.64 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1pKomeZvkw2ovK7gGoPMUNPCgwu-EijiK&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1pKomeZvkw2ovK7gGoPMUNPCgwu-EijiK&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1pKomeZvkw2ovK7gGoPMUNPCgwu-EijiK&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=1aQ6SImgy7lWUI27XHn2gCP3qG6kN-yO9&sz=w200" alt="Youtube صور مصغرة_YT-Banner Template-04-ai.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_YT-Banner Template-04-ai.psd</h3>
+                            <p class="card-size">الحجم: 2.90 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=1aQ6SImgy7lWUI27XHn2gCP3qG6kN-yO9&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=1aQ6SImgy7lWUI27XHn2gCP3qG6kN-yO9&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=1aQ6SImgy7lWUI27XHn2gCP3qG6kN-yO9&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://drive.google.com/thumbnail?id=13SSb5CQeco0elckDo-qs5SvksoTYJo31&sz=w200" alt="Youtube صور مصغرة_YT-Banner Template-05-ai.psd" class="card-img" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Youtube صور مصغرة_YT-Banner Template-05-ai.psd</h3>
+                            <p class="card-size">الحجم: 2.16 MB</p>
+                            <div class="card-links">
+                                
+                            <a href="https://drive.google.com/uc?id=13SSb5CQeco0elckDo-qs5SvksoTYJo31&export=view" target="_blank">عرض</a>
+                            <a href="https://drive.google.com/uc?id=13SSb5CQeco0elckDo-qs5SvksoTYJo31&export=download" target="_blank">تحميل</a>
+                        
+                                
+                        <button class="copy-link-button" onclick="copyToClipboard('https://drive.google.com/uc?id=13SSb5CQeco0elckDo-qs5SvksoTYJo31&export=view');">نسخ</button>
+                    
+                                <span class="file-extension">.PSD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+        <div id="contactButtonContainer">
+            <div id="contactButton"><i class="fab fa-whatsapp"></i></div>
+            <div id="contactMenu">
+                <a href="https://wa.me/yourNumber" target="_blank">WhatsApp</a>
+                <a href="https://youtube.com/yourChannel" target="_blank">YouTube</a>
+                <a href="https://facebook.com/yourPage" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactButton = document.getElementById('contactButton');
+            var contactMenu = document.getElementById('contactMenu');
+            contactButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                contactMenu.style.display = contactMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            document.addEventListener('click', function(event) {
+                if (contactMenu.style.display === 'block') {
+                    contactMenu.style.display = 'none';
+                }
+            });
+        });
+        </script>
+        
+        </body>
+        </html>
+        
