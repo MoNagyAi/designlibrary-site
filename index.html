@@ -1040,6 +1040,22 @@
                         if (!doc) return;
 
                         const applyFrameEnhancements = () => {
+                            if (!doc.getElementById('bilingual-file-actions')) {
+                                const style = doc.createElement('style');
+                                style.id = 'bilingual-file-actions';
+                                style.textContent = '.dl-action{display:inline-flex!important;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:70px;padding:8px 10px!important;line-height:1.2!important;vertical-align:middle}.dl-action-en{font:700 12px/1.2 Arial,sans-serif;direction:ltr}.dl-action-ar{font:12px/1.3 Cairo,Tahoma,sans-serif;direction:rtl}';
+                                doc.head.appendChild(style);
+                            }
+                            doc.querySelectorAll('a,button').forEach(button => {
+                                if (button.dataset.dlBilingual) return;
+                                const label = button.textContent.trim();
+                                const english = label === 'عرض' ? 'View' : label === 'تحميل' ? 'Download' : '';
+                                if (!english) return;
+                                button.dataset.dlBilingual = '1';
+                                button.classList.add('dl-action');
+                                button.setAttribute('aria-label', english + ' / ' + label);
+                                button.innerHTML = '<span class="dl-action-en" lang="en">' + english + '</span><span class="dl-action-ar" lang="ar">' + label + '</span>';
+                            });
                             // The parent provides a single contact menu; remove legacy WhatsApp widgets.
                             doc.querySelectorAll('#contactButtonContainer').forEach(widget => {
                                 if (widget.querySelector('.fa-whatsapp')) widget.remove();
@@ -1140,6 +1156,21 @@ a:focus-visible,button:focus-visible{outline:3px solid #e8bb53;outline-offset:3p
 .format-icons{display:flex;gap:5px;margin-top:5px;direction:ltr}.format-icons span{display:inline-flex;align-items:center;justify-content:center;height:24px;min-width:29px;padding:0 5px;border:1px solid currentColor;border-radius:5px;font:800 10px/1 Arial,sans-serif;box-shadow:0 2px 5px #0004}
 .format-psd{color:#5bc8ff;background:#082741}.format-ai{color:#ffb43c;background:#382008}.format-pdf{color:#ff7c82;background:#3b1321}.format-svg{color:#ffde69;background:#352b08}.format-3d{color:#75e5c9;background:#0b302b}.format-ae{color:#c2acff;background:#231746}
 @media(max-width:850px){.top-nav.brand-nav{grid-template-columns:100px minmax(0,1fr);padding:9px 12px!important;gap:8px 12px}.brand-logo{width:100px!important;max-width:100px!important}.brand-center-info{padding-inline-start:12px}.brand-nav-actions{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.brand-nav-actions a,.brand-nav-actions .nav-folders{min-height:34px;padding:5px}.brand-center-info .app-title-en{font-size:18px}.brand-subtitle{display:none}.brand-center-info .app-title-ar{font-size:12px}.format-icons span{height:21px;min-width:25px;font-size:9px}.education-badge{font-size:8px}.brand-byline{font-size:9px}}
+</style><style id="purpose-and-green-contact">
+#contactButton{background:linear-gradient(140deg,#20c570,#13934e)!important;color:#fff!important;box-shadow:0 6px 20px #11934c40;border:1px solid #78e7a880}
+#contactButton:hover{background:#108347!important}
+.top-nav.brand-nav{grid-template-columns:145px minmax(300px,1fr) minmax(320px,.85fr) auto}
+.cover-purpose{grid-column:3;grid-row:1;justify-self:center;min-width:0;padding:4px 20px;border-inline-start:1px solid #e8c77530;border-inline-end:1px solid #e8c77530;background:linear-gradient(90deg,transparent,#06121abe,transparent);text-align:center;color:#f5f2e9}
+.purpose-heading{font:700 12px/1.5 Arial,sans-serif;letter-spacing:1.1px;color:#e8c775}
+.purpose-heading>span{display:block;font:600 14px/1.7 Cairo,Tahoma,sans-serif;letter-spacing:0;color:#fff}
+.purpose-categories{display:flex;justify-content:center;gap:22px;margin-top:7px}
+.purpose-categories>span{display:grid;justify-items:center;gap:3px}
+.purpose-categories i{font-size:17px;color:#e8c775}
+.purpose-categories b{font:600 10px/1.2 Arial,sans-serif;white-space:nowrap}
+.purpose-categories small{font:10px/1.3 Cairo,Tahoma,sans-serif;color:#ccd7df}
+.brand-nav-actions{grid-column:4}
+@media(max-width:1250px){.top-nav.brand-nav{grid-template-columns:125px minmax(260px,1fr) auto}.cover-purpose{display:none}.brand-nav-actions{grid-column:3}}
+@media(max-width:850px){.top-nav.brand-nav{grid-template-columns:100px minmax(0,1fr)}.brand-nav-actions{grid-column:1/-1;grid-row:2}}
 </style></head>
         <body>
             
@@ -1158,7 +1189,10 @@ a:focus-visible,button:focus-visible{outline:3px solid #e8bb53;outline-offset:3p
 <span class="app-note-en">No commercial use · Rights remain with their original owners</span>
 </div>
 
-                <div class="brand-nav-actions"><button class="nav-folders" onclick="toggleSidebar()" aria-label="Show or hide folders / إظهار أو إخفاء الأقسام"><i class="fas fa-bars" aria-hidden="true"></i><span class="header-btn-text"><span>Sections</span><span class="btn-sub">الأقسام</span></span></button>
+                <div class="cover-purpose" aria-label="Explore, learn and create / اكتشف وتعلم وابتكر">
+<div class="purpose-heading">YOUR NEXT IDEA STARTS HERE<span lang="ar" dir="rtl">فكرتك الجاية تبدأ هنا</span></div>
+<div class="purpose-categories"><span><i class="fas fa-layer-group" aria-hidden="true"></i><b>Design assets</b><small>موارد تصميم</small></span><span><i class="fas fa-book-open" aria-hidden="true"></i><b>Books &amp; references</b><small>كتب ومراجع</small></span><span><i class="fas fa-cube" aria-hidden="true"></i><b>Creative tools</b><small>أدوات إبداعية</small></span></div>
+</div><div class="brand-nav-actions"><button class="nav-folders" onclick="toggleSidebar()" aria-label="Show or hide folders / إظهار أو إخفاء الأقسام"><i class="fas fa-bars" aria-hidden="true"></i><span class="header-btn-text"><span>Sections</span><span class="btn-sub">الأقسام</span></span></button>
                     <a class="google-play-button" href="https://play.google.com/store/apps/details?id=dlfatcom.buntyfrombengal.riyantalks" target="_blank" rel="noopener noreferrer" aria-label="Get the Design Library app on Google Play">
                         <i class="fab fa-google-play"></i>
                         <span class="header-btn-text">
