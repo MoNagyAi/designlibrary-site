@@ -176,7 +176,7 @@
                     display: none;
                 }
                 .sidebar {
-                    width: 270px;
+                    width: 320px;
                     background-color: #2c3e50;
                     color: white;
                     padding: 20px;
@@ -198,7 +198,7 @@
                 }
                 .sidebar-subfolder-button {
                     background-color: #3b4a59;
-                    padding: 10px 12px;
+                    padding: 12px 14px;
                     border-radius: 6px;
                     margin: 5px 0;
                     cursor: pointer;
@@ -481,7 +481,7 @@
                 .bilingual-label .menu-en {
                     font-family: Arial, sans-serif;
                     font-weight: 700;
-                    font-size: 13px;
+                    font-size: 16px;
                     color: inherit;
                     direction: ltr;
                     text-align: left;
@@ -489,7 +489,7 @@
                 .bilingual-label .menu-ar {
                     font-family: 'Cairo', sans-serif;
                     font-weight: 400;
-                    font-size: 10px;
+                    font-size: 12px;
                     opacity: .78;
                     direction: rtl;
                     text-align: left;
@@ -530,6 +530,7 @@
                     ["تصميمات اسلاميه واعمال خيرية", "Islamic & Charity Designs"],
                     ["منيوهات مطاعم ومقاهي", "Restaurant & Cafe Menus"],
                     ["مهرجنات وكروت افراح", "Wedding Cards & Designs"],
+                    ["نتائج العام الجديد", "New Year Designs"],
                     ["شهادات تقدير", "Certificates of Appreciation"],
                     ["كروت شخصية مدرسين", "Teacher Business Cards"],
                     ["كروت حجز مدرسين", "Teacher Booking Cards"],
@@ -897,24 +898,42 @@
                 function hideCopyButtonsInFrame() {
                     const iframe = document.getElementById('mainFrame');
                     if (!iframe) return;
+
                     try {
                         const doc = iframe.contentDocument || iframe.contentWindow.document;
                         if (!doc) return;
 
-                        const hide = () => {
+                        const applyFrameEnhancements = () => {
+                            // Remove copy buttons from all internal pages.
                             doc.querySelectorAll('.copy-link-button').forEach(btn => btn.remove());
+
+                            // Translate the main page heading: English first, Arabic below.
+                            const h1 = doc.querySelector('h1');
+                            if (h1 && !h1.dataset.bilingualApplied) {
+                                const original = h1.textContent.trim();
+                                if (original) {
+                                    const english = englishLabelFor(original);
+                                    h1.innerHTML =
+                                        '<span style="display:block;font-family:Arial,sans-serif;font-size:1.12em;font-weight:700;direction:ltr;text-align:center;">' +
+                                        escapeHtml(english) +
+                                        '</span>' +
+                                        '<span style="display:block;margin-top:5px;font-family:Cairo,sans-serif;font-size:.62em;font-weight:500;opacity:.78;direction:rtl;text-align:center;">' +
+                                        escapeHtml(original) +
+                                        '</span>';
+                                    h1.dataset.bilingualApplied = '1';
+                                }
+                            }
                         };
 
-                        hide();
+                        applyFrameEnhancements();
 
-                        // Also remove any copy buttons added later by page scripts.
-                        if (doc.body && !doc.body.dataset.copyButtonsObserver) {
-                            const observer = new MutationObserver(hide);
+                        if (doc.body && !doc.body.dataset.designLibraryObserver) {
+                            const observer = new MutationObserver(applyFrameEnhancements);
                             observer.observe(doc.body, { childList: true, subtree: true });
-                            doc.body.dataset.copyButtonsObserver = '1';
+                            doc.body.dataset.designLibraryObserver = '1';
                         }
                     } catch (e) {
-                        // External pages loaded in the iframe are cross-origin and cannot be edited.
+                        // External cross-origin pages cannot be modified from the parent page.
                     }
                 }
 
